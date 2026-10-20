@@ -24,31 +24,36 @@ def enviar_telegram(mensaje):
     requests.post(url, json=payload)
 
 def buscar_wallapop(item):
+    """Consulta los artículos de Wallapop buscando por texto libre sin restricciones estrictas de categoría."""
     busqueda = f"vinilo {item['artista']} {item['disco']}"
-    url = f"https://api.wallapop.com/api/v3/general/search?keywords={busqueda}&category_ids=12545"
+    url = f"https://api.wallapop.com/api/v3/general/search?keywords={urllib.parse.quote(busqueda)}&order_by=newest"
     
     headers = {
-        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36',
+        'Accept': 'application/json',
+        'X-Device-OS': '0'
     }
     
     try:
         response = requests.get(url, headers=headers, timeout=10)
         if response.status_code == 200:
             data = response.json()
-            search_objects = data.get('search_objects', [])
+            sections = data.get('search_objects', [])
             
             encontrados = []
-            for obj in search_objects:
-                precio = obj.get('price')
-                titulo = obj.get('title', '')
-                slug = obj.get('web_slug')
+            for obj in sections:
+                item_data = obj.get('item', {})
+                titulo = item_data.get('title', '')
+                precio = float(item_data.get('price', 0))
+                item_id = item_data.get('id')
+                slug = item_data.get('web_slug')
                 
-                if precio and precio <= item['max_precio'] and slug:
-                    link = f"https://es.wallapop.com/item/{slug}"
+                if item_id and slug and precio > 0 and precio <= item['max_precio']:
+                    url_item = f"https://es.wallapop.com/item/{slug}"
                     encontrados.append({
                         'titulo': titulo,
                         'precio': precio,
-                        'link': link
+                        'link': url_item
                     })
             return encontrados
     except Exception as e:
