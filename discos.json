@@ -1,4 +1,4 @@
-[
+w[
   {
     "artista": "Billie Holiday",
     "disco": "Lady in Satin",
@@ -178,5 +178,16 @@
     "artista": "Van Morrison",
     "disco": "Moondance",
     "max_precio": 20
+  },
+    {
+    "artista": "Vetusta Morla",
+    "disco": "Un día en el mundo",
+    "max_precio": 35
+  },
+  {
+    "artista": "Vetusta Morla",
+    "disco": "La deriva",
+    "max_precio": 30
   }
+  
 ]
