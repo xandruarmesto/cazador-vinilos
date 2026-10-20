@@ -1,4 +1,59 @@
 [
+    {
+    "artista": "Amy Winehouse",
+    "disco": "Back to Black",
+    "max_precio": 20
+  },
+  {
+    "artista": "Aretha Franklin",
+    "disco": "I Never Loved a Man the Way I Love You",
+    "max_precio": 18
+  },
+  {
+    "artista": "Aretha Franklin",
+    "disco": "30 Greatest Hits",
+    "max_precio": 22
+  },
+  {
+    "artista": "Bob Marley",
+    "disco": "Legend",
+    "max_precio": 20
+  },
+  {
+    "artista": "Nirvana",
+    "disco": "Nevermind",
+    "max_precio": 22
+  },
+  {
+    "artista": "Nirvana",
+    "disco": "MTV Unplugged in New York",
+    "max_precio": 22
+  },
+  {
+    "artista": "The Cure",
+    "disco": "Disintegration",
+    "max_precio": 22
+  },
+  {
+    "artista": "The Cure",
+    "disco": "Boys Don't Cry",
+    "max_precio": 20
+  },
+  {
+    "artista": "The Rolling Stones",
+    "disco": "Sticky Fingers",
+    "max_precio": 22
+  },
+  {
+    "artista": "The Rolling Stones",
+    "disco": "Forty Licks",
+    "max_precio": 25
+  },
+  {
+    "artista": "The Who",
+    "disco": "Who's Next",
+    "max_precio": 20
+  },
   {
     "artista": "Billie Holiday",
     "disco": "Lady in Satin",
