@@ -23,6 +23,14 @@
   "precio": 15.0,
   "ts": 1792532780.6827123
  },
+ "https://www.discogs.com/sell/release/10160286": {
+  "precio": 22.0,
+  "ts": 1792536711.4838152
+ },
+ "https://www.discogs.com/sell/release/10519149": {
+  "precio": 19.0,
+  "ts": 1792536729.0928922
+ },
  "https://www.discogs.com/sell/release/11118466": {
   "precio": 17.8,
   "ts": 1792532576.2410343
@@ -67,6 +75,14 @@
   "precio": 12.0,
   "ts": 1792532257.378146
  },
+ "https://www.discogs.com/sell/release/12860352": {
+  "precio": 23.72,
+  "ts": 1792536562.5796402
+ },
+ "https://www.discogs.com/sell/release/1312327": {
+  "precio": 10.92,
+  "ts": 1792536763.2760737
+ },
  "https://www.discogs.com/sell/release/1333208": {
   "precio": 5.0,
   "ts": 1792532292.4331994
@@ -79,9 +95,17 @@
   "precio": 17.0,
   "ts": 1792532814.324583
  },
+ "https://www.discogs.com/sell/release/13662884": {
+  "precio": 9.86,
+  "ts": 1792536762.815271
+ },
  "https://www.discogs.com/sell/release/14049672": {
   "precio": 7.6,
   "ts": 1792532203.4999175
+ },
+ "https://www.discogs.com/sell/release/14330620": {
+  "precio": 18.99,
+  "ts": 1792537071.2813008
  },
  "https://www.discogs.com/sell/release/14350987": {
   "precio": 2.0,
@@ -111,9 +135,33 @@
   "precio": 11.87,
   "ts": 1792532743.3598003
  },
+ "https://www.discogs.com/sell/release/15341441": {
+  "precio": 19.3,
+  "ts": 1792536677.762223
+ },
+ "https://www.discogs.com/sell/release/15443692": {
+  "precio": 5.0,
+  "ts": 1792536598.2476697
+ },
+ "https://www.discogs.com/sell/release/15589779": {
+  "precio": 20.0,
+  "ts": 1792536580.2874665
+ },
+ "https://www.discogs.com/sell/release/15999105": {
+  "precio": 11.87,
+  "ts": 1792536615.6723418
+ },
  "https://www.discogs.com/sell/release/1621644": {
   "precio": 7.99,
   "ts": 1792532424.975688
+ },
+ "https://www.discogs.com/sell/release/16458108": {
+  "precio": 17.8,
+  "ts": 1792537232.8480537
+ },
+ "https://www.discogs.com/sell/release/16953198": {
+  "precio": 20.0,
+  "ts": 1792537249.9617662
  },
  "https://www.discogs.com/sell/release/1864446": {
   "precio": 1.5,
@@ -138,6 +186,10 @@
  "https://www.discogs.com/sell/release/23295314": {
   "precio": 22.9,
   "ts": 1792532087.5844994
+ },
+ "https://www.discogs.com/sell/release/23513969": {
+  "precio": 16.91,
+  "ts": 1792536887.9954352
  },
  "https://www.discogs.com/sell/release/24845798": {
   "precio": 14.24,
@@ -171,13 +223,25 @@
   "precio": 18.69,
   "ts": 1792532327.803744
  },
+ "https://www.discogs.com/sell/release/3052492": {
+  "precio": 18.82,
+  "ts": 1792536955.30285
+ },
  "https://www.discogs.com/sell/release/3146367": {
   "precio": 3.55,
   "ts": 1792532760.1144626
  },
+ "https://www.discogs.com/sell/release/31632307": {
+  "precio": 18.67,
+  "ts": 1792536728.6792047
+ },
  "https://www.discogs.com/sell/release/3289556": {
   "precio": 1.5,
   "ts": 1792532796.151937
+ },
+ "https://www.discogs.com/sell/release/32950698": {
+  "precio": 16.6,
+  "ts": 1792536616.1455176
  },
  "https://www.discogs.com/sell/release/3404752": {
   "precio": 1.74,
@@ -186,6 +250,14 @@
  "https://www.discogs.com/sell/release/34256551": {
   "precio": 17.95,
   "ts": 1792532376.2436361
+ },
+ "https://www.discogs.com/sell/release/34294015": {
+  "precio": 18.9,
+  "ts": 1792536677.3480022
+ },
+ "https://www.discogs.com/sell/release/3441168": {
+  "precio": 18.0,
+  "ts": 1792536728.2648914
  },
  "https://www.discogs.com/sell/release/3509085": {
   "precio": 9.46,
@@ -231,6 +303,10 @@
   "precio": 6.88,
   "ts": 1792532293.4440541
  },
+ "https://www.discogs.com/sell/release/4783985": {
+  "precio": 18.67,
+  "ts": 1792536579.8086264
+ },
  "https://www.discogs.com/sell/release/5332160": {
   "precio": 11.29,
   "ts": 1792532813.8210523
@@ -246,6 +322,10 @@
  "https://www.discogs.com/sell/release/5611406": {
   "precio": 23.25,
   "ts": 1792532334.4330888
+ },
+ "https://www.discogs.com/sell/release/5747985": {
+  "precio": 15.71,
+  "ts": 1792536745.885977
  },
  "https://www.discogs.com/sell/release/5888310": {
   "precio": 8.81,
@@ -275,6 +355,18 @@
   "precio": 13.6,
   "ts": 1792532761.068071
  },
+ "https://www.discogs.com/sell/release/7236002": {
+  "precio": 2.66,
+  "ts": 1792536597.2229578
+ },
+ "https://www.discogs.com/sell/release/760558": {
+  "precio": 21.35,
+  "ts": 1792536711.04298
+ },
+ "https://www.discogs.com/sell/release/7614034": {
+  "precio": 4.75,
+  "ts": 1792536597.6333303
+ },
  "https://www.discogs.com/sell/release/7790160": {
   "precio": 25.0,
   "ts": 1792532592.9802778
@@ -286,6 +378,10 @@
  "https://www.discogs.com/sell/release/7944206": {
   "precio": 7.0,
   "ts": 1792532141.193034
+ },
+ "https://www.discogs.com/sell/release/7950925": {
+  "precio": 21.9,
+  "ts": 1792537071.6983664
  },
  "https://www.discogs.com/sell/release/7965153": {
   "precio": 22.0,
@@ -303,6 +399,10 @@
   "precio": 18.83,
   "ts": 1792532186.6197927
  },
+ "https://www.discogs.com/sell/release/9107249": {
+  "precio": 11.81,
+  "ts": 1792536615.2478414
+ },
  "https://www.discogs.com/sell/release/9435896": {
   "precio": 19.95,
   "ts": 1792532662.5687242
@@ -310,6 +410,10 @@
  "https://www.discogs.com/sell/release/9619261": {
   "precio": 13.35,
   "ts": 1792532174.2596633
+ },
+ "https://www.discogs.com/sell/release/993128": {
+  "precio": 24.7,
+  "ts": 1792536562.9923987
  },
  "https://www.discogs.com/sell/release/9943580": {
   "precio": 18.0,
