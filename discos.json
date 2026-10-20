@@ -1,13 +1,8 @@
 [
-    {
+  {
     "artista": "Amy Winehouse",
     "disco": "Back to Black",
-    "max_precio": 40
-  },
-  {
-    "artista": "Aretha Franklin",
-    "disco": "I Never Loved a Man the Way I Love You",
-    "max_precio": 18
+    "max_precio": 25
   },
   {
     "artista": "Aretha Franklin",
@@ -15,44 +10,9 @@
     "max_precio": 22
   },
   {
-    "artista": "Bob Marley",
-    "disco": "Legend",
-    "max_precio": 20
-  },
-  {
-    "artista": "Nirvana",
-    "disco": "Nevermind",
-    "max_precio": 22
-  },
-  {
-    "artista": "Nirvana",
-    "disco": "MTV Unplugged in New York",
-    "max_precio": 22
-  },
-  {
-    "artista": "The Cure",
-    "disco": "Disintegration",
-    "max_precio": 22
-  },
-  {
-    "artista": "The Cure",
-    "disco": "Boys Don't Cry",
-    "max_precio": 20
-  },
-  {
-    "artista": "The Rolling Stones",
-    "disco": "Sticky Fingers",
-    "max_precio": 22
-  },
-  {
-    "artista": "The Rolling Stones",
-    "disco": "Forty Licks",
-    "max_precio": 25
-  },
-  {
-    "artista": "The Who",
-    "disco": "Who's Next",
-    "max_precio": 20
+    "artista": "Aretha Franklin",
+    "disco": "I Never Loved a Man the Way I Love You",
+    "max_precio": 18
   },
   {
     "artista": "Billie Holiday",
@@ -73,6 +33,11 @@
     "artista": "Bob Dylan",
     "disco": "The Essential",
     "max_precio": 22
+  },
+  {
+    "artista": "Bob Marley",
+    "disco": "Legend",
+    "max_precio": 20
   },
   {
     "artista": "Counting Crows",
@@ -150,6 +115,16 @@
     "max_precio": 18
   },
   {
+    "artista": "Nirvana",
+    "disco": "MTV Unplugged in New York",
+    "max_precio": 22
+  },
+  {
+    "artista": "Nirvana",
+    "disco": "Nevermind",
+    "max_precio": 22
+  },
+  {
     "artista": "Oasis",
     "disco": "Morning Glory",
     "max_precio": 25
@@ -205,6 +180,16 @@
     "max_precio": 22
   },
   {
+    "artista": "The Cure",
+    "disco": "Boys Don't Cry",
+    "max_precio": 20
+  },
+  {
+    "artista": "The Cure",
+    "disco": "Disintegration",
+    "max_precio": 22
+  },
+  {
     "artista": "The Doors",
     "disco": "LA Woman",
     "max_precio": 20
@@ -220,8 +205,23 @@
     "max_precio": 20
   },
   {
+    "artista": "The Rolling Stones",
+    "disco": "Forty Licks",
+    "max_precio": 25
+  },
+  {
+    "artista": "The Rolling Stones",
+    "disco": "Sticky Fingers",
+    "max_precio": 22
+  },
+  {
     "artista": "The Strokes",
     "disco": "Is This It",
+    "max_precio": 20
+  },
+  {
+    "artista": "The Who",
+    "disco": "Who's Next",
     "max_precio": 20
   },
   {
@@ -234,15 +234,14 @@
     "disco": "Moondance",
     "max_precio": 20
   },
-    {
-    "artista": "Vetusta Morla",
-    "disco": "Un día en el mundo",
-    "max_precio": 35
-  },
   {
     "artista": "Vetusta Morla",
     "disco": "La deriva",
-    "max_precio": 30
+    "max_precio": 22
+  },
+  {
+    "artista": "Vetusta Morla",
+    "disco": "Un día en el mundo",
+    "max_precio": 25
   }
-  
 ]
