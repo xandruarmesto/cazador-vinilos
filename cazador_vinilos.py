@@ -215,36 +215,65 @@ def buscar_wallapop(item):
 
 
 # ---------------------------------------------------------------- Vinted
+#
+# Vinted bloquea las peticiones que "no parecen" un navegador. La librería
+# requests se delata por su huella TLS, así que aquí usamos curl_cffi, que
+# imita a Chrome. Si no está instalada, se intenta igualmente con requests.
 
-_vinted_session = None
+try:
+    from curl_cffi import requests as cffi_requests
+except ImportError:
+    cffi_requests = None
+
+_vinted = {"session": None, "bloqueado": False}
 
 
-def sesion_vinted():
-    """Vinted exige la cookie 'access_token_web' que da la portada.
-    Se pide una sola vez y se reutiliza para todas las búsquedas."""
-    global _vinted_session
-    if _vinted_session is None:
+def _nueva_sesion_vinted():
+    if cffi_requests:
+        s = cffi_requests.Session(impersonate="chrome")
+    else:
+        print("   (curl_cffi no instalado: Vinted probablemente bloqueará la petición)")
         s = requests.Session()
-        s.headers.update({"User-Agent": UA, "Accept-Language": "es-ES,es;q=0.9",
-                          "Accept": "application/json, text/plain, */*"})
-        r = s.get("https://www.vinted.es", timeout=15)
-        if "access_token_web" not in s.cookies:
-            registrar_error("Vinted", f"No se obtuvo la cookie de sesión (HTTP {r.status_code}); "
-                                      "probablemente Vinted bloquea la IP de GitHub")
-        _vinted_session = s
-    return _vinted_session
+        s.headers.update({"User-Agent": UA})
+    s.headers.update({"Accept-Language": "es-ES,es;q=0.9"})
+    r = s.get("https://www.vinted.es/", timeout=20)
+    cookies = s.cookies.get_dict() if hasattr(s.cookies, "get_dict") else dict(s.cookies)
+    if "access_token_web" in cookies:
+        print(f"   Vinted: sesión obtenida (HTTP {r.status_code}).")
+    else:
+        registrar_error("Vinted", f"Sin cookie de sesión al abrir la portada (HTTP {r.status_code}). "
+                                  f"Cookies recibidas: {sorted(cookies)}. Inicio de la respuesta: "
+                                  f"{r.text[:120]!r}")
+    return s
 
 
 def buscar_vinted(item):
+    if _vinted["bloqueado"]:
+        return []
     busqueda = f"vinilo {item['artista']} {item['disco']}"
     try:
-        s = sesion_vinted()
-        r = s.get("https://www.vinted.es/api/v2/catalog/items",
-                  params={"search_text": busqueda, "order": "newest_first", "per_page": 30},
-                  timeout=15)
+        for intento in (1, 2):
+            if _vinted["session"] is None:
+                _vinted["session"] = _nueva_sesion_vinted()
+            r = _vinted["session"].get(
+                "https://www.vinted.es/api/v2/catalog/items",
+                params={"search_text": busqueda, "order": "newest_first", "per_page": 30},
+                headers={"Accept": "application/json, text/plain, */*",
+                         "Referer": "https://www.vinted.es/catalog"},
+                timeout=20)
+            if r.status_code == 401 and intento == 1:
+                _vinted["session"] = None  # la cookie caduca: se renueva y se reintenta
+                continue
+            break
+
         if r.status_code != 200:
-            registrar_error("Vinted", f"HTTP {r.status_code} buscando '{busqueda}': {r.text[:150]}")
+            registrar_error("Vinted", f"HTTP {r.status_code} buscando '{busqueda}': {r.text[:150]!r}")
+            if r.status_code == 403:
+                # Bloqueo de IP/antibots: no tiene sentido seguir con los demás discos
+                _vinted["bloqueado"] = True
+                print("   Vinted bloquea esta IP (403). Se omite Vinted en el resto de la pasada.")
             return []
+
         objetos = r.json().get("items", [])
         encontrados = []
         for obj in objetos:
