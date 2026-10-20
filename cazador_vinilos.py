@@ -103,6 +103,12 @@ def buscar_vinted(item):
     return []
 
 def main():
+    # TEST DE TELEGRAM (Borrar o comentar después)
+    print("Enviando mensaje de prueba a Telegram...")
+    enviar_telegram("🤖 *Prueba de bot*: El sistema de notificaciones está funcionando correctamente.")
+    
+    # Resto de tu código normal...
+    
     discos_deseados = cargar_lista_discos()
     if not discos_deseados:
         print("Lista vacía o inválida.")
