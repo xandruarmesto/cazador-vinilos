@@ -1,5 +1,6 @@
 import os
 import json
+import urllib.parse
 import requests
 
 TELEGRAM_TOKEN = os.environ.get("TELEGRAM_TOKEN")
@@ -21,7 +22,14 @@ def enviar_telegram(mensaje):
         "parse_mode": "Markdown",
         "disable_web_page_preview": False
     }
-    requests.post(url, json=payload)
+    try:
+        res = requests.post(url, json=payload)
+        if res.status_code == 200:
+            print("✅ Mensaje enviado a Telegram correctamente.")
+        else:
+            print(f"❌ Error de Telegram ({res.status_code}): {res.text}")
+    except Exception as e:
+        print(f"❌ Excepción conectando a Telegram: {e}")
 
 def buscar_wallapop(item):
     """Consulta los artículos de Wallapop buscando por texto libre sin restricciones estrictas de categoría."""
@@ -72,10 +80,7 @@ def buscar_vinted(item):
     session.headers.update(headers)
     
     try:
-        # Petición previa para obtener las cookies de sesión requeridas por Vinted
         session.get("https://www.vinted.es", timeout=10)
-        
-        # Búsqueda en API de Vinted
         url_api = f"https://www.vinted.es/api/v2/catalog/items?search_text={busqueda}&order=newest_first"
         response = session.get(url_api, timeout=10)
         
@@ -103,11 +108,7 @@ def buscar_vinted(item):
     return []
 
 def main():
-    # TEST DE TELEGRAM (Borrar o comentar después)
-    print("Enviando mensaje de prueba a Telegram...")
-    enviar_telegram("🤖 *Prueba de bot*: El sistema de notificaciones está funcionando correctamente.")
-    
-    # Resto de tu código normal...
+    print("Iniciando rastreo de vinilos...")
     
     discos_deseados = cargar_lista_discos()
     if not discos_deseados:
