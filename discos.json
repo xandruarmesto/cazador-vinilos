@@ -1,0 +1,182 @@
+[
+  {
+    "artista": "Billie Holiday",
+    "disco": "Lady in Satin",
+    "max_precio": 18
+  },
+  {
+    "artista": "Blur",
+    "disco": "Parklife",
+    "max_precio": 22
+  },
+  {
+    "artista": "Bob Dylan",
+    "disco": "Highway 61 Revisited",
+    "max_precio": 20
+  },
+  {
+    "artista": "Bob Dylan",
+    "disco": "The Essential",
+    "max_precio": 22
+  },
+  {
+    "artista": "Counting Crows",
+    "disco": "August and Everything After",
+    "max_precio": 22
+  },
+  {
+    "artista": "Creedence Clearwater Revival",
+    "disco": "Chronicle",
+    "max_precio": 22
+  },
+  {
+    "artista": "Creedence Clearwater Revival",
+    "disco": "Cosmo's Factory",
+    "max_precio": 20
+  },
+  {
+    "artista": "Dire Straits",
+    "disco": "Brothers in Arms",
+    "max_precio": 18
+  },
+  {
+    "artista": "Dire Straits",
+    "disco": "Making Movies",
+    "max_precio": 16
+  },
+  {
+    "artista": "Green Day",
+    "disco": "American Idiot",
+    "max_precio": 22
+  },
+  {
+    "artista": "Green Day",
+    "disco": "Dookie",
+    "max_precio": 20
+  },
+  {
+    "artista": "Iván Ferreiro",
+    "disco": "Canciones para el tiempo y la distancia",
+    "max_precio": 25
+  },
+  {
+    "artista": "Iván Ferreiro",
+    "disco": "Casa",
+    "max_precio": 22
+  },
+  {
+    "artista": "John Coltrane",
+    "disco": "A Love Supreme",
+    "max_precio": 20
+  },
+  {
+    "artista": "John Coltrane",
+    "disco": "Blue Train",
+    "max_precio": 18
+  },
+  {
+    "artista": "Nacho Vegas",
+    "disco": "Actos Inexplicables",
+    "max_precio": 25
+  },
+  {
+    "artista": "Nacho Vegas",
+    "disco": "La Zona Sucia",
+    "max_precio": 22
+  },
+  {
+    "artista": "Nina Simone",
+    "disco": "I Put a Spell on You",
+    "max_precio": 20
+  },
+  {
+    "artista": "Nina Simone",
+    "disco": "The Best of Nina Simone",
+    "max_precio": 18
+  },
+  {
+    "artista": "Oasis",
+    "disco": "Morning Glory",
+    "max_precio": 25
+  },
+  {
+    "artista": "Queen",
+    "disco": "A Night at the Opera",
+    "max_precio": 22
+  },
+  {
+    "artista": "Queen",
+    "disco": "Greatest Hits",
+    "max_precio": 22
+  },
+  {
+    "artista": "Ramones",
+    "disco": "Ramones",
+    "max_precio": 18
+  },
+  {
+    "artista": "Red Hot Chili Peppers",
+    "disco": "Blood Sugar Sex Magik",
+    "max_precio": 22
+  },
+  {
+    "artista": "Red Hot Chili Peppers",
+    "disco": "Californication",
+    "max_precio": 22
+  },
+  {
+    "artista": "REM",
+    "disco": "Automatic for the People",
+    "max_precio": 20
+  },
+  {
+    "artista": "The Beatles",
+    "disco": "1",
+    "max_precio": 25
+  },
+  {
+    "artista": "The Beatles",
+    "disco": "Abbey Road",
+    "max_precio": 22
+  },
+  {
+    "artista": "The Clash",
+    "disco": "London Calling",
+    "max_precio": 25
+  },
+  {
+    "artista": "The Cranberries",
+    "disco": "Everybody Else Is Doing It",
+    "max_precio": 22
+  },
+  {
+    "artista": "The Doors",
+    "disco": "LA Woman",
+    "max_precio": 20
+  },
+  {
+    "artista": "The Doors",
+    "disco": "The Doors",
+    "max_precio": 20
+  },
+  {
+    "artista": "The Offspring",
+    "disco": "Smash",
+    "max_precio": 20
+  },
+  {
+    "artista": "The Strokes",
+    "disco": "Is This It",
+    "max_precio": 20
+  },
+  {
+    "artista": "Tracy Chapman",
+    "disco": "Tracy Chapman",
+    "max_precio": 22
+  },
+  {
+    "artista": "Van Morrison",
+    "disco": "Moondance",
+    "max_precio": 20
+  }
+]
