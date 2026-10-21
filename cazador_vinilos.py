@@ -2,6 +2,7 @@ import os
 import sys
 import json
 import html
+import re
 import time
 import requests
 
@@ -145,13 +146,24 @@ def comprobar_telegram():
 
 def formatear(web, emoji, item, res):
     e = html.escape
+    limite = item.get("max_precio_discogs", item["max_precio"]) if web == "Discogs" else item["max_precio"]
     return (
         f"{emoji} <b>¡Chollo en {web}!</b>\n\n"
         f"<b>Buscado:</b> {e(item['artista'])} - {e(item['disco'])}\n"
         f"<b>Anuncio:</b> {e(str(res['titulo']))}\n"
-        f"<b>Precio:</b> {res['precio']:.2f} € (Límite: {item['max_precio']} €)\n\n"
+        f"<b>Precio:</b> {res['precio']:.2f} € (Límite: {limite} €)\n\n"
         f"🔗 <a href=\"{e(res['link'], quote=True)}\">Ver en {web}</a>"
     )
+
+
+_NO_VINILO = re.compile(
+    r"\b(cd|cds|cdr|dvd|blu-?ray|cassette|casete|cassete|musicassetta|musicasetta|cinta|"
+    r"camiseta|t-?shirt|sudadera|poster|póster|libro|funko|taza|chapa|puzzle)\b", re.I)
+
+
+def parece_vinilo(titulo):
+    """Descarta CDs, casetes, camisetas, pósters… que salen al buscar 'vinilo X'."""
+    return not _NO_VINILO.search(str(titulo))
 
 
 def a_precio(valor):
@@ -201,7 +213,7 @@ def buscar_wallapop(item):
             it = obj.get("item", obj)  # en el formato antiguo venía envuelto en "item"
             precio = a_precio(it.get("price"))
             slug = it.get("web_slug")
-            if slug and 0 < precio <= item["max_precio"]:
+            if slug and 0 < precio <= item["max_precio"] and parece_vinilo(it.get("title", "")):
                 encontrados.append({
                     "titulo": it.get("title", ""),
                     "precio": precio,
@@ -247,41 +259,54 @@ def _nueva_sesion_vinted():
     return s
 
 
+_RE_VINTED = re.compile(
+    r'href="/items/(\d+-[^"?]*)\?referrer=catalog"[^>]*?title="([^"]*)"')
+_RE_EUROS = re.compile(r"(\d+(?:[.,]\d{1,2})?)\s?€")
+
+
 def buscar_vinted(item):
+    """Vinted retiró /api/v2/catalog/items (da 404). Ahora los resultados
+    vienen dentro de la página del catálogo: cada anuncio es un enlace
+    /items/... con un title del tipo
+    'Nirvana Nevermind, Estado: Muy bueno, 15.00 €, 16.45 €'
+    (precio del vendedor y precio con la protección al comprador)."""
     if _vinted["bloqueado"]:
         return []
     busqueda = f"vinilo {item['artista']} {item['disco']}"
     try:
-        for intento in (1, 2):
-            if _vinted["session"] is None:
-                _vinted["session"] = _nueva_sesion_vinted()
-            r = _vinted["session"].get(
-                "https://www.vinted.es/api/v2/catalog/items",
-                params={"search_text": busqueda, "order": "newest_first", "per_page": 30},
-                headers={"Accept": "application/json, text/plain, */*",
-                         "Referer": "https://www.vinted.es/catalog"},
-                timeout=20)
-            if r.status_code == 401 and intento == 1:
-                _vinted["session"] = None  # la cookie caduca: se renueva y se reintenta
-                continue
-            break
-
+        if _vinted["session"] is None:
+            _vinted["session"] = _nueva_sesion_vinted()
+        r = _vinted["session"].get(
+            "https://www.vinted.es/catalog",
+            params={"search_text": busqueda, "order": "newest_first"},
+            headers={"Referer": "https://www.vinted.es/"},
+            timeout=30)
         if r.status_code != 200:
             registrar_error("Vinted", f"HTTP {r.status_code} buscando '{busqueda}': {r.text[:150]!r}")
             if r.status_code == 403:
-                # Bloqueo de IP/antibots: no tiene sentido seguir con los demás discos
                 _vinted["bloqueado"] = True
                 print("   Vinted bloquea esta IP (403). Se omite Vinted en el resto de la pasada.")
             return []
 
-        objetos = r.json().get("items", [])
-        encontrados = []
-        for obj in objetos:
-            precio = a_precio(obj.get("price"))
-            url_item = obj.get("url")
-            if url_item and 0 < precio <= item["max_precio"]:
-                encontrados.append({"titulo": obj.get("title", ""), "precio": precio, "link": url_item})
-        print(f"   Vinted: {len(objetos)} anuncios, {len(encontrados)} por debajo del límite")
+        vistos_aqui, encontrados, total = set(), [], 0
+        for ruta, titulo_attr in _RE_VINTED.findall(r.text):
+            if ruta in vistos_aqui:
+                continue
+            vistos_aqui.add(ruta)
+            total += 1
+            texto = html.unescape(titulo_attr)
+            precios = _RE_EUROS.findall(texto)
+            if not precios:
+                continue
+            precio = a_precio(precios[0].replace(",", "."))
+            titulo = re.split(r",\s*(?:Estado|Marca|Talla):", texto)[0]
+            if 0 < precio <= item["max_precio"] and parece_vinilo(titulo):
+                encontrados.append({"titulo": titulo, "precio": precio,
+                                    "link": f"https://www.vinted.es/items/{ruta}"})
+        if total == 0 and "/items/" not in r.text:
+            registrar_error("Vinted", f"La página de '{busqueda}' no trae anuncios "
+                                      "(¿ha vuelto a cambiar el formato de Vinted?)")
+        print(f"   Vinted: {total} anuncios, {len(encontrados)} por debajo del límite")
         return encontrados
     except Exception as e:
         registrar_error("Vinted", f"Excepción buscando '{busqueda}': {e!r}")
@@ -290,36 +315,89 @@ def buscar_vinted(item):
 
 # ---------------------------------------------------------------- Discogs (opcional)
 
+# Discogs no deja saber desde qué país vende cada vendedor (ni por la API ni,
+# de forma fiable, desde la web), así que filtramos de otra manera:
+#  1. Se suma un margen de envío estimado al precio más bajo antes de compararlo.
+#  2. Solo cuentan las ediciones cuyo título coincide de verdad con el disco
+#     (evita recopilatorios, singles y ediciones de otros discos).
+#  3. Se ignoran ediciones con muy pocas copias a la venta (suelen ser caras o raras).
+#  4. Solo se avisa de la edición más barata de cada disco.
+# En discos.json puedes poner "max_precio_discogs" a un disco concreto
+# para usar un límite distinto solo en Discogs (o 0 para no buscarlo allí).
+DISCOGS_MARGEN_ENVIO = float(os.environ.get("DISCOGS_MARGEN_ENVIO") or 12)
+DISCOGS_MIN_COPIAS = 2
+
+
+def _normalizar(texto):
+    import unicodedata, re
+    t = unicodedata.normalize("NFKD", str(texto)).encode("ascii", "ignore").decode().lower()
+    t = re.sub(r"\(\d+\)", " ", t)          # "Nirvana (2)" -> "Nirvana"
+    t = re.sub(r"[^a-z0-9]+", " ", t)
+    return re.sub(r"\bthe\b", " ", t).split()
+
+
+def _coincide(item, titulo_discogs):
+    """Discogs devuelve 'Artista - Título'. Exige que el artista y el título
+    buscados estén en el sitio que les corresponde."""
+    if " - " not in titulo_discogs:
+        return False
+    artista_d, disco_d = titulo_discogs.split(" - ", 1)
+    a_buscado, d_buscado = _normalizar(item["artista"]), _normalizar(item["disco"])
+    a_d, d_d = _normalizar(artista_d), _normalizar(disco_d)
+    if not set(a_buscado) <= set(a_d):
+        return False
+    # El título buscado debe aparecer seguido dentro del de la edición, sin que
+    # sea un lote de varios discos ("Nevermind / In Utero") ni añada demasiado.
+    if " / " in disco_d or len(d_d) > len(d_buscado) + 3:
+        return False
+    n = len(d_buscado)
+    return any(d_d[i:i + n] == d_buscado for i in range(len(d_d) - n + 1))
+
+
 def buscar_discogs(item):
     """La API de Discogs no permite listar anuncios, pero sí da el precio
     más bajo en venta de cada edición. Necesita el secret DISCOGS_TOKEN
     (discogs.com/settings/developers → Generate new token)."""
     if not DISCOGS_TOKEN:
         return []
+    limite = item.get("max_precio_discogs", item["max_precio"])
+    if not limite:
+        return []
     headers = {"User-Agent": "CazadorVinilos/1.0",
                "Authorization": f"Discogs token={DISCOGS_TOKEN}"}
     try:
         r = requests.get("https://api.discogs.com/database/search", headers=headers, timeout=15,
                          params={"artist": item["artista"], "release_title": item["disco"],
-                                 "format": "Vinyl", "type": "release", "per_page": 10})
+                                 "format": "Vinyl", "type": "release", "per_page": 15})
         if r.status_code != 200:
             registrar_error("Discogs", f"HTTP {r.status_code}: {r.text[:150]}")
             return []
+        resultados = r.json().get("results", [])
+        validos = [rel for rel in resultados if _coincide(item, rel.get("title", ""))]
         encontrados = []
-        for rel in r.json().get("results", []):
+        for rel in validos:
             time.sleep(1.1)  # límite: 60 peticiones/minuto
             st = requests.get(f"https://api.discogs.com/marketplace/stats/{rel['id']}",
                               headers=headers, params={"curr_abbr": "EUR"}, timeout=15)
             if st.status_code != 200:
                 continue
-            lp = st.json().get("lowest_price") or {}
+            datos = st.json()
+            if (datos.get("num_for_sale") or 0) < DISCOGS_MIN_COPIAS:
+                continue
+            lp = datos.get("lowest_price") or {}
             precio = a_precio(lp.get("value"))
-            if lp.get("currency") == "EUR" and 0 < precio <= item["max_precio"]:
-                encontrados.append({"titulo": rel.get("title", ""), "precio": precio,
-                                    "link": f"https://www.discogs.com/sell/release/{rel['id']}"})
+            if lp.get("currency") == "EUR" and 0 < precio and precio + DISCOGS_MARGEN_ENVIO <= limite:
+                extra = " · ".join(x for x in [rel.get("country"), str(rel.get("year") or "")] if x)
+                encontrados.append({
+                    "titulo": f"{rel.get('title', '')} ({extra}) · {datos.get('num_for_sale')} en venta "
+                              f"· con envío estimado ≈ {precio + DISCOGS_MARGEN_ENVIO:.0f} €",
+                    "precio": precio,
+                    "link": f"https://www.discogs.com/sell/release/{rel['id']}?sort=price%2Casc",
+                })
         encontrados.sort(key=lambda x: x["precio"])
-        print(f"   Discogs: {len(encontrados)} ediciones por debajo del límite")
-        return encontrados
+        print(f"   Discogs: {len(resultados)} ediciones encontradas, {len(validos)} del disco correcto, "
+              f"{len(encontrados)} bajo el límite con envío")
+        return encontrados[:1]  # solo la más barata
     except Exception as e:
         registrar_error("Discogs", f"Excepción: {e!r}")
     return []
