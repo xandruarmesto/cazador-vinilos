@@ -166,26 +166,62 @@ def parece_vinilo(titulo):
     return not _NO_VINILO.search(str(titulo))
 
 
+_NUMEROS = {"1": "one", "2": "two", "3": "three", "4": "four", "5": "five",
+            "6": "six", "7": "seven", "8": "eight", "9": "nine", "10": "ten"}
+_RELLENO = {"vinilo", "vinyl", "vinile", "vinyle", "lp", "disco", "album"}
+
+
+def _titulo_corto_ok(palabras, disco, artista):
+    """Para discos de una sola palabra ("1", "Legend", "Casa") no basta con que
+    la palabra aparezca en cualquier parte: tiene que ir pegada al artista
+    ("Beatles 1", "Bob Marley - Legend", "Casa Iván Ferreiro").
+    Si es un número, solo vale justo después del artista, para que no cuelen
+    "1 vinilo de los Beatles 1969" y similares."""
+    numero = disco.isdigit()
+    sin_relleno = [w for w in palabras if w not in _RELLENO]
+    pos_artista = [i for i, w in enumerate(sin_relleno) if w in artista]
+    if not pos_artista:
+        return False
+    ini, fin = min(pos_artista), max(pos_artista)
+    if disco in sin_relleno[fin + 1:fin + 2]:
+        return True
+    if not numero and disco in sin_relleno[max(0, ini - 1):ini]:
+        return True
+    return False
+
+
 def es_relevante(item, titulo):
     """Vinted y Wallapop devuelven cualquier cosa que se parezca a la búsqueda.
     Exigimos que el anuncio nombre el disco (todas sus palabras si es corto,
-    al menos el 75 % si es largo) y, si el título del disco es de una sola
-    palabra ("Legend", "Casa", "1"), también al artista."""
-    t = set(_normalizar(titulo))
-    disco = _normalizar(item["disco"])
+    al menos el 75 % si es largo). Los títulos de una sola palabra tienen que
+    ir junto al artista. En discos.json se puede afinar cada disco con:
+      "alias":   ["One"]                 otros nombres con los que se anuncia
+      "excluir": ["1962", "1967", "box"] palabras que descartan el anuncio"""
+    palabras = _normalizar(titulo)
+    t = set(palabras)
     artista = _normalizar(item["artista"])
-    if not disco:
+
+    excluir = {w for x in item.get("excluir", []) for w in _normalizar(x)}
+    if t & excluir:
         return False
-    aciertos = sum(1 for w in disco if w in t)
-    if len(disco) <= 3:
-        ok_disco = aciertos == len(disco)
-    else:
-        ok_disco = aciertos >= 0.75 * len(disco)
-    if not ok_disco:
-        return False
-    if len(disco) == 1 and disco != artista:
-        return any(w in t for w in artista)
-    return True
+
+    variantes = [item["disco"]] + list(item.get("alias", []))
+    if item["disco"].strip() in _NUMEROS:
+        variantes.append(_NUMEROS[item["disco"].strip()])
+
+    for variante in variantes:
+        disco = _normalizar(variante)
+        if not disco:
+            continue
+        if len(disco) == 1 and disco != artista:
+            if _titulo_corto_ok(palabras, disco[0], set(artista)):
+                return True
+            continue
+        aciertos = sum(1 for w in disco if w in t)
+        necesarios = len(disco) if len(disco) <= 3 else 0.75 * len(disco)
+        if aciertos >= necesarios:
+            return True
+    return False
 
 
 def a_precio(valor):
