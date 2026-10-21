@@ -311,9 +311,17 @@
   "precio": 19.99,
   "ts": 1792550434.5399725
  },
+ "https://www.discogs.com/sell/release/2448535?sort=price%2Casc": {
+  "precio": 7.0,
+  "ts": 1792623350.8401244
+ },
  "https://www.discogs.com/sell/release/24845798": {
   "precio": 14.24,
   "ts": 1792532238.08005
+ },
+ "https://www.discogs.com/sell/release/2498807?sort=price%2Casc": {
+  "precio": 5.43,
+  "ts": 1792623909.8170483
  },
  "https://www.discogs.com/sell/release/2509121": {
   "precio": 8.9,
@@ -495,6 +503,10 @@
   "precio": 19.99,
   "ts": 1792532627.9347634
  },
+ "https://www.discogs.com/sell/release/3958354?sort=price%2Casc": {
+  "precio": 8.0,
+  "ts": 1792623646.4700315
+ },
  "https://www.discogs.com/sell/release/4039395?sort=price%2Casc": {
   "precio": 6.5,
   "ts": 1792612629.2945123
@@ -563,6 +575,10 @@
   "precio": 3.56,
   "ts": 1792550015.092528
  },
+ "https://www.discogs.com/sell/release/5679685?sort=price%2Casc": {
+  "precio": 3.56,
+  "ts": 1792623499.0505273
+ },
  "https://www.discogs.com/sell/release/5699510": {
   "precio": 9.99,
   "ts": 1792549980.7771745
@@ -594,6 +610,10 @@
  "https://www.discogs.com/sell/release/6530139": {
   "precio": 3.56,
   "ts": 1792532274.1453996
+ },
+ "https://www.discogs.com/sell/release/6530139?sort=price%2Casc": {
+  "precio": 3.56,
+  "ts": 1792623475.3791082
  },
  "https://www.discogs.com/sell/release/6601684": {
   "precio": 2.72,
@@ -670,6 +690,10 @@
  "https://www.discogs.com/sell/release/8019777": {
   "precio": 4.73,
   "ts": 1792550526.6884494
+ },
+ "https://www.discogs.com/sell/release/8019777?sort=price%2Casc": {
+  "precio": 4.73,
+  "ts": 1792624160.8965895
  },
  "https://www.discogs.com/sell/release/8031816": {
   "precio": 5.93,
@@ -766,6 +790,10 @@
  "https://www.vinted.es/items/10253646259-fleetwood-mac-greatest-hits-vinyl": {
   "precio": 21.95,
   "ts": 1792594512.961914
+ },
+ "https://www.vinted.es/items/10260113876-tracy-chapman-crossroads-lp": {
+  "precio": 18.95,
+  "ts": 1792624114.9419677
  },
  "https://www.vinted.es/items/10265618242-miniaturas-disco-de-vinilo-the-clash-london-calling": {
   "precio": 1.0,
@@ -875,6 +903,10 @@
   "precio": 25.0,
   "ts": 1792573788.9768896
  },
+ "https://www.vinted.es/items/10430800217-vinilo-tracy-chapman-crossroads": {
+  "precio": 19.99,
+  "ts": 1792624115.2710485
+ },
  "https://www.vinted.es/items/10433419392-lp-queen-greatest-hits-1981-emi-3c-064-78041": {
   "precio": 21.99,
   "ts": 1792573688.573343
@@ -898,6 +930,10 @@
  "https://www.vinted.es/items/10445410192-john-coltrane-blue-train-vinyle-jazz": {
   "precio": 16.0,
   "ts": 1792570388.1422343
+ },
+ "https://www.vinted.es/items/10448345960-disque-vinyle-33t-pop-tracy-chapman": {
+  "precio": 20.0,
+  "ts": 1792624115.5814395
  },
  "https://www.vinted.es/items/10449412408-dire-straits-making-movies-lp": {
   "precio": 14.0,
@@ -987,6 +1023,14 @@
   "precio": 15.0,
   "ts": 1792612562.6314163
  },
+ "https://www.vinted.es/items/10477080697-nirvana-nevermind-lp": {
+  "precio": 19.0,
+  "ts": 1792623696.935658
+ },
+ "https://www.vinted.es/items/10477100754-the-doors-other-voices-vinile": {
+  "precio": 17.0,
+  "ts": 1792623991.5277236
+ },
  "https://www.vinted.es/items/7707797524-cuadro-queen-a-night-at-the-opera": {
   "precio": 17.9,
   "ts": 1792570546.870937
@@ -1030,6 +1074,10 @@
  "https://www.vinted.es/items/9971003161-the-beatles-live-at-the-star-club-in-hamburg-germany-1962-carnaby-c-78201-espana-1977-2-lp": {
   "precio": 24.0,
   "ts": 1792573788.5862658
+ },
+ "https://www.vinted.es/items/9985506858-vinile-7-savage-dont-cry-tonight-1983-originale-italo-disco-discomagic": {
+  "precio": 15.0,
+  "ts": 1792623940.3633075
  },
  "https://www.vinted.es/items/9996189833-bob-dylan-vinile-lp-highway-61-revisited": {
   "precio": 20.0,
