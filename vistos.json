@@ -19,6 +19,18 @@
   "precio": 10.0,
   "ts": 1792532276.8763301
  },
+ "https://es.wallapop.com/item/vinilo-lp-sticky-fingers-the-rolling-stones-1315568661": {
+  "precio": 10.0,
+  "ts": 1792594799.7169857
+ },
+ "https://es.wallapop.com/item/vinilo-lp-the-doors-celebration-1315609464": {
+  "precio": 18.0,
+  "ts": 1792594740.614278
+ },
+ "https://es.wallapop.com/item/vinilo-the-beatles-rock-n-roll-music-vol-1-1315570004": {
+  "precio": 5.0,
+  "ts": 1792594611.116297
+ },
  "https://es.wallapop.com/item/vinilo-tracy-chapman-crossroads-1989-1315388619": {
   "precio": 15.0,
   "ts": 1792532780.6827123
@@ -91,6 +103,10 @@
   "precio": 7.35,
   "ts": 1792532274.6807404
  },
+ "https://www.discogs.com/sell/release/12500511?sort=price%2Casc": {
+  "precio": 0.88,
+  "ts": 1792594008.776184
+ },
  "https://www.discogs.com/sell/release/12651177": {
   "precio": 16.0,
   "ts": 1792532204.0189676
@@ -111,6 +127,10 @@
   "precio": 10.92,
   "ts": 1792536763.2760737
  },
+ "https://www.discogs.com/sell/release/13248100?sort=price%2Casc": {
+  "precio": 4.99,
+  "ts": 1792594217.339009
+ },
  "https://www.discogs.com/sell/release/1333208": {
   "precio": 5.0,
   "ts": 1792532292.4331994
@@ -122,6 +142,10 @@
  "https://www.discogs.com/sell/release/1341313": {
   "precio": 17.0,
   "ts": 1792532814.324583
+ },
+ "https://www.discogs.com/sell/release/13488595?sort=price%2Casc": {
+  "precio": 2.22,
+  "ts": 1792594867.627334
  },
  "https://www.discogs.com/sell/release/13491580": {
   "precio": 8.9,
@@ -363,6 +387,10 @@
   "precio": 1.5,
   "ts": 1792532796.151937
  },
+ "https://www.discogs.com/sell/release/3289556?sort=price%2Casc": {
+  "precio": 1.5,
+  "ts": 1792594893.9007633
+ },
  "https://www.discogs.com/sell/release/3289895": {
   "precio": 20.0,
   "ts": 1792550345.6126187
@@ -458,6 +486,10 @@
  "https://www.discogs.com/sell/release/411744": {
   "precio": 9.0,
   "ts": 1792550345.1613245
+ },
+ "https://www.discogs.com/sell/release/411744?sort=price%2Casc": {
+  "precio": 9.0,
+  "ts": 1792594682.3517563
  },
  "https://www.discogs.com/sell/release/412970": {
   "precio": 2.0,
@@ -571,6 +603,10 @@
   "precio": 2.66,
   "ts": 1792536597.2229578
  },
+ "https://www.discogs.com/sell/release/7241932?sort=price%2Casc": {
+  "precio": 6.54,
+  "ts": 1792594079.3067093
+ },
  "https://www.discogs.com/sell/release/736266": {
   "precio": 17.59,
   "ts": 1792550294.501023
@@ -595,6 +631,10 @@
   "precio": 8.9,
   "ts": 1792549900.8567367
  },
+ "https://www.discogs.com/sell/release/7878813?sort=price%2Casc": {
+  "precio": 8.9,
+  "ts": 1792594657.7423565
+ },
  "https://www.discogs.com/sell/release/7944206": {
   "precio": 7.0,
   "ts": 1792532141.193034
@@ -614,6 +654,10 @@
  "https://www.discogs.com/sell/release/8031816": {
   "precio": 5.93,
   "ts": 1792550015.5054424
+ },
+ "https://www.discogs.com/sell/release/8341955?sort=price%2Casc": {
+  "precio": 5.34,
+  "ts": 1792594182.7752674
  },
  "https://www.discogs.com/sell/release/8403786": {
   "precio": 20.17,
@@ -659,6 +703,10 @@
   "precio": 18.0,
   "ts": 1792532204.5027256
  },
+ "https://www.vinted.es/items/10003258825-lp-dire-straits-making-movies-repress": {
+  "precio": 15.0,
+  "ts": 1792594222.1856217
+ },
  "https://www.vinted.es/items/10007986778-bob-dylan-highway-61-revisited-lp-re-eu-2015-nuovo": {
   "precio": 19.0,
   "ts": 1792570128.271463
@@ -691,9 +739,17 @@
   "precio": 25.0,
   "ts": 1792570014.799238
  },
+ "https://www.vinted.es/items/10253646259-fleetwood-mac-greatest-hits-vinyl": {
+  "precio": 21.95,
+  "ts": 1792594512.961914
+ },
  "https://www.vinted.es/items/10265618242-miniaturas-disco-de-vinilo-the-clash-london-calling": {
   "precio": 1.0,
   "ts": 1792570719.7591248
+ },
+ "https://www.vinted.es/items/10274039018-vinyle-33t-dire-straits-making-movies": {
+  "precio": 15.0,
+  "ts": 1792594221.6689553
  },
  "https://www.vinted.es/items/10279467805-the-cure-boys-dont-cry-new-voice-new-mix-7-45-single-portugal": {
   "precio": 20.0,
@@ -759,6 +815,10 @@
   "precio": 14.9,
   "ts": 1792570597.7070262
  },
+ "https://www.vinted.es/items/10397552675-tracy-chapman-vinilo": {
+  "precio": 15.0,
+  "ts": 1792594872.4099061
+ },
  "https://www.vinted.es/items/10399220451-dire-straits-making-movies": {
   "precio": 12.5,
   "ts": 1792573400.1786218
@@ -791,6 +851,10 @@
   "precio": 12.0,
   "ts": 1792570280.196288
  },
+ "https://www.vinted.es/items/10440190241-dire-straits-portugal-lp-making-movies-1980": {
+  "precio": 15.0,
+  "ts": 1792594221.220311
+ },
  "https://www.vinted.es/items/10443743696-the-rolling-stones-greatest-hits-vinyl": {
   "precio": 19.5,
   "ts": 1792570571.727235
@@ -811,6 +875,10 @@
   "precio": 15.0,
   "ts": 1792570800.8839111
  },
+ "https://www.vinted.es/items/10454559057-tracy-chapman-cross-roads-made-germany-lp": {
+  "precio": 15.0,
+  "ts": 1792594872.0139444
+ },
  "https://www.vinted.es/items/10455012407-nirvana-nevermind-lp": {
   "precio": 19.0,
   "ts": 1792570497.6735725
@@ -826,6 +894,14 @@
  "https://www.vinted.es/items/10458191890-the-doors-other-voices-vinyle-original-1971-us": {
   "precio": 18.0,
   "ts": 1792573915.2979653
+ },
+ "https://www.vinted.es/items/10459906441-vinile-the-doors-absolutely-live": {
+  "precio": 20.0,
+  "ts": 1792594743.9902253
+ },
+ "https://www.vinted.es/items/10460334818-vinyle-the-doors": {
+  "precio": 20.0,
+  "ts": 1792594743.5043266
  },
  "https://www.vinted.es/items/10460389993-ramones-pretenders-flexi-6-espana-promo-1981": {
   "precio": 15.0,
@@ -848,8 +924,16 @@
   "ts": 1792573914.9178646
  },
  "https://www.vinted.es/items/10464525366-2-magneti-rock-the-clash-london-calling-arctic-monkeys-am-mini-vinili": {
-  "precio": 14.99,
-  "ts": 1792570720.208398
+  "precio": 9.99,
+  "ts": 1792594661.1588125
+ },
+ "https://www.vinted.es/items/10470043347-two-originals-of-the-doors": {
+  "precio": 18.0,
+  "ts": 1792594743.0788517
+ },
+ "https://www.vinted.es/items/10471889636-disco-33-giri-tracy-chapman-crossroads": {
+  "precio": 11.9,
+  "ts": 1792594871.5259485
  },
  "https://www.vinted.es/items/7707797524-cuadro-queen-a-night-at-the-opera": {
   "precio": 17.9,
