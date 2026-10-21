@@ -55,6 +55,10 @@
   "precio": 1.33,
   "ts": 1792532122.1694894
  },
+ "https://www.discogs.com/sell/release/11564441?sort=price%2Casc": {
+  "precio": 1.33,
+  "ts": 1792570078.4968512
+ },
  "https://www.discogs.com/sell/release/11836346": {
   "precio": 21.3,
   "ts": 1792549834.4344482
@@ -78,6 +82,10 @@
  "https://www.discogs.com/sell/release/12416337": {
   "precio": 12.35,
   "ts": 1792532086.5934975
+ },
+ "https://www.discogs.com/sell/release/12416337?sort=price%2Casc": {
+  "precio": 12.35,
+  "ts": 1792570036.2731388
  },
  "https://www.discogs.com/sell/release/1247160": {
   "precio": 7.35,
@@ -131,6 +139,14 @@
   "precio": 7.6,
   "ts": 1792532203.4999175
  },
+ "https://www.discogs.com/sell/release/14049672?sort=price%2Casc": {
+  "precio": 7.6,
+  "ts": 1792570186.203949
+ },
+ "https://www.discogs.com/sell/release/1417554?sort=price%2Casc": {
+  "precio": 4.45,
+  "ts": 1792570276.2653387
+ },
  "https://www.discogs.com/sell/release/14190055": {
   "precio": 19.95,
   "ts": 1792550328.2235372
@@ -142,6 +158,10 @@
  "https://www.discogs.com/sell/release/14350987": {
   "precio": 2.0,
   "ts": 1792532140.1958582
+ },
+ "https://www.discogs.com/sell/release/14350987?sort=price%2Casc": {
+  "precio": 2.0,
+  "ts": 1792570101.3547745
  },
  "https://www.discogs.com/sell/release/14534098": {
   "precio": 8.9,
@@ -279,6 +299,10 @@
   "precio": 20.0,
   "ts": 1792532701.005942
  },
+ "https://www.discogs.com/sell/release/2663595?sort=price%2Casc": {
+  "precio": 6.99,
+  "ts": 1792570446.7179525
+ },
  "https://www.discogs.com/sell/release/26872253": {
   "precio": 18.69,
   "ts": 1792549817.56678
@@ -291,9 +315,17 @@
   "precio": 15.0,
   "ts": 1792532796.6349804
  },
+ "https://www.discogs.com/sell/release/2803597?sort=price%2Casc": {
+  "precio": 7.0,
+  "ts": 1792570593.1846647
+ },
  "https://www.discogs.com/sell/release/28617106": {
   "precio": 18.69,
   "ts": 1792532327.803744
+ },
+ "https://www.discogs.com/sell/release/28858963?sort=price%2Casc": {
+  "precio": 6.23,
+  "ts": 1792570948.5996034
  },
  "https://www.discogs.com/sell/release/29530600": {
   "precio": 7.88,
@@ -310,6 +342,10 @@
  "https://www.discogs.com/sell/release/3146367": {
   "precio": 3.55,
   "ts": 1792532760.1144626
+ },
+ "https://www.discogs.com/sell/release/3146367?sort=price%2Casc": {
+  "precio": 3.55,
+  "ts": 1792570903.4686034
  },
  "https://www.discogs.com/sell/release/31632307": {
   "precio": 18.67,
@@ -367,9 +403,17 @@
   "precio": 9.46,
   "ts": 1792532104.8901289
  },
+ "https://www.discogs.com/sell/release/35591521?sort=price%2Casc": {
+  "precio": 5.93,
+  "ts": 1792570973.1371312
+ },
  "https://www.discogs.com/sell/release/36091450": {
   "precio": 8.9,
   "ts": 1792532237.5916638
+ },
+ "https://www.discogs.com/sell/release/36091450?sort=price%2Casc": {
+  "precio": 8.9,
+  "ts": 1792570233.5014343
  },
  "https://www.discogs.com/sell/release/36440865": {
   "precio": 21.36,
@@ -390,6 +434,10 @@
  "https://www.discogs.com/sell/release/3829390": {
   "precio": 6.62,
   "ts": 1792532104.4004014
+ },
+ "https://www.discogs.com/sell/release/3829390?sort=price%2Casc": {
+  "precio": 6.62,
+  "ts": 1792570054.852725
  },
  "https://www.discogs.com/sell/release/3843900": {
   "precio": 11.87,
@@ -430,6 +478,14 @@
  "https://www.discogs.com/sell/release/4783985": {
   "precio": 18.67,
   "ts": 1792536579.8086264
+ },
+ "https://www.discogs.com/sell/release/4849428?sort=price%2Casc": {
+  "precio": 4.99,
+  "ts": 1792570822.2502582
+ },
+ "https://www.discogs.com/sell/release/5208267?sort=price%2Casc": {
+  "precio": 6.23,
+  "ts": 1792570923.4422698
  },
  "https://www.discogs.com/sell/release/5332160": {
   "precio": 11.29,
@@ -474,6 +530,10 @@
  "https://www.discogs.com/sell/release/6402138": {
   "precio": 20.46,
   "ts": 1792550509.9882016
+ },
+ "https://www.discogs.com/sell/release/6424439?sort=price%2Casc": {
+  "precio": 7.12,
+  "ts": 1792570878.8810391
  },
  "https://www.discogs.com/sell/release/6462967": {
   "precio": 12.7,
@@ -563,6 +623,10 @@
   "precio": 6.28,
   "ts": 1792550209.7343755
  },
+ "https://www.discogs.com/sell/release/8414159?sort=price%2Casc": {
+  "precio": 6.28,
+  "ts": 1792570567.8330557
+ },
  "https://www.discogs.com/sell/release/8467756": {
   "precio": 19.58,
   "ts": 1792532238.5869343
@@ -594,5 +658,173 @@
  "https://www.discogs.com/sell/release/9943580": {
   "precio": 18.0,
   "ts": 1792532204.5027256
+ },
+ "https://www.vinted.es/items/10007986778-bob-dylan-highway-61-revisited-lp-re-eu-2015-nuovo": {
+  "precio": 19.0,
+  "ts": 1792570128.271463
+ },
+ "https://www.vinted.es/items/10019765454-bob-dylan-highway-61-revisited": {
+  "precio": 20.0,
+  "ts": 1792570129.1151893
+ },
+ "https://www.vinted.es/items/10020592463-disco-in-vinile-bob-marley-and-the-wailers-the-birth-of-a-legend-1977": {
+  "precio": 12.0,
+  "ts": 1792570164.9771607
+ },
+ "https://www.vinted.es/items/10036476139-folleto-queen-a-night-at-the-opera": {
+  "precio": 15.0,
+  "ts": 1792570546.3383474
+ },
+ "https://www.vinted.es/items/10127707545-the-strokes-is-this-it": {
+  "precio": 9.99,
+  "ts": 1792570882.656886
+ },
+ "https://www.vinted.es/items/10191173742-vinyl-dire-straits-brothers-in-arms": {
+  "precio": 18.0,
+  "ts": 1792570255.5402105
+ },
+ "https://www.vinted.es/items/10228912920-making-movies-dire-straits": {
+  "precio": 12.2,
+  "ts": 1792570280.585011
+ },
+ "https://www.vinted.es/items/10245662483-back-to-black-amy-winehouse": {
+  "precio": 25.0,
+  "ts": 1792570014.799238
+ },
+ "https://www.vinted.es/items/10265618242-miniaturas-disco-de-vinilo-the-clash-london-calling": {
+  "precio": 1.0,
+  "ts": 1792570719.7591248
+ },
+ "https://www.vinted.es/items/10279467805-the-cure-boys-dont-cry-new-voice-new-mix-7-45-single-portugal": {
+  "precio": 20.0,
+  "ts": 1792570748.5793288
+ },
+ "https://www.vinted.es/items/10308591841-tracy-chapman-fast-car": {
+  "precio": 3.0,
+  "ts": 1792570926.984085
+ },
+ "https://www.vinted.es/items/10313720767-vinile-lp-the-beatles-rock-n-roll-music-volume-1-1976": {
+  "precio": 18.0,
+  "ts": 1792570673.4646287
+ },
+ "https://www.vinted.es/items/10317018090-dire-straits-making-movies": {
+  "precio": 10.0,
+  "ts": 1792570279.783811
+ },
+ "https://www.vinted.es/items/10346037183-lp-the-beatles-rocknroll-music-vol-1-e-vol-2": {
+  "precio": 16.0,
+  "ts": 1792570673.0267763
+ },
+ "https://www.vinted.es/items/10346820660-back-to-black-amy-winehouse-vinyl": {
+  "precio": 25.0,
+  "ts": 1792570014.3452485
+ },
+ "https://www.vinted.es/items/10354222445-bob-marley-the-wailers-the-birth-of-a-legend-lp-nm-vg-calla-records-us": {
+  "precio": 20.0,
+  "ts": 1792570165.368208
+ },
+ "https://www.vinted.es/items/10354382492-abbey-road-the-beatles": {
+  "precio": 15.0,
+  "ts": 1792570695.8995717
+ },
+ "https://www.vinted.es/items/10373130410-vinile-nirvana-nevermind": {
+  "precio": 22.0,
+  "ts": 1792570498.0817654
+ },
+ "https://www.vinted.es/items/10377559394-vinile-ramones-l": {
+  "precio": 10.0,
+  "ts": 1792570597.2943902
+ },
+ "https://www.vinted.es/items/10391184615-ramones-rock-n-roll-high-school-danny-says-7-1980-holland": {
+  "precio": 14.9,
+  "ts": 1792570597.7070262
+ },
+ "https://www.vinted.es/items/10401092766-tracy-chapman-where-you-live": {
+  "precio": 4.0,
+  "ts": 1792570927.4042459
+ },
+ "https://www.vinted.es/items/10401109595-tracy-chapman-new-beginning": {
+  "precio": 5.0,
+  "ts": 1792570927.8042083
+ },
+ "https://www.vinted.es/items/10413195917-vinilo-the-doors-la-woman": {
+  "precio": 20.0,
+  "ts": 1792570795.8428051
+ },
+ "https://www.vinted.es/items/10415449930-simon-and-garfunkela-greatest-hits": {
+  "precio": 5.0,
+  "ts": 1792570571.2150583
+ },
+ "https://www.vinted.es/items/10440156025-dire-straits-canada-lp-making-movies-1980": {
+  "precio": 12.0,
+  "ts": 1792570280.196288
+ },
+ "https://www.vinted.es/items/10443743696-the-rolling-stones-greatest-hits-vinyl": {
+  "precio": 19.5,
+  "ts": 1792570571.727235
+ },
+ "https://www.vinted.es/items/10445410192-john-coltrane-blue-train-vinyle-jazz": {
+  "precio": 16.0,
+  "ts": 1792570388.1422343
+ },
+ "https://www.vinted.es/items/10450880998-vinile-lp-queen-greatest-hits-1981-prima-stampa-italiana-completo": {
+  "precio": 20.0,
+  "ts": 1792570572.1948533
+ },
+ "https://www.vinted.es/items/10450936474-vinile-the-doors-the-doors": {
+  "precio": 15.0,
+  "ts": 1792570800.8839111
+ },
+ "https://www.vinted.es/items/10455012407-nirvana-nevermind-lp": {
+  "precio": 19.0,
+  "ts": 1792570497.6735725
+ },
+ "https://www.vinted.es/items/10455019951-vinyle-33t-the-doors-la-woman-pressage-allemand-elektra-rs-alsdorf": {
+  "precio": 16.0,
+  "ts": 1792570801.2925084
+ },
+ "https://www.vinted.es/items/10457056229-vinil-the-doors-13": {
+  "precio": 14.99,
+  "ts": 1792570800.4571671
+ },
+ "https://www.vinted.es/items/10461555046-nirvana-nevermind": {
+  "precio": 15.0,
+  "ts": 1792570497.2815375
+ },
+ "https://www.vinted.es/items/10461723102-ramones-baby-i-love-you-1980-pt": {
+  "precio": 8.9,
+  "ts": 1792570596.8391864
+ },
+ "https://www.vinted.es/items/10464525366-2-magneti-rock-the-clash-london-calling-arctic-monkeys-am-mini-vinili": {
+  "precio": 14.99,
+  "ts": 1792570720.208398
+ },
+ "https://www.vinted.es/items/7707797524-cuadro-queen-a-night-at-the-opera": {
+  "precio": 17.9,
+  "ts": 1792570546.870937
+ },
+ "https://www.vinted.es/items/9673115400-van-morrison-moondance": {
+  "precio": 20.0,
+  "ts": 1792570952.214207
+ },
+ "https://www.vinted.es/items/9857030783-bob-dylan-highway-61-revisited-lp": {
+  "precio": 19.0,
+  "ts": 1792570128.684685
+ },
+ "https://www.vinted.es/items/9882132787-miniaturas-disco-de-vinilo-queen-a-night-at-the-opera": {
+  "precio": 1.0,
+  "ts": 1792570545.9241776
+ },
+ "https://www.vinted.es/items/9902881971-back-to-black-amy-winehous": {
+  "precio": 25.0,
+  "ts": 1792570015.2461977
+ },
+ "https://www.vinted.es/items/9939251994-the-rolling-stones-sticky-fingers": {
+  "precio": 22.0,
+  "ts": 1792570858.1797712
+ },
+ "https://www.vinted.es/items/9999797704-vonyle-33-tours-the-beatles-1976-rocknroll-music-vol-1": {
+  "precio": 9.0,
+  "ts": 1792570672.6232316
  }
 }
