@@ -43,6 +43,10 @@
   "precio": 19.0,
   "ts": 1792536729.0928922
  },
+ "https://www.discogs.com/sell/release/10651460?sort=price%2Casc": {
+  "precio": 6.23,
+  "ts": 1792612512.5814137
+ },
  "https://www.discogs.com/sell/release/10683094": {
   "precio": 16.91,
   "ts": 1792550417.1534557
@@ -255,6 +259,10 @@
   "precio": 14.16,
   "ts": 1792550509.592195
  },
+ "https://www.discogs.com/sell/release/18373480?sort=price%2Casc": {
+  "precio": 1.78,
+  "ts": 1792612874.2649045
+ },
  "https://www.discogs.com/sell/release/1864446": {
   "precio": 1.5,
   "ts": 1792532256.3320184
@@ -294,6 +302,10 @@
  "https://www.discogs.com/sell/release/23513969": {
   "precio": 16.91,
   "ts": 1792536887.9954352
+ },
+ "https://www.discogs.com/sell/release/23839931?sort=price%2Casc": {
+  "precio": 7.85,
+  "ts": 1792612930.6029918
  },
  "https://www.discogs.com/sell/release/24455585": {
   "precio": 19.99,
@@ -455,6 +467,10 @@
   "precio": 3.56,
   "ts": 1792549997.4784162
  },
+ "https://www.discogs.com/sell/release/3705797?sort=price%2Casc": {
+  "precio": 3.56,
+  "ts": 1792612333.0314367
+ },
  "https://www.discogs.com/sell/release/371966": {
   "precio": 5.0,
   "ts": 1792532491.9766595
@@ -478,6 +494,10 @@
  "https://www.discogs.com/sell/release/393261": {
   "precio": 19.99,
   "ts": 1792532627.9347634
+ },
+ "https://www.discogs.com/sell/release/4039395?sort=price%2Casc": {
+  "precio": 6.5,
+  "ts": 1792612629.2945123
  },
  "https://www.discogs.com/sell/release/4104052": {
   "precio": 8.29,
@@ -735,6 +755,10 @@
   "precio": 12.2,
   "ts": 1792570280.585011
  },
+ "https://www.vinted.es/items/10241742476-tracy-chapman-crossroads": {
+  "precio": 15.0,
+  "ts": 1792612978.0641766
+ },
  "https://www.vinted.es/items/10245662483-back-to-black-amy-winehouse": {
   "precio": 25.0,
   "ts": 1792570014.799238
@@ -786,6 +810,14 @@
  "https://www.vinted.es/items/10359588567-tracy-chapman-fast-car": {
   "precio": 5.5,
   "ts": 1792574039.922039
+ },
+ "https://www.vinted.es/items/10363476367-vinile-tracy-chapman-crossroads-1989": {
+  "precio": 15.0,
+  "ts": 1792612977.545404
+ },
+ "https://www.vinted.es/items/10370798144-vinilo-crossroads-tracy-chapman": {
+  "precio": 15.0,
+  "ts": 1792612977.0121772
  },
  "https://www.vinted.es/items/10372548664-disque-vinyle-45-t-tracy-chapman": {
   "precio": 12.0,
@@ -858,6 +890,10 @@
  "https://www.vinted.es/items/10443743696-the-rolling-stones-greatest-hits-vinyl": {
   "precio": 19.5,
   "ts": 1792570571.727235
+ },
+ "https://www.vinted.es/items/10444901465-the-doors-an-american-prayer": {
+  "precio": 20.0,
+  "ts": 1792612853.847144
  },
  "https://www.vinted.es/items/10445410192-john-coltrane-blue-train-vinyle-jazz": {
   "precio": 16.0,
@@ -935,6 +971,22 @@
   "precio": 11.9,
   "ts": 1792594871.5259485
  },
+ "https://www.vinted.es/items/10472815469-33t-the-doors-absolutely-live-huggy68100": {
+  "precio": 20.0,
+  "ts": 1792612853.2658427
+ },
+ "https://www.vinted.es/items/10474293483-the-doors-red-rocks-coloured-vinyl-lp": {
+  "precio": 19.95,
+  "ts": 1792612852.7237184
+ },
+ "https://www.vinted.es/items/10475815838-nirvana-nevermind": {
+  "precio": 15.0,
+  "ts": 1792612563.19102
+ },
+ "https://www.vinted.es/items/10475852307-nirvana-nevermind": {
+  "precio": 15.0,
+  "ts": 1792612562.6314163
+ },
  "https://www.vinted.es/items/7707797524-cuadro-queen-a-night-at-the-opera": {
   "precio": 17.9,
   "ts": 1792570546.870937
@@ -954,6 +1006,10 @@
  "https://www.vinted.es/items/9882132787-miniaturas-disco-de-vinilo-queen-a-night-at-the-opera": {
   "precio": 1.0,
   "ts": 1792570545.9241776
+ },
+ "https://www.vinted.es/items/9895671752-dire-straits-making-movies": {
+  "precio": 15.0,
+  "ts": 1792612346.657937
  },
  "https://www.vinted.es/items/9898570239-lp-33t-dire-straits-making-movies-excnm": {
   "precio": 12.0,
