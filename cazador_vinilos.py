@@ -166,6 +166,28 @@ def parece_vinilo(titulo):
     return not _NO_VINILO.search(str(titulo))
 
 
+def es_relevante(item, titulo):
+    """Vinted y Wallapop devuelven cualquier cosa que se parezca a la búsqueda.
+    Exigimos que el anuncio nombre el disco (todas sus palabras si es corto,
+    al menos el 75 % si es largo) y, si el título del disco es de una sola
+    palabra ("Legend", "Casa", "1"), también al artista."""
+    t = set(_normalizar(titulo))
+    disco = _normalizar(item["disco"])
+    artista = _normalizar(item["artista"])
+    if not disco:
+        return False
+    aciertos = sum(1 for w in disco if w in t)
+    if len(disco) <= 3:
+        ok_disco = aciertos == len(disco)
+    else:
+        ok_disco = aciertos >= 0.75 * len(disco)
+    if not ok_disco:
+        return False
+    if len(disco) == 1 and disco != artista:
+        return any(w in t for w in artista)
+    return True
+
+
 def a_precio(valor):
     """Wallapop y Vinted devuelven el precio como número o como
     {'amount': ..., 'currency': ...}. Esto acepta ambos formatos."""
@@ -213,7 +235,8 @@ def buscar_wallapop(item):
             it = obj.get("item", obj)  # en el formato antiguo venía envuelto en "item"
             precio = a_precio(it.get("price"))
             slug = it.get("web_slug")
-            if slug and 0 < precio <= item["max_precio"] and parece_vinilo(it.get("title", "")):
+            if slug and 0 < precio <= item["max_precio"] and parece_vinilo(it.get("title", "")) \
+                    and es_relevante(item, it.get("title", "")):
                 encontrados.append({
                     "titulo": it.get("title", ""),
                     "precio": precio,
@@ -300,7 +323,7 @@ def buscar_vinted(item):
                 continue
             precio = a_precio(precios[0].replace(",", "."))
             titulo = re.split(r",\s*(?:Estado|Marca|Talla):", texto)[0]
-            if 0 < precio <= item["max_precio"] and parece_vinilo(titulo):
+            if 0 < precio <= item["max_precio"] and parece_vinilo(titulo) and es_relevante(item, titulo):
                 encontrados.append({"titulo": titulo, "precio": precio,
                                     "link": f"https://www.vinted.es/items/{ruta}"})
         if total == 0 and "/items/" not in r.text:
