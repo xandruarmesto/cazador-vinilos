@@ -119,6 +119,10 @@
   "precio": 12.0,
   "ts": 1792532257.378146
  },
+ "https://www.discogs.com/sell/release/12776421?sort=price%2Casc": {
+  "precio": 4.95,
+  "ts": 1792636225.9921904
+ },
  "https://www.discogs.com/sell/release/12860352": {
   "precio": 23.72,
   "ts": 1792536562.5796402
@@ -279,6 +283,10 @@
   "precio": 21.35,
   "ts": 1792550032.6473165
  },
+ "https://www.discogs.com/sell/release/2100475?sort=price%2Casc": {
+  "precio": 4.44,
+  "ts": 1792636777.2093952
+ },
  "https://www.discogs.com/sell/release/21890308": {
   "precio": 17.8,
   "ts": 1792532358.3657691
@@ -331,6 +339,10 @@
   "precio": 8.0,
   "ts": 1792550527.1004944
  },
+ "https://www.discogs.com/sell/release/2525429?sort=price%2Casc": {
+  "precio": 8.0,
+  "ts": 1792636925.7559874
+ },
  "https://www.discogs.com/sell/release/2527527": {
   "precio": 4.73,
   "ts": 1792532140.670643
@@ -375,6 +387,10 @@
   "precio": 7.88,
   "ts": 1792549998.2902584
  },
+ "https://www.discogs.com/sell/release/2957217?sort=price%2Casc": {
+  "precio": 5.8,
+  "ts": 1792636125.5643232
+ },
  "https://www.discogs.com/sell/release/30328208": {
   "precio": 22.0,
   "ts": 1792550277.8896835
@@ -418,6 +434,10 @@
  "https://www.discogs.com/sell/release/32938806": {
   "precio": 8.0,
   "ts": 1792550459.8986723
+ },
+ "https://www.discogs.com/sell/release/32938806?sort=price%2Casc": {
+  "precio": 8.0,
+  "ts": 1792636834.8674963
  },
  "https://www.discogs.com/sell/release/32950698": {
   "precio": 16.6,
@@ -538,6 +558,10 @@
  "https://www.discogs.com/sell/release/4521089": {
   "precio": 6.88,
   "ts": 1792532293.4440541
+ },
+ "https://www.discogs.com/sell/release/475612?sort=price%2Casc": {
+  "precio": 6.19,
+  "ts": 1792636556.9566567
  },
  "https://www.discogs.com/sell/release/4783985": {
   "precio": 18.67,
@@ -867,6 +891,10 @@
   "precio": 10.0,
   "ts": 1792570597.2943902
  },
+ "https://www.vinted.es/items/10387201456-tracy-chapman-vinyl-lp-crossroads-original-1989-first-issue": {
+  "precio": 22.0,
+  "ts": 1792636881.2386174
+ },
  "https://www.vinted.es/items/10389774201-tracy-chapman-let-it-rain": {
   "precio": 5.0,
   "ts": 1792574039.5042126
@@ -890,6 +918,14 @@
  "https://www.vinted.es/items/10401109595-tracy-chapman-new-beginning": {
   "precio": 5.0,
   "ts": 1792570927.8042083
+ },
+ "https://www.vinted.es/items/10407332904-tracy-chapman-crossroads-vinyl-lp-original-1987": {
+  "precio": 20.0,
+  "ts": 1792636880.9143648
+ },
+ "https://www.vinted.es/items/10408896342-vinyle-tracy-chapman-complet": {
+  "precio": 22.0,
+  "ts": 1792636881.5598485
  },
  "https://www.vinted.es/items/10413195917-vinilo-the-doors-la-woman": {
   "precio": 20.0,
