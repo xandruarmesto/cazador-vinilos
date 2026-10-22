@@ -161,9 +161,25 @@ _NO_VINILO = re.compile(
     r"camiseta|t-?shirt|sudadera|poster|póster|libro|funko|taza|chapa|puzzle)\b", re.I)
 
 
-def parece_vinilo(titulo):
-    """Descarta CDs, casetes, camisetas, pósters… que salen al buscar 'vinilo X'."""
-    return not _NO_VINILO.search(str(titulo))
+# Formatos que NO son un LP: singles y EPs de 7", 10", maxis, 45 rpm…
+# Ojo: "singles" en plural (p. ej. "The Singles", un recopilatorio) NO se descarta.
+_NO_LP = re.compile(
+    r"(?<![\d.,])(7|10)\s?(\"|”|″|''|’’|pulgadas|pulg\.?|inch(es)?|in)(?![\w])"
+    r"|\b45\s?(rpm|r\.p\.m\.?|vueltas|rev)\b"
+    r"|\b(single|sencillo|maxi|maxisingle|maxi-single|ep|flexi|flexidisc)\b",
+    re.I)
+
+
+def parece_vinilo(titulo, item=None):
+    """Descarta CDs, casetes, camisetas, pósters… y también singles/EPs
+    (7", 10", 45 rpm, "single", "maxi"…), salvo que en discos.json el disco
+    lleve "formato": "single"."""
+    titulo = str(titulo)
+    if _NO_VINILO.search(titulo):
+        return False
+    if item is not None and str(item.get("formato", "LP")).lower() == "single":
+        return True
+    return not _NO_LP.search(titulo)
 
 
 _NUMEROS = {"1": "one", "2": "two", "3": "three", "4": "four", "5": "five",
@@ -271,7 +287,7 @@ def buscar_wallapop(item):
             it = obj.get("item", obj)  # en el formato antiguo venía envuelto en "item"
             precio = a_precio(it.get("price"))
             slug = it.get("web_slug")
-            if slug and 0 < precio <= item["max_precio"] and parece_vinilo(it.get("title", "")) \
+            if slug and 0 < precio <= item["max_precio"] and parece_vinilo(it.get("title", ""), item) \
                     and es_relevante(item, it.get("title", "")):
                 encontrados.append({
                     "titulo": it.get("title", ""),
@@ -359,7 +375,7 @@ def buscar_vinted(item):
                 continue
             precio = a_precio(precios[0].replace(",", "."))
             titulo = re.split(r",\s*(?:Estado|Marca|Talla):", texto)[0]
-            if 0 < precio <= item["max_precio"] and parece_vinilo(titulo) and es_relevante(item, titulo):
+            if 0 < precio <= item["max_precio"] and parece_vinilo(titulo, item) and es_relevante(item, titulo):
                 encontrados.append({"titulo": titulo, "precio": precio,
                                     "link": f"https://www.vinted.es/items/{ruta}"})
         if total == 0 and "/items/" not in r.text:
@@ -432,7 +448,17 @@ def buscar_discogs(item):
             registrar_error("Discogs", f"HTTP {r.status_code}: {r.text[:150]}")
             return []
         resultados = r.json().get("results", [])
-        validos = [rel for rel in resultados if _coincide(item, rel.get("title", ""))]
+        quiere_single = str(item.get("formato", "LP")).lower() == "single"
+
+        def formato_ok(rel):
+            fmts = {str(f).lower() for f in rel.get("format", [])}
+            es_single = bool(fmts & {'7"', '10"', "single", "ep", "maxi-single", "45 rpm"})
+            if quiere_single:
+                return es_single
+            return "lp" in fmts and not es_single
+
+        validos = [rel for rel in resultados
+                   if _coincide(item, rel.get("title", "")) and formato_ok(rel)]
         encontrados = []
         for rel in validos:
             time.sleep(1.1)  # límite: 60 peticiones/minuto
