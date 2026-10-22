@@ -40,6 +40,21 @@
     "max_precio": 20
   },
   {
+    "artista": "Cat Stevens",
+    "disco": "Tea for the Tillerman",
+    "max_precio": 18
+  },
+  {
+    "artista": "Charlie Parker",
+    "disco": "With Strings",
+    "max_precio": 18
+  },
+  {
+    "artista": "Chet Baker",
+    "disco": "Chet Baker Sings",
+    "max_precio": 20
+  },
+  {
     "artista": "Counting Crows",
     "disco": "August and Everything After",
     "max_precio": 22
@@ -63,6 +78,21 @@
     "artista": "Dire Straits",
     "disco": "Making Movies",
     "max_precio": 16
+  },
+  {
+    "artista": "Dr. John",
+    "disco": "Gumbo",
+    "max_precio": 25
+  },
+  {
+    "artista": "Ella Fitzgerald",
+    "disco": "Ella and Louis",
+    "max_precio": 20
+  },
+  {
+    "artista": "Etta James",
+    "disco": "At Last!",
+    "max_precio": 20
   },
   {
     "artista": "Green Day",
@@ -95,6 +125,43 @@
     "max_precio": 18
   },
   {
+    "artista": "Louis Armstrong",
+    "disco": "Hot Fives",
+    "max_precio": 20,
+    "alias": ["Hot Five", "Hot Sevens", "Hot Seven"]
+  },
+  {
+    "artista": "Louis Armstrong",
+    "disco": "What a Wonderful World",
+    "max_precio": 18,
+    "excluir": ["single", "7"]
+  },
+  {
+    "artista": "Love of Lesbian",
+    "disco": "1999",
+    "max_precio": 25
+  },
+  {
+    "artista": "Michael Kiwanuka",
+    "disco": "Home Again",
+    "max_precio": 22
+  },
+  {
+    "artista": "Michael Kiwanuka",
+    "disco": "Love & Hate",
+    "max_precio": 25
+  },
+  {
+    "artista": "Miles Davis",
+    "disco": "Kind of Blue",
+    "max_precio": 22
+  },
+  {
+    "artista": "Mose Allison",
+    "disco": "I Don't Worry About a Thing",
+    "max_precio": 20
+  },
+  {
     "artista": "Nacho Vegas",
     "disco": "Actos Inexplicables",
     "max_precio": 25
@@ -103,6 +170,11 @@
     "artista": "Nacho Vegas",
     "disco": "La Zona Sucia",
     "max_precio": 22
+  },
+  {
+    "artista": "Nat King Cole",
+    "disco": "Love Is the Thing",
+    "max_precio": 18
   },
   {
     "artista": "Nina Simone",
@@ -140,6 +212,11 @@
     "max_precio": 22
   },
   {
+    "artista": "Quique González",
+    "disco": "Delantera mítica",
+    "max_precio": 25
+  },
+  {
     "artista": "Ramones",
     "disco": "Ramones",
     "max_precio": 18
@@ -160,6 +237,11 @@
     "max_precio": 20
   },
   {
+    "artista": "Sidney Bechet",
+    "disco": "Petite Fleur",
+    "max_precio": 15
+  },
+  {
     "artista": "The Beatles",
     "disco": "1",
     "max_precio": 25
@@ -177,6 +259,11 @@
   {
     "artista": "The Cranberries",
     "disco": "Everybody Else Is Doing It",
+    "max_precio": 22
+  },
+  {
+    "artista": "The Cranberries",
+    "disco": "No Need to Argue",
     "max_precio": 22
   },
   {
@@ -205,6 +292,23 @@
     "max_precio": 20
   },
   {
+    "artista": "The Police",
+    "disco": "Every Breath You Take",
+    "max_precio": 18,
+    "alias": ["The Singles"],
+    "excluir": ["single", "maxi", "7"]
+  },
+  {
+    "artista": "The Police",
+    "disco": "Reggatta de Blanc",
+    "max_precio": 18
+  },
+  {
+    "artista": "The Police",
+    "disco": "Synchronicity",
+    "max_precio": 18
+  },
+  {
     "artista": "The Rolling Stones",
     "disco": "Forty Licks",
     "max_precio": 25
@@ -215,6 +319,12 @@
     "max_precio": 22
   },
   {
+    "artista": "The Runaways",
+    "disco": "The Runaways",
+    "max_precio": 25,
+    "excluir": ["queens", "noise", "waitin", "live", "japan", "cherry"]
+  },
+  {
     "artista": "The Strokes",
     "disco": "Is This It",
     "max_precio": 20
@@ -223,6 +333,16 @@
     "artista": "The Who",
     "disco": "Who's Next",
     "max_precio": 20
+  },
+  {
+    "artista": "Tom Petty",
+    "disco": "Damn the Torpedoes",
+    "max_precio": 20
+  },
+  {
+    "artista": "Tom Petty",
+    "disco": "Full Moon Fever",
+    "max_precio": 22
   },
   {
     "artista": "Tracy Chapman",
