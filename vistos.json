@@ -11,6 +11,10 @@
   "precio": 15.0,
   "ts": 1792532444.0077722
  },
+ "https://es.wallapop.com/item/vinilo-a-night-at-the-opera-lp-gatefold-de-queen-1316060212": {
+  "precio": 21.95,
+  "ts": 1792692556.0326185
+ },
  "https://es.wallapop.com/item/vinilo-amy-winehouse-back-to-black-1315388552": {
   "precio": 25.0,
   "ts": 1792532070.2216942
@@ -30,6 +34,10 @@
  "https://es.wallapop.com/item/vinilo-lp-louis-armstrong-the-hot-fives-cbs1988-nm-1315593158": {
   "precio": 14.0,
   "ts": 1792660200.4028492
+ },
+ "https://es.wallapop.com/item/vinilo-lp-nirvana-nevermind-1316088489": {
+  "precio": 20.0,
+  "ts": 1792692507.6705356
  },
  "https://es.wallapop.com/item/vinilo-lp-sticky-fingers-the-rolling-stones-1315568661": {
   "precio": 10.0,
@@ -186,6 +194,10 @@
  "https://www.discogs.com/sell/release/13491580": {
   "precio": 8.9,
   "ts": 1792549851.215685
+ },
+ "https://www.discogs.com/sell/release/13560691?sort=price%2Casc": {
+  "precio": 10.0,
+  "ts": 1792693133.8498995
  },
  "https://www.discogs.com/sell/release/13662884": {
   "precio": 9.86,
@@ -727,6 +739,10 @@
   "precio": 2.72,
   "ts": 1792532777.9076622
  },
+ "https://www.discogs.com/sell/release/6601684?sort=price%2Casc": {
+  "precio": 2.72,
+  "ts": 1792693051.9982488
+ },
  "https://www.discogs.com/sell/release/6606240": {
   "precio": 14.24,
   "ts": 1792532375.2377372
@@ -742,6 +758,10 @@
  "https://www.discogs.com/sell/release/6869093?sort=price%2Casc": {
   "precio": 3.98,
   "ts": 1792660209.0428426
+ },
+ "https://www.discogs.com/sell/release/6886986?sort=price%2Casc": {
+  "precio": 3.56,
+  "ts": 1792692088.692806
  },
  "https://www.discogs.com/sell/release/6925275": {
   "precio": 13.6,
@@ -843,9 +863,17 @@
   "precio": 10.0,
   "ts": 1792550416.2614074
  },
+ "https://www.discogs.com/sell/release/8619084?sort=price%2Casc": {
+  "precio": 3.74,
+  "ts": 1792692949.024465
+ },
  "https://www.discogs.com/sell/release/8638893": {
   "precio": 18.83,
   "ts": 1792532186.6197927
+ },
+ "https://www.discogs.com/sell/release/8898453?sort=price%2Casc": {
+  "precio": 3.37,
+  "ts": 1792692604.1962833
  },
  "https://www.discogs.com/sell/release/9107249": {
   "precio": 11.81,
@@ -1306,6 +1334,22 @@
  "https://www.vinted.es/items/10484685755-nirvana-nevermind-lp-sigillato": {
   "precio": 22.0,
   "ts": 1792681046.0119987
+ },
+ "https://www.vinted.es/items/10486907558-the-doors-live-lp-vinyl": {
+  "precio": 19.99,
+  "ts": 1792692852.9713528
+ },
+ "https://www.vinted.es/items/10487083406-queen-a-night-at-the-opera": {
+  "precio": 18.0,
+  "ts": 1792692558.3239472
+ },
+ "https://www.vinted.es/items/10487407122-miles-davis-kind-of-blue-lp-vinile": {
+  "precio": 17.0,
+  "ts": 1792692352.026708
+ },
+ "https://www.vinted.es/items/10487919646-lp-the-doors-lawoman": {
+  "precio": 17.0,
+  "ts": 1792692852.5587678
  },
  "https://www.vinted.es/items/3440604572-louis-armstrong-and-his-hot-five-muskrat-ramble-1925-1926": {
   "precio": 10.0,
