@@ -17,6 +17,37 @@ ARCHIVO_VISTOS = "vistos.json"
 DIAS_MEMORIA = 60          # se olvidan los anuncios pasados estos días
 MAX_AVISOS_POR_WEB = 3     # máximo de anuncios nuevos por disco y web en cada pasada
 
+# Gran chollo: precio igual o inferior a este porcentaje del límite (0.6 = 60 %).
+# Se puede cambiar por disco en discos.json con "gran_chollo": 12 (euros).
+UMBRAL_GRAN_CHOLLO = float(os.environ.get("UMBRAL_GRAN_CHOLLO") or 0.6)
+# Los avisos normales llegan sin sonido; los grandes chollos, con sonido.
+AVISOS_NORMALES_SILENCIOSOS = os.environ.get("AVISOS_NORMALES_SILENCIOSOS", "1") == "1"
+
+# Modo ahorro: si compras algo, el resto del mes solo te avisa de grandes chollos.
+MODO_AHORRO = os.environ.get("MODO_AHORRO", "1") == "1"
+_MESES = ["enero", "febrero", "marzo", "abril", "mayo", "junio", "julio", "agosto",
+          "septiembre", "octubre", "noviembre", "diciembre"]
+
+
+def hoy():
+    """Fecha de hoy en hora de Madrid (GitHub trabaja en UTC)."""
+    from datetime import datetime
+    from zoneinfo import ZoneInfo
+    return datetime.now(ZoneInfo("Europe/Madrid")).date()
+
+
+def compras_del_mes(discos):
+    mes = hoy().strftime("%Y-%m")
+    return [d for d in discos if str(d.get("comprado", "")).startswith(mes)]
+
+
+def aviso_modo_ahorro():
+    h = hoy()
+    siguiente = _MESES[h.month % 12]
+    return (f"\n🧘 <b>Modo ahorro</b> hasta el 1 de {siguiente}: "
+            "solo te avisaré de los grandes chollos.")
+
+
 # Contadores para el resumen final
 stats = {"ok": 0, "fallos_telegram": 0, "errores_web": {}}
 
@@ -60,16 +91,20 @@ def es_nuevo(vistos, res):
 
 # ---------------------------------------------------------------- Telegram
 
-def enviar_telegram(mensaje):
+def enviar_telegram(mensaje, silencioso=False, responder_a=None):
     """Envía en HTML (más robusto que Markdown: un '_' o '*' en el título
-    de un anuncio ya no rompe el mensaje)."""
+    de un anuncio ya no rompe el mensaje). Con silencioso=True el mensaje
+    llega sin sonido ni vibración."""
     url = f"https://api.telegram.org/bot{TELEGRAM_TOKEN}/sendMessage"
     payload = {
         "chat_id": TELEGRAM_CHAT_ID,
         "text": mensaje,
         "parse_mode": "HTML",
         "disable_web_page_preview": False,
+        "disable_notification": silencioso,
     }
+    if responder_a:
+        payload["reply_parameters"] = {"message_id": responder_a, "allow_sending_without_reply": True}
     try:
         res = requests.post(url, json=payload, timeout=15)
         if res.status_code == 200:
@@ -80,7 +115,7 @@ def enviar_telegram(mensaje):
         if res.status_code == 429:  # demasiados mensajes seguidos
             espera = res.json().get("parameters", {}).get("retry_after", 5)
             time.sleep(espera + 1)
-            return enviar_telegram(mensaje)
+            return enviar_telegram(mensaje, silencioso, responder_a)
     except Exception as e:
         print(f"❌ Excepción conectando a Telegram: {e}")
     stats["fallos_telegram"] += 1
@@ -144,11 +179,31 @@ def comprobar_telegram():
     sys.exit(1)
 
 
+def limite_de(web, item):
+    return item.get("max_precio_discogs", item["max_precio"]) if web == "Discogs" else item["max_precio"]
+
+
+def es_gran_chollo(web, item, res):
+    """Gran chollo = precio (con el envío estimado, en Discogs) muy por debajo
+    del límite: por defecto, el 60 % o menos. En discos.json se puede fijar
+    un umbral propio en euros con "gran_chollo"."""
+    precio = res.get("precio_total", res["precio"])
+    umbral = item.get("gran_chollo", UMBRAL_GRAN_CHOLLO * limite_de(web, item))
+    return round(precio, 2) <= round(umbral, 2)
+
+
 def formatear(web, emoji, item, res):
     e = html.escape
-    limite = item.get("max_precio_discogs", item["max_precio"]) if web == "Discogs" else item["max_precio"]
+    limite = limite_de(web, item)
+    precio = res.get("precio_total", res["precio"])
+    if es_gran_chollo(web, item, res):
+        rebaja = round(100 * (1 - precio / limite)) if limite else 0
+        cabecera = (f"🚨🔥 <b>¡GRAN CHOLLO en {web.upper()}!</b> 🔥🚨\n"
+                    f"<b>{rebaja} % por debajo de tu límite</b>")
+    else:
+        cabecera = f"{emoji} <b>¡Chollo en {web}!</b>"
     return (
-        f"{emoji} <b>¡Chollo en {web}!</b>\n\n"
+        f"{cabecera}\n\n"
         f"<b>Buscado:</b> {e(item['artista'])} - {e(item['disco'])}\n"
         f"<b>Anuncio:</b> {e(str(res['titulo']))}\n"
         f"<b>Precio:</b> {res['precio']:.2f} € (Límite: {limite} €)\n\n"
@@ -165,8 +220,8 @@ _NO_VINILO = re.compile(
 # Ojo: "singles" en plural (p. ej. "The Singles", un recopilatorio) NO se descarta.
 _NO_LP = re.compile(
     r"(?<![\d.,])(7|10)\s?(\"|”|″|''|’’|pulgadas|pulg\.?|inch(es)?|in)(?![\w])"
-    r"|\b45\s?(rpm|r\.p\.m\.?|vueltas|rev)\b"
-    r"|\b(single|sencillo|maxi|maxisingle|maxi-single|ep|flexi|flexidisc)\b",
+    r"|\b45\s?(rpm|r\.p\.m\.?|vueltas|rev|giri|tours?|t|u/?min|upm|toeren)\b"
+    r"|\b(single|sencillo|singolo|maxi|maxisingle|maxi-single|ep|flexi|flexidisc)\b",
     re.I)
 
 
@@ -206,11 +261,29 @@ def _titulo_corto_ok(palabras, disco, artista):
     return False
 
 
+def _menciona_artista(palabras, item):
+    """El anuncio tiene que nombrar al artista: basta su palabra más larga
+    (normalmente el apellido: "Marley", "Fitzgerald"), el nombre junto
+    ("R.E.M." -> "rem") o sus iniciales ("CCR"). En discos.json se pueden
+    añadir otros nombres con "alias_artista": ["CCR", "Creedence"]."""
+    t = set(palabras)
+    juntas = "".join(palabras)
+    for nombre in [item["artista"]] + list(item.get("alias_artista", [])):
+        a = _normalizar(nombre)
+        if not a:
+            continue
+        if max(a, key=len) in t or "".join(a) in juntas:
+            return True
+        if len(a) >= 2 and "".join(w[0] for w in a) in t:
+            return True
+    return False
+
+
 def es_relevante(item, titulo):
     """Vinted y Wallapop devuelven cualquier cosa que se parezca a la búsqueda.
     Exigimos que el anuncio nombre el disco (todas sus palabras si es corto,
-    al menos el 75 % si es largo). Los títulos de una sola palabra tienen que
-    ir junto al artista. En discos.json se puede afinar cada disco con:
+    al menos el 75 % si es largo) y al artista. Los títulos de una sola
+    palabra tienen que ir junto al artista. En discos.json se puede afinar cada disco con:
       "alias":   ["One"]                 otros nombres con los que se anuncia
       "excluir": ["1962", "1967", "box"] palabras que descartan el anuncio"""
     palabras = _normalizar(titulo)
@@ -220,6 +293,8 @@ def es_relevante(item, titulo):
     excluir = {w for x in item.get("excluir", []) for w in _normalizar(x)}
     if t & excluir:
         return False
+    if not _menciona_artista(palabras, item):
+        return False   # p. ej. "Best of UB40 - Greatest Hits" buscando Queen
 
     variantes = [item["disco"]] + list(item.get("alias", []))
     if item["disco"].strip() in _NUMEROS:
@@ -230,7 +305,13 @@ def es_relevante(item, titulo):
         if not disco:
             continue
         if len(disco) == 1 and disco != artista:
-            if _titulo_corto_ok(palabras, disco[0], set(artista)):
+            nombres = set(artista)
+            for n in [item["artista"]] + list(item.get("alias_artista", [])):
+                a = _normalizar(n)
+                nombres |= set(a)
+                if len(a) >= 2:
+                    nombres.add("".join(w[0] for w in a))  # iniciales: CCR, RHCP…
+            if _titulo_corto_ok(palabras, disco[0], nombres):
                 return True
             continue
         aciertos = sum(1 for w in disco if w in t)
@@ -477,6 +558,7 @@ def buscar_discogs(item):
                     "titulo": f"{rel.get('title', '')} ({extra}) · {datos.get('num_for_sale')} en venta "
                               f"· con envío estimado ≈ {precio + DISCOGS_MARGEN_ENVIO:.0f} €",
                     "precio": precio,
+                    "precio_total": precio + DISCOGS_MARGEN_ENVIO,
                     "link": f"https://www.discogs.com/sell/release/{rel['id']}?sort=price%2Casc",
                 })
         encontrados.sort(key=lambda x: x["precio"])
@@ -488,6 +570,203 @@ def buscar_discogs(item):
     return []
 
 
+# ---------------------------------------------------------------- Comprados
+#
+# Para quitar un disco de la búsqueda cuando lo compras:
+#   · en Telegram, RESPONDE a cualquier aviso de ese disco con la palabra "comprado"
+#     (o escribe "/comprado Artista Disco", vale aproximado: "nirvana nevermin"),
+#     y en la siguiente pasada se marca solo;
+#   · o en discos.json añade a mano "comprado": "2026-10-22" a ese disco.
+# Los discos comprados se quedan en la lista (como registro) pero ya no se buscan.
+# Para volver a buscarlo, borra la línea "comprado" o responde "descomprado".
+# Puedes añadir lo que pagaste: "comprado 15€".
+# Otras órdenes para el bot:
+#   /registrar Artista - Disco 12€   apunta como comprado un disco que no estaba
+#                                    en la lista (p. ej. uno que cayó en un pack)
+#   /buscar Artista - Disco 20€      añade un disco nuevo a la búsqueda
+
+def guardar_discos(discos, filename="discos.json"):
+    def fmt(o):
+        lineas = [f"    {json.dumps(k, ensure_ascii=False)}: "
+                  f"{json.dumps(v, ensure_ascii=False).replace(chr(34) + ',' + chr(34), chr(34) + ', ' + chr(34))}"
+                  for k, v in o.items()]
+        return "  {\n" + ",\n".join(lineas) + "\n  }"
+    import unicodedata
+
+    def clave(texto):
+        return unicodedata.normalize("NFKD", texto).encode("ascii", "ignore").decode().lower()
+    discos.sort(key=lambda d: (clave(d["artista"]), clave(d["disco"])))  # orden alfabético
+    with open(filename, "w", encoding="utf-8") as f:
+        f.write("[\n" + ",\n".join(fmt(d) for d in discos) + "\n]\n")
+
+
+def _separar_precio(texto, exigir_euro=False):
+    """Separa un precio escrito al final: 'Nirvana - Nevermind 15€' -> ('Nirvana - Nevermind', 15.0).
+    Un número sin € solo cuenta como precio si no es el propio título ("Beatles - 1")
+    y, con exigir_euro=True, solo si lleva € o "eur"."""
+    m = re.search(r"\s+(\d+(?:[.,]\d{1,2})?)\s*(€|eur|euros?)?\s*$", texto, re.I)
+    if not m:
+        return texto, None
+    resto = texto[:m.start()].strip()
+    valor = float(m.group(1).replace(",", "."))
+    valor = int(valor) if valor.is_integer() else valor   # 25 en vez de 25.0 en discos.json
+    if m.group(2):
+        return resto, valor
+    if exigir_euro or resto.endswith("-"):
+        return texto, None
+    return resto, valor
+
+
+def alta_desde_telegram(orden, texto, discos, por_nombre, message_id):
+    """/registrar Artista - Disco [precio]  -> lo apunta como comprado (fuera de lista)
+       /buscar    Artista - Disco precio    -> lo añade a la búsqueda con ese límite"""
+    cuerpo = texto.split(" ", 1)[1].strip() if " " in texto else ""
+    cuerpo, precio = _separar_precio(cuerpo)
+    if " - " not in cuerpo:
+        ejemplo = "/registrar Bob Dylan - Blonde on Blonde 12€" if orden == "registrar" \
+            else "/buscar Bob Dylan - Blonde on Blonde 20€"
+        enviar_telegram(f"✍️ Escríbelo así, con un guion entre artista y disco:\n{ejemplo}",
+                        responder_a=message_id)
+        return False
+    artista, titulo = (x.strip() for x in cuerpo.split(" - ", 1))
+    existente = por_nombre.get(f"{artista} - {titulo}".lower())
+    if orden == "buscar":
+        if not precio:
+            enviar_telegram("💶 Dime también el precio máximo, p. ej.:\n"
+                            f"/buscar {html.escape(artista)} - {html.escape(titulo)} 20€",
+                            responder_a=message_id)
+            return False
+        if existente:
+            existente["max_precio"] = precio
+            existente.pop("comprado", None)
+            aviso = f"🔁 Ya estaba en la lista: ahora lo busco con límite de {precio:g} €."
+        else:
+            nuevo = {"artista": artista, "disco": titulo, "max_precio": precio}
+            discos.append(nuevo)
+            por_nombre[f"{artista} - {titulo}".lower()] = nuevo
+            aviso = f"🔎 Añadido a la búsqueda con límite de {precio:g} €."
+    else:  # registrar
+        d = existente or {"artista": artista, "disco": titulo, "max_precio": 0, "fuera_de_lista": True}
+        d["comprado"] = hoy().isoformat()
+        if precio is not None:
+            d["precio_pagado"] = precio
+        if not existente:
+            discos.append(d)
+            por_nombre[f"{artista} - {titulo}".lower()] = d
+        aviso = ("📀 Apuntado en tu registro de comprados." + (f" Pagado: {precio:g} €." if precio else "")
+                 + (aviso_modo_ahorro() if MODO_AHORRO else ""))
+    enviar_telegram(f"<b>{html.escape(artista)} - {html.escape(titulo)}</b>\n{aviso}",
+                    responder_a=message_id)
+    return True
+
+
+def buscar_aproximado(texto, discos):
+    """Encuentra el disco aunque lo escribas a medias o con erratas:
+    "nirvana nevermin", "Nevermind", "police synchronicity"…
+    Devuelve (disco, None) si está claro, (None, [candidatos]) si duda
+    y (None, None) si no se parece a ninguno."""
+    from difflib import SequenceMatcher
+    q = " ".join(_normalizar(texto))
+    if not q:
+        return None, None
+    # Solo el artista ("nirvana", "the police"): preguntamos cuál de sus discos
+    del_artista = [d for d in discos if " ".join(_normalizar(d["artista"])) == q]
+    if del_artista:
+        return (del_artista[0], None) if len(del_artista) == 1 else (None, del_artista)
+    puntuados = []
+    for d in discos:
+        completo = " ".join(_normalizar(f"{d['artista']} {d['disco']}"))
+        solo_disco = " ".join(_normalizar(d["disco"]))
+        p = max(SequenceMatcher(None, q, completo).ratio(),
+                SequenceMatcher(None, q, solo_disco).ratio())
+        puntuados.append((p, d))
+    puntuados.sort(key=lambda x: -x[0])
+    mejor, d1 = puntuados[0]
+    segundo = puntuados[1][0] if len(puntuados) > 1 else 0
+    if mejor < 0.7:
+        return None, None
+    if mejor - segundo < 0.08:
+        return None, [d for p, d in puntuados[:4] if p >= mejor - 0.08]
+    return d1, None
+
+
+def procesar_comandos(discos):
+    """Lee los mensajes que le has escrito al bot desde la última pasada.
+    Devuelve True si ha cambiado algo en discos.json."""
+    api = f"https://api.telegram.org/bot{TELEGRAM_TOKEN}"
+    try:
+        r = requests.get(f"{api}/getUpdates", params={"timeout": 0}, timeout=20)
+        updates = r.json().get("result", [])
+    except Exception as e:
+        print(f"⚠️  No se pudieron leer los mensajes de Telegram: {e!r}")
+        return False
+    if not updates:
+        return False
+
+    por_nombre = {f"{d['artista']} - {d['disco']}".lower(): d for d in discos}
+    cambiado = False
+    for u in updates:
+        m = u.get("message") or {}
+        if str(m.get("chat", {}).get("id")) != str(TELEGRAM_CHAT_ID):
+            continue  # solo obedecemos a tu chat
+        texto = (m.get("text") or "").strip()
+        orden = texto.split()[0].lower().lstrip("/") if texto else ""
+        if orden in ("registrar", "buscar"):
+            cambiado |= alta_desde_telegram(orden, texto, discos, por_nombre, m.get("message_id"))
+            continue
+        if orden not in ("comprado", "descomprado"):
+            continue
+        # "comprado 15" (respondiendo a un aviso) o "/comprado Nirvana Nevermind 15€"
+        texto, pagado = _separar_precio(texto, exigir_euro=len(texto.split()) > 2)
+        # ¿A qué disco se refiere? Primero, al aviso al que responde…
+        nombre = None
+        citado = (m.get("reply_to_message") or {}).get("text") or ""
+        mt = re.search(r"Buscado:\s*(.+)", citado)
+        if mt:
+            nombre = mt.group(1).strip()
+        # …y si no, a lo escrito detrás de la orden: "/comprado Nirvana - Nevermind"
+        if not nombre and " " in texto:
+            nombre = texto.split(" ", 1)[1].strip()
+        disco = por_nombre.get((nombre or "").lower())
+        if not disco and nombre:
+            disco, dudas = buscar_aproximado(nombre, discos)
+            if dudas:
+                opciones = "\n".join(f"• /{orden} {html.escape(d['artista'])} - {html.escape(d['disco'])}"
+                                      for d in dudas)
+                enviar_telegram(f"🤔 «{html.escape(nombre)}» podría ser varios discos. "
+                                f"¿Cuál de estos?\n{opciones}", responder_a=m.get("message_id"))
+                continue
+        if not disco:
+            enviar_telegram(f"❓ No encuentro «{html.escape(nombre or texto)}» en la lista. "
+                            "Responde «comprado» a un aviso o escribe /comprado Artista Disco.\n"
+                            "Si es un disco que no estaba en la lista (p. ej. de un pack), usa:\n"
+                            "/registrar Artista - Disco 12€",
+                            responder_a=m.get("message_id"))
+            continue
+        nombre = f"{disco['artista']} - {disco['disco']}"
+        if orden == "comprado":
+            disco["comprado"] = hoy().isoformat()
+            if pagado is not None:
+                disco["precio_pagado"] = pagado
+            enviar_telegram(f"✅ <b>{html.escape(nombre)}</b> marcado como comprado. "
+                            "Ya no lo buscaré. ¡Que lo disfrutes!"
+                            + (aviso_modo_ahorro() if MODO_AHORRO else ""),
+                            responder_a=m.get("message_id"))
+        else:
+            disco.pop("comprado", None)
+            disco.pop("precio_pagado", None)
+            enviar_telegram(f"🔁 Vuelvo a buscar <b>{html.escape(nombre)}</b>.",
+                            responder_a=m.get("message_id"))
+        cambiado = True
+
+    # Confirmar a Telegram que ya hemos leído estos mensajes
+    try:
+        requests.get(f"{api}/getUpdates", params={"offset": updates[-1]["update_id"] + 1, "timeout": 0}, timeout=20)
+    except Exception:
+        pass
+    return cambiado
+
+
 # ---------------------------------------------------------------- main
 
 def main():
@@ -497,10 +776,20 @@ def main():
     if os.environ.get("TEST_TELEGRAM") == "1":
         enviar_telegram("🧪 Mensaje de prueba del Cazador de Vinilos: Telegram funciona.")
 
-    discos = cargar_lista_discos()
-    if not discos:
+    todos = cargar_lista_discos()
+    if not todos:
         print("Lista vacía o inválida.")
         sys.exit(1)
+    if procesar_comandos(todos):
+        guardar_discos(todos)
+        print("📝 discos.json actualizado con los cambios pedidos por Telegram.")
+    discos = [d for d in todos if not d.get("comprado")]
+    compras = compras_del_mes(todos)
+    ahorro = MODO_AHORRO and bool(compras)
+    if ahorro:
+        print(f"🧘 Modo ahorro: {len(compras)} compra(s) este mes; solo se avisa de grandes chollos.")
+    callados = 0
+    print(f"Discos comprados (no se buscan): {len(todos) - len(discos)}")
 
     webs = [("Wallapop", "🎵", buscar_wallapop), ("Vinted", "🛍️", buscar_vinted)]
     if DISCOGS_TOKEN:
@@ -523,7 +812,11 @@ def main():
                     msg = formatear(nombre, emoji, item, res)
                     if previo:
                         msg = "📉 <b>¡Ha bajado de precio!</b> (antes " + f"{previo['precio']:.2f} €)\n" + msg
-                    if enviar_telegram(msg):
+                    gran = es_gran_chollo(nombre, item, res)
+                    if ahorro and not gran:
+                        callados += 1   # no se marca como visto: si sigue a la venta, llegará el mes que viene
+                        continue
+                    if enviar_telegram(msg, silencioso=AVISOS_NORMALES_SILENCIOSOS and not gran):
                         vistos[res["link"]] = {"precio": res["precio"], "ts": time.time()}
                 time.sleep(1)  # no saturar las webs
     finally:
@@ -531,7 +824,8 @@ def main():
 
     # ---- Resumen: si algo ha fallado, el workflow sale en ROJO en GitHub
     print("\n========== RESUMEN ==========")
-    print(f"Mensajes enviados: {stats['ok']}  |  Fallos de Telegram: {stats['fallos_telegram']}")
+    print(f"Mensajes enviados: {stats['ok']}  |  Fallos de Telegram: {stats['fallos_telegram']}"
+          + (f"  |  Avisos normales retenidos por el modo ahorro: {callados}" if ahorro else ""))
     for web, errores in stats["errores_web"].items():
         print(f"{web}: {len(errores)} errores (primero: {errores[0]})")
 
