@@ -198,6 +198,13 @@
     "max_precio": 22
   },
   {
+    "artista": "Nirvana",
+    "disco": "Unplugged",
+    "max_precio": 0,
+    "fuera_de_lista": true,
+    "comprado": "2026-10-23"
+  },
+  {
     "artista": "Oasis",
     "disco": "Morning Glory",
     "max_precio": 25
