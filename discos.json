@@ -2,7 +2,8 @@
   {
     "artista": "Amy Winehouse",
     "disco": "Back to Black",
-    "max_precio": 25
+    "max_precio": 25,
+    "comprado": "2026-10-24"
   },
   {
     "artista": "Aretha Franklin",
