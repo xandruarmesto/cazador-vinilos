@@ -583,7 +583,9 @@ def buscar_discogs(item):
 # Otras órdenes para el bot:
 #   /registrar Artista - Disco 12€   apunta como comprado un disco que no estaba
 #                                    en la lista (p. ej. uno que cayó en un pack)
-#   /buscar Artista - Disco 20€      añade un disco nuevo a la búsqueda
+#   /amestar Artista - Disco - 15    añade un disco a la búsqueda (también /buscar)
+#   /llista                          lista los discos que se buscan (/llista compraos: los comprados)
+#   /axuda                           recuerda todas las órdenes
 
 def guardar_discos(discos, filename="discos.json"):
     def fmt(o):
@@ -608,6 +610,13 @@ def _separar_precio(texto, exigir_euro=False):
     if not m:
         return texto, None
     resto = texto[:m.start()].strip()
+    # "Los Piratas - Ultrasónica - 15": el último guion separa el precio,
+    # siempre que quede "Artista - Disco" delante (si no, "Beatles - 1" es el título)
+    if resto.endswith("-"):
+        sin_guion = resto[:-1].strip()
+        if " - " in sin_guion:
+            valor = float(m.group(1).replace(",", "."))
+            return sin_guion, int(valor) if valor.is_integer() else valor
     valor = float(m.group(1).replace(",", "."))
     valor = int(valor) if valor.is_integer() else valor   # 25 en vez de 25.0 en discos.json
     if m.group(2):
@@ -624,16 +633,16 @@ def alta_desde_telegram(orden, texto, discos, por_nombre, message_id):
     cuerpo, precio = _separar_precio(cuerpo)
     if " - " not in cuerpo:
         ejemplo = "/registrar Bob Dylan - Blonde on Blonde 12€" if orden == "registrar" \
-            else "/buscar Bob Dylan - Blonde on Blonde 20€"
+            else f"/{orden} Los Piratas - Ultrasónica - 15"
         enviar_telegram(f"✍️ Escríbelo así, con un guion entre artista y disco:\n{ejemplo}",
                         responder_a=message_id)
         return False
     artista, titulo = (x.strip() for x in cuerpo.split(" - ", 1))
     existente = por_nombre.get(f"{artista} - {titulo}".lower())
-    if orden == "buscar":
+    if orden in ("buscar", "amestar"):
         if not precio:
             enviar_telegram("💶 Dime también el precio máximo, p. ej.:\n"
-                            f"/buscar {html.escape(artista)} - {html.escape(titulo)} 20€",
+                            f"/{orden} {html.escape(artista)} - {html.escape(titulo)} - 20",
                             responder_a=message_id)
             return False
         if existente:
@@ -658,6 +667,51 @@ def alta_desde_telegram(orden, texto, discos, por_nombre, message_id):
     enviar_telegram(f"<b>{html.escape(artista)} - {html.escape(titulo)}</b>\n{aviso}",
                     responder_a=message_id)
     return True
+
+
+AYUDA_BOT = (
+    "🎵 <b>Órdenes del Cazador de Vinilos</b>\n\n"
+    "/llista — discos que estoy buscando\n"
+    "/llista compraos — discos que ya compraste\n"
+    "/amestar Artista - Disco - 15 — añadir un disco a la búsqueda (o cambiar su límite)\n"
+    "comprado — respondiendo a un aviso; también «comprado 15» con lo que pagaste\n"
+    "/comprado Artista Disco — marcar como comprado (vale aproximado)\n"
+    "/registrar Artista - Disco 12€ — apuntar una compra que no estaba en la lista\n"
+    "descomprado — respondiendo a la confirmación, para volver a buscarlo\n\n"
+    "⏱️ Leo los mensajes en cada pasada, así que la respuesta puede tardar un rato."
+)
+
+
+def enviar_lista(discos, texto, message_id):
+    """/llista -> discos que se buscan; /llista compraos -> los comprados."""
+    e = html.escape
+    comprados = any(w in texto.lower() for w in ("comprad", "comprao", "mercad", "mercao"))
+    if comprados:
+        sel = [d for d in discos if d.get("comprado")]
+        titulo = f"📀 <b>Comprados ({len(sel)})</b>"
+        linea = lambda d: (f"• {e(d['artista'])} – <i>{e(d['disco'])}</i> · {e(str(d['comprado']))}"
+                           + (f" · {d['precio_pagado']:g} €" if d.get("precio_pagado") is not None else ""))
+    else:
+        sel = [d for d in discos if not d.get("comprado")]
+        titulo = f"🔎 <b>Estoy buscando {len(sel)} discos</b>"
+        linea = lambda d: f"• {e(d['artista'])} – <i>{e(d['disco'])}</i> · ≤ {d['max_precio']:g} €"
+    if not sel:
+        enviar_telegram(titulo + "\n\n(ninguno)", responder_a=message_id)
+        return
+    import unicodedata
+    clave = lambda t: unicodedata.normalize("NFKD", t).encode("ascii", "ignore").decode().lower()
+    sel = sorted(sel, key=lambda d: (clave(d["artista"]), clave(d["disco"])))
+    # Telegram admite 4096 caracteres por mensaje: se trocea si hace falta
+    trozos, actual = [], titulo + "\n"
+    for d in sel:
+        l = "\n" + linea(d)
+        if len(actual) + len(l) > 3800:
+            trozos.append(actual)
+            actual = ""
+        actual += l
+    trozos.append(actual)
+    for i, t in enumerate(trozos):
+        enviar_telegram(t, responder_a=message_id if i == 0 else None)
 
 
 def buscar_aproximado(texto, discos):
@@ -710,8 +764,14 @@ def procesar_comandos(discos):
         if str(m.get("chat", {}).get("id")) != str(TELEGRAM_CHAT_ID):
             continue  # solo obedecemos a tu chat
         texto = (m.get("text") or "").strip()
-        orden = texto.split()[0].lower().lstrip("/") if texto else ""
-        if orden in ("registrar", "buscar"):
+        orden = texto.split()[0].lower().lstrip("/").split("@")[0] if texto else ""
+        if orden in ("llista", "lista", "listado"):
+            enviar_lista(discos, texto, m.get("message_id"))
+            continue
+        if orden in ("axuda", "ayuda", "help", "start"):
+            enviar_telegram(AYUDA_BOT, responder_a=m.get("message_id"))
+            continue
+        if orden in ("registrar", "buscar", "amestar"):
             cambiado |= alta_desde_telegram(orden, texto, discos, por_nombre, m.get("message_id"))
             continue
         if orden not in ("comprado", "descomprado"):
