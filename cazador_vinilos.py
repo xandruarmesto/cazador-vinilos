@@ -52,7 +52,18 @@ def aviso_modo_ahorro():
 stats = {"ok": 0, "fallos_telegram": 0, "errores_web": {}}
 
 
+def sin_secretos(texto):
+    """Quita los tokens de cualquier texto que vaya al log (el log es público
+    si el repositorio lo es). GitHub ya los oculta, pero así no dependemos de ello."""
+    texto = str(texto)
+    for secreto in (TELEGRAM_TOKEN, DISCOGS_TOKEN, TELEGRAM_CHAT_ID):
+        if secreto:
+            texto = texto.replace(secreto, "***")
+    return texto
+
+
 def registrar_error(web, detalle):
+    detalle = sin_secretos(detalle)
     stats["errores_web"].setdefault(web, []).append(detalle)
     print(f"⚠️  [{web}] {detalle}")
 
@@ -111,13 +122,13 @@ def enviar_telegram(mensaje, silencioso=False, responder_a=None):
             stats["ok"] += 1
             print("✅ Mensaje enviado a Telegram.")
             return True
-        print(f"❌ Error de Telegram ({res.status_code}): {res.text}")
+        print(f"❌ Error de Telegram ({res.status_code}): {sin_secretos(res.text)}")
         if res.status_code == 429:  # demasiados mensajes seguidos
             espera = res.json().get("parameters", {}).get("retry_after", 5)
             time.sleep(espera + 1)
             return enviar_telegram(mensaje, silencioso, responder_a)
     except Exception as e:
-        print(f"❌ Excepción conectando a Telegram: {e}")
+        print(f"❌ Excepción conectando a Telegram: {sin_secretos(e)}")
     stats["fallos_telegram"] += 1
     return False
 
@@ -140,42 +151,28 @@ def comprobar_telegram():
     api = f"https://api.telegram.org/bot{TELEGRAM_TOKEN}"
     r = requests.get(f"{api}/getMe", timeout=15)
     if r.status_code != 200:
-        print(f"❌ Token NO válido ({r.status_code}): {r.text}")
+        print(f"❌ Token NO válido ({r.status_code}): {sin_secretos(r.text)}")
         print("   Pide uno nuevo a @BotFather (/mybots → API Token) y actualiza el secret.")
         sys.exit(1)
-    bot = r.json()["result"]["username"]
-    print(f"✅ Token válido. Bot: @{bot}")
-    print(f"   chat_id configurado: {TELEGRAM_CHAT_ID}")
+    print("✅ Token válido.")   # sin nombre del bot ni chat_id: el log puede ser público
 
     r = requests.get(f"{api}/getChat", params={"chat_id": TELEGRAM_CHAT_ID}, timeout=15)
     if r.status_code == 200:
-        chat = r.json()["result"]
-        nombre = chat.get("title") or chat.get("first_name") or chat.get("username")
-        print(f"✅ El bot puede ver ese chat ({chat.get('type')}: {nombre}).")
+        print("✅ El bot puede escribir en tu chat.")
         return
 
-    print(f"❌ El bot NO puede escribir en ese chat_id ({r.status_code}): {r.text}")
+    print(f"❌ El bot NO puede escribir en ese chat_id ({r.status_code}): {sin_secretos(r.text)}")
     print("   Causas típicas: chat_id equivocado, o nunca le has enviado /start al bot,")
     print("   o es un grupo y le falta el '-' (o el '-100') delante del número.")
-    print(f"   👉 Abre Telegram, busca @{bot}, pulsa INICIAR / envía /start y vuelve a lanzar el workflow.")
+    print("   👉 Abre Telegram, busca tu bot, pulsa INICIAR / envía /start y vuelve a lanzar el workflow.")
 
     # Intentamos descubrir el chat_id correcto a partir de los últimos mensajes recibidos
     wh = requests.get(f"{api}/getWebhookInfo", timeout=15).json().get("result", {})
     if wh.get("url"):
-        print(f"   ⚠️ El bot tiene un webhook activo ({wh['url']}); eso impide leer mensajes con getUpdates.")
-    up = requests.get(f"{api}/getUpdates", timeout=15).json()
-    chats = {}
-    for u in up.get("result", []):
-        m = u.get("message") or u.get("channel_post") or u.get("my_chat_member") or {}
-        c = m.get("chat")
-        if c:
-            chats[c["id"]] = f"{c.get('type')}: {c.get('title') or c.get('first_name') or c.get('username')}"
-    if chats:
-        print("   Chats que han escrito recientemente al bot (usa uno de estos como TELEGRAM_CHAT_ID):")
-        for cid, desc in chats.items():
-            print(f"     • {cid}  ({desc})")
-    else:
-        print("   El bot no ha recibido ningún mensaje reciente. Envíale /start y relanza.")
+        print("   ⚠️ El bot tiene un webhook activo; eso impide leer mensajes con getUpdates.")
+    # No se muestran los chat_id ni los nombres de quien escribe al bot (el log puede ser público).
+    print("   Para ver tu chat_id: envía /start al bot y abre en el navegador")
+    print("   https://api.telegram.org/bot<TU_TOKEN>/getUpdates  →  busca \"chat\":{\"id\": …")
     sys.exit(1)
 
 
@@ -752,7 +749,7 @@ def procesar_comandos(discos):
         r = requests.get(f"{api}/getUpdates", params={"timeout": 0}, timeout=20)
         updates = r.json().get("result", [])
     except Exception as e:
-        print(f"⚠️  No se pudieron leer los mensajes de Telegram: {e!r}")
+        print(f"⚠️  No se pudieron leer los mensajes de Telegram: {sin_secretos(repr(e))}")
         return False
     if not updates:
         return False
