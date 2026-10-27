@@ -936,8 +936,8 @@
   "ts": 1792660614.236681
  },
  "https://www.vinted.es/items/10032634554-disco-de-vinil-vintage-the-police-every-breath-you-take-1983": {
-  "precio": 6.0,
-  "ts": 1792681437.4727793
+  "precio": 5.0,
+  "ts": 1793116458.6695547
  },
  "https://www.vinted.es/items/10036476139-folleto-queen-a-night-at-the-opera": {
   "precio": 15.0,
@@ -1400,8 +1400,8 @@
   "ts": 1792937808.497838
  },
  "https://www.vinted.es/items/10546198456-the-doors-lotto-2-lp-morrison-hotel-the-soft-parade-stampe-italiane": {
-  "precio": 11.0,
-  "ts": 1793053263.3441374
+  "precio": 10.0,
+  "ts": 1793116409.9537294
  },
  "https://www.vinted.es/items/10547670375-the-doors": {
   "precio": 12.0,
@@ -1411,17 +1411,45 @@
   "precio": 10.0,
   "ts": 1793053262.9943693
  },
+ "https://www.vinted.es/items/10555274465-tracy-chapman-fast-car": {
+  "precio": 6.5,
+  "ts": 1793116665.4144921
+ },
+ "https://www.vinted.es/items/10557202942-vinile-billie-holiday-jazz-lady-in-satin": {
+  "precio": 10.0,
+  "ts": 1793115442.205294
+ },
+ "https://www.vinted.es/items/10558817931-tracy-chapman-vinyl-lp-album-stereo-1990": {
+  "precio": 12.0,
+  "ts": 1793116666.39167
+ },
  "https://www.vinted.es/items/3440604572-louis-armstrong-and-his-hot-five-muskrat-ramble-1925-1926": {
   "precio": 10.0,
   "ts": 1792660203.5079153
+ },
+ "https://www.vinted.es/items/3649365844-the-police-the-singles-tratto-dall-lp-every-breath-you-take": {
+  "precio": 8.0,
+  "ts": 1793116459.1085565
  },
  "https://www.vinted.es/items/5057060358-louis-armstrong-the-hot-fives-volume-i": {
   "precio": 7.0,
   "ts": 1792660202.6092262
  },
+ "https://www.vinted.es/items/5548739893-lp-petite-fleur-sidney-bechet": {
+  "precio": 3.0,
+  "ts": 1793116245.563175
+ },
  "https://www.vinted.es/items/5873867104-vinile-di-louis-armstrong-what-a-wonderful-world": {
   "precio": 12.99,
   "ts": 1792680832.0883312
+ },
+ "https://www.vinted.es/items/6099038102-sidney-bechet-petite-fleur-dans-les-reus-dantibes": {
+  "precio": 4.0,
+  "ts": 1793116246.024206
+ },
+ "https://www.vinted.es/items/6345437904-dire-straits-brothers-in-arms": {
+  "precio": 8.0,
+  "ts": 1793115660.7111666
  },
  "https://www.vinted.es/items/6837102957-louis-armstrong-what-a-wonderful-world-give-me-your-kisses": {
   "precio": 10.0,
@@ -1451,9 +1479,25 @@
   "precio": 14.0,
   "ts": 1792660065.7061515
  },
+ "https://www.vinted.es/items/8699518761-the-police-every-breath-you-take-45-lp-leggi-descrizione": {
+  "precio": 3.0,
+  "ts": 1793116458.2096324
+ },
  "https://www.vinted.es/items/8781942151-louis-armstrong-and-his-hot-five-irish-black-bottom-1926-lp": {
   "precio": 18.0,
   "ts": 1792680823.6457503
+ },
+ "https://www.vinted.es/items/8856755398-sidney-bechet-petite-fleur": {
+  "precio": 5.0,
+  "ts": 1793116246.4790378
+ },
+ "https://www.vinted.es/items/8920526073-pin-brooch-the-beatles-abbey-road": {
+  "precio": 5.0,
+  "ts": 1793116284.969611
+ },
+ "https://www.vinted.es/items/9095447437-the-rolling-stones-sticky-fingers-digipack-sconto-week-end-30": {
+  "precio": 12.0,
+  "ts": 1793116523.2972577
  },
  "https://www.vinted.es/items/9122060343-vinilo-lp-de-louis-armstrong-what-a-wonderful-world-1968": {
   "precio": 15.0,
@@ -1467,6 +1511,10 @@
   "precio": 15.0,
   "ts": 1792660339.9282613
  },
+ "https://www.vinted.es/items/9340489868-miniaturas-disco-de-vinilo-sticky-fingers-the-rolling-stones": {
+  "precio": 1.0,
+  "ts": 1793116522.8610685
+ },
  "https://www.vinted.es/items/9475891106-petite-fleur": {
   "precio": 4.0,
   "ts": 1792660613.8414762
@@ -1475,9 +1523,17 @@
   "precio": 5.0,
   "ts": 1792660835.293538
  },
+ "https://www.vinted.es/items/9550869883-tracy-chapman-crossroads-lp-1989": {
+  "precio": 10.0,
+  "ts": 1793116665.9193425
+ },
  "https://www.vinted.es/items/9558065083-john-coltrane-blue-train-lp": {
   "precio": 18.0,
   "ts": 1792660178.3919373
+ },
+ "https://www.vinted.es/items/9661485895-cherie-currie-call-me-at-midnight-1978-french-promo-the-runaways-punk-hard-pop": {
+  "precio": 13.0,
+  "ts": 1793116547.102122
  },
  "https://www.vinted.es/items/9673115400-van-morrison-moondance": {
   "precio": 20.0,
@@ -1490,6 +1546,10 @@
  "https://www.vinted.es/items/9816737620-tom-petty-and-the-heartbreakers-damn-the-torpedoes-vinile-1-stampa": {
   "precio": 20.0,
   "ts": 1792661011.4288125
+ },
+ "https://www.vinted.es/items/9824403611-runaways-the-waiting-for-the-night": {
+  "precio": 7.0,
+  "ts": 1793116546.6238277
  },
  "https://www.vinted.es/items/9851650078-bob-dylan-highway-61-revisited": {
   "precio": 20.0,
