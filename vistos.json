@@ -271,6 +271,10 @@
   "precio": 6.5,
   "ts": 1792532292.9235423
  },
+ "https://www.discogs.com/sell/release/1527216?sort=price%2Casc": {
+  "precio": 5.0,
+  "ts": 1793307702.7141163
+ },
  "https://www.discogs.com/sell/release/1527502": {
   "precio": 1.77,
   "ts": 1792532123.3133166
@@ -326,6 +330,10 @@
  "https://www.discogs.com/sell/release/1825697?sort=price%2Casc": {
   "precio": 3.0,
   "ts": 1792659872.643536
+ },
+ "https://www.discogs.com/sell/release/1835188?sort=price%2Casc": {
+  "precio": 0.95,
+  "ts": 1793307315.8468874
  },
  "https://www.discogs.com/sell/release/18373480?sort=price%2Casc": {
   "precio": 1.78,
@@ -1055,6 +1063,10 @@
   "precio": 20.0,
   "ts": 1792680696.5379431
  },
+ "https://www.vinted.es/items/10302343240-mink-deville-coup-de-grace-lp-1981-heartland-rock-blue-eyed-soul": {
+  "precio": 5.0,
+  "ts": 1793307291.5200233
+ },
  "https://www.vinted.es/items/10304159845-the-police-synchronicity-ii-promo": {
   "precio": 10.0,
   "ts": 1792660884.5275025
@@ -1443,9 +1455,21 @@
   "precio": 10.0,
   "ts": 1793220739.5129395
  },
+ "https://www.vinted.es/items/10581120819-vinyle-33t-compilation-kings-of-pop-music-vol-1-the-doors-mc5-elektra": {
+  "precio": 3.5,
+  "ts": 1793307867.5126617
+ },
  "https://www.vinted.es/items/10583973494-vinyle-runaways": {
   "precio": 15.0,
   "ts": 1793286279.9590213
+ },
+ "https://www.vinted.es/items/10586515305-the-doors-absolutely-live-2xlp-album": {
+  "precio": 12.0,
+  "ts": 1793307868.1911373
+ },
+ "https://www.vinted.es/items/10589017123-jeff-hill-band-lp-chiswick-powerpop-punk-pub-rock-new-wave-ramones-101-ers-undertones": {
+  "precio": 9.5,
+  "ts": 1793307577.2247107
  },
  "https://www.vinted.es/items/3440604572-louis-armstrong-and-his-hot-five-muskrat-ramble-1925-1926": {
   "precio": 10.0,
@@ -1463,9 +1487,17 @@
   "precio": 3.0,
   "ts": 1793116245.563175
  },
+ "https://www.vinted.es/items/5606215742-sinead-oconnor-i-do-not-want-what-i-havent-got-lp": {
+  "precio": 10.0,
+  "ts": 1793307677.4519777
+ },
  "https://www.vinted.es/items/5873867104-vinile-di-louis-armstrong-what-a-wonderful-world": {
   "precio": 12.99,
   "ts": 1792680832.0883312
+ },
+ "https://www.vinted.es/items/6035869262-sinead-oconnor-i-do-not-want-what-i-havent-got": {
+  "precio": 15.0,
+  "ts": 1793307678.7876086
  },
  "https://www.vinted.es/items/6099038102-sidney-bechet-petite-fleur-dans-les-reus-dantibes": {
   "precio": 4.0,
@@ -1494,6 +1526,10 @@
  "https://www.vinted.es/items/7741460756-the-police-every-breath-you-take-the-singles": {
   "precio": 10.0,
   "ts": 1793133368.4882617
+ },
+ "https://www.vinted.es/items/7798780462-mink-deville-coup-de-grace": {
+  "precio": 10.0,
+  "ts": 1793307292.809953
  },
  "https://www.vinted.es/items/8009136754-louis-armstrong-the-hot-fives-volume-i-vinyl-lp-compilation-remastered-europe-1988-jazz": {
   "precio": 8.0,
@@ -1547,6 +1583,10 @@
   "precio": 15.0,
   "ts": 1792660339.9282613
  },
+ "https://www.vinted.es/items/9278124828-lp-mink-deville-coup-de-grace": {
+  "precio": 10.0,
+  "ts": 1793307292.1712224
+ },
  "https://www.vinted.es/items/9300808485-dire-straits-making-movies-coton-rock": {
   "precio": 7.5,
   "ts": 1793260348.737941
@@ -1594,6 +1634,10 @@
  "https://www.vinted.es/items/9824403611-runaways-the-waiting-for-the-night": {
   "precio": 7.0,
   "ts": 1793116546.6238277
+ },
+ "https://www.vinted.es/items/9832647671-lp-vinile-sinead-oconnor-i-do-not-want-what-i-havent-got": {
+  "precio": 14.9,
+  "ts": 1793307678.1112757
  },
  "https://www.vinted.es/items/9851650078-bob-dylan-highway-61-revisited": {
   "precio": 20.0,

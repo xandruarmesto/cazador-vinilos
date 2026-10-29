@@ -1,5 +1,10 @@
 [
   {
+    "artista": "Al Green",
+    "disco": "Let's Stay Together - 28\n/amestar Al Green - I'm Still in Love with You - 28\n/amestar Al Green - Greatest Hits",
+    "max_precio": 25
+  },
+  {
     "artista": "Amy Winehouse",
     "disco": "Back to Black",
     "max_precio": 25,
@@ -117,6 +122,11 @@
     "max_precio": 22
   },
   {
+    "artista": "Janis Joplin",
+    "disco": "Cheap Thrills - 28\n/amestar Janis Joplin - Pearl",
+    "max_precio": 30
+  },
+  {
     "artista": "John Coltrane",
     "disco": "A Love Supreme",
     "max_precio": 20
@@ -125,6 +135,11 @@
     "artista": "John Coltrane",
     "disco": "Blue Train",
     "max_precio": 18
+  },
+  {
+    "artista": "Lou Reed",
+    "disco": "Transformer",
+    "max_precio": 25
   },
   {
     "artista": "Louis Armstrong",
@@ -157,6 +172,11 @@
     "artista": "Miles Davis",
     "disco": "Kind of Blue",
     "max_precio": 22
+  },
+  {
+    "artista": "Mink DeVille",
+    "disco": "Coup de Grace",
+    "max_precio": 28
   },
   {
     "artista": "Mose Allison",
@@ -211,6 +231,11 @@
     "max_precio": 25
   },
   {
+    "artista": "Otis Redding",
+    "disco": "The Very Best of Otis Redding",
+    "max_precio": 25
+  },
+  {
     "artista": "Queen",
     "disco": "A Night at the Opera",
     "max_precio": 22
@@ -249,6 +274,11 @@
     "artista": "Sidney Bechet",
     "disco": "Petite Fleur",
     "max_precio": 15
+  },
+  {
+    "artista": "Sinead O'Connor",
+    "disco": "I Do Not Want What I Haven't Got",
+    "max_precio": 35
   },
   {
     "artista": "The Beatles",
@@ -296,6 +326,11 @@
     "max_precio": 20
   },
   {
+    "artista": "The Housemartins",
+    "disco": "Now That's What I Call Quite Good",
+    "max_precio": 30
+  },
+  {
     "artista": "The Offspring",
     "disco": "Smash",
     "max_precio": 20
@@ -334,9 +369,19 @@
     "excluir": ["queens", "noise", "waitin", "live", "japan", "cherry"]
   },
   {
+    "artista": "The Simths",
+    "disco": "Best",
+    "max_precio": 25
+  },
+  {
     "artista": "The Strokes",
     "disco": "Is This It",
     "max_precio": 20
+  },
+  {
+    "artista": "The Velvet Underground",
+    "disco": "Loaded",
+    "max_precio": 25
   },
   {
     "artista": "The Who",
