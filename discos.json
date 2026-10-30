@@ -51,6 +51,11 @@
     "max_precio": 18
   },
   {
+    "artista": "Cat Stevens",
+    "disco": "Tea for the Tillerman - 28\n/amestar Cat Stevens - Teaser and the Firecat - 26\n/amestar Cat Stevens - Greatest Hits",
+    "max_precio": 24
+  },
+  {
     "artista": "Charlie Parker",
     "disco": "With Strings",
     "max_precio": 18
