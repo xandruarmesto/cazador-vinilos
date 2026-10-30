@@ -142,6 +142,11 @@
     "max_precio": 18
   },
   {
+    "artista": "Johnny Cash",
+    "disco": "At Folsom Prison - 28\n/amestar Mumford and Sons - Sigh No More - 26\n/amestar La MODA - Salvavida (45º)",
+    "max_precio": 28
+  },
+  {
     "artista": "Lou Reed",
     "disco": "Transformer",
     "max_precio": 25
