@@ -751,6 +751,10 @@
   "precio": 12.7,
   "ts": 1792532408.2311132
  },
+ "https://www.discogs.com/sell/release/6478303?sort=price%2Casc": {
+  "precio": 0.89,
+  "ts": 1793371845.3141637
+ },
  "https://www.discogs.com/sell/release/6530139": {
   "precio": 3.56,
   "ts": 1792532274.1453996
@@ -1487,6 +1491,10 @@
   "precio": 10.0,
   "ts": 1792660203.5079153
  },
+ "https://www.vinted.es/items/3535702733-mink-deville-coup-de-grace": {
+  "precio": 15.0,
+  "ts": 1793371822.964412
+ },
  "https://www.vinted.es/items/3649365844-the-police-the-singles-tratto-dall-lp-every-breath-you-take": {
   "precio": 8.0,
   "ts": 1793116459.1085565
@@ -1598,6 +1606,10 @@
  "https://www.vinted.es/items/8920526073-pin-brooch-the-beatles-abbey-road": {
   "precio": 5.0,
   "ts": 1793116284.969611
+ },
+ "https://www.vinted.es/items/8958639871-mink-deville-coup-de-grace": {
+  "precio": 15.0,
+  "ts": 1793371822.6302629
  },
  "https://www.vinted.es/items/9095447437-the-rolling-stones-sticky-fingers-digipack-sconto-week-end-30": {
   "precio": 12.0,
