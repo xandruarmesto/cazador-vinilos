@@ -63,6 +63,10 @@
   "precio": 5.0,
   "ts": 1792594611.116297
  },
+ "https://es.wallapop.com/item/vinilo-the-police-synchronicity-1318825638": {
+  "precio": 10.0,
+  "ts": 1793392492.5301955
+ },
  "https://es.wallapop.com/item/vinilo-tracy-chapman-crossroads-1989-1315388619": {
   "precio": 15.0,
   "ts": 1792532780.6827123
@@ -382,6 +386,10 @@
  "https://www.discogs.com/sell/release/22814468": {
   "precio": 15.13,
   "ts": 1792549901.2454123
+ },
+ "https://www.discogs.com/sell/release/22829321?sort=price%2Casc": {
+  "precio": 8.0,
+  "ts": 1793392251.6337154
  },
  "https://www.discogs.com/sell/release/2316981": {
   "precio": 7.56,
