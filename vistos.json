@@ -23,6 +23,10 @@
   "precio": 18.0,
   "ts": 1792532342.7917101
  },
+ "https://es.wallapop.com/item/vinile-crossroads-tracy-chapman-1319559981": {
+  "precio": 10.0,
+  "ts": 1793569897.5319374
+ },
  "https://es.wallapop.com/item/vinile-nirvana-nevermind-1315154556": {
   "precio": 15.0,
   "ts": 1792532444.0077722
@@ -82,6 +86,10 @@
  "https://es.wallapop.com/item/vinilo-the-doors-13-1318998799": {
   "precio": 13.0,
   "ts": 1793503837.657356
+ },
+ "https://es.wallapop.com/item/vinilo-the-police-reggatta-de-blanc-1979-1319465699": {
+  "precio": 18.0,
+  "ts": 1793569674.67923
  },
  "https://es.wallapop.com/item/vinilo-the-police-synchronicity-1318825638": {
   "precio": 10.0,
@@ -399,6 +407,10 @@
   "precio": 7.99,
   "ts": 1792680622.2267473
  },
+ "https://www.discogs.com/sell/release/1971501?sort=price%2Casc": {
+  "precio": 7.12,
+  "ts": 1793568996.1312249
+ },
  "https://www.discogs.com/sell/release/1975774": {
   "precio": 15.0,
   "ts": 1792532426.061507
@@ -463,6 +475,10 @@
   "precio": 7.0,
   "ts": 1792623350.8401244
  },
+ "https://www.discogs.com/sell/release/2452869?sort=price%2Casc": {
+  "precio": 8.0,
+  "ts": 1793569872.5532196
+ },
  "https://www.discogs.com/sell/release/24845798": {
   "precio": 14.24,
   "ts": 1792532238.08005
@@ -514,6 +530,10 @@
  "https://www.discogs.com/sell/release/27823230": {
   "precio": 15.0,
   "ts": 1792532796.6349804
+ },
+ "https://www.discogs.com/sell/release/2792620?sort=price%2Casc": {
+  "precio": 2.17,
+  "ts": 1793568832.8716962
  },
  "https://www.discogs.com/sell/release/2803597?sort=price%2Casc": {
   "precio": 7.0,
@@ -654,6 +674,10 @@
  "https://www.discogs.com/sell/release/3675449": {
   "precio": 11.39,
   "ts": 1792532778.9325118
+ },
+ "https://www.discogs.com/sell/release/367750?sort=price%2Casc": {
+  "precio": 2.37,
+  "ts": 1793569722.3673549
  },
  "https://www.discogs.com/sell/release/3705797": {
   "precio": 3.56,
@@ -810,6 +834,10 @@
  "https://www.discogs.com/sell/release/5679685?sort=price%2Casc": {
   "precio": 3.56,
   "ts": 1792623499.0505273
+ },
+ "https://www.discogs.com/sell/release/5681576?sort=price%2Casc": {
+  "precio": 6.76,
+  "ts": 1793569498.8792343
  },
  "https://www.discogs.com/sell/release/5699510": {
   "precio": 9.99,
@@ -1095,6 +1123,10 @@
   "precio": 20.0,
   "ts": 1792680891.480582
  },
+ "https://www.vinted.es/items/10057288246-vinile-tracy-chapman": {
+  "precio": 20.0,
+  "ts": 1793569900.1706142
+ },
  "https://www.vinted.es/items/10060776693-lp-the-runaways": {
   "precio": 22.5,
   "ts": 1793503999.7636228
@@ -1106,6 +1138,10 @@
  "https://www.vinted.es/items/10098184439-vinyle-33t-tracy-chapman-vintage": {
   "precio": 20.0,
   "ts": 1793555174.5593765
+ },
+ "https://www.vinted.es/items/10108883509-vinile-lp-sinead-oconnor-i-do-not-want-what-i-havent-got": {
+  "precio": 28.0,
+  "ts": 1793569429.820354
  },
  "https://www.vinted.es/items/10118923676-queen-samantha-greatest-hits-vinile-lp": {
   "precio": 8.0,
@@ -1140,8 +1176,8 @@
   "ts": 1792570255.5402105
  },
  "https://www.vinted.es/items/10195723900-vinilo-lp-de-the-police-reggatta-de-blanc": {
-  "precio": 15.0,
-  "ts": 1792660859.623002
+  "precio": 12.0,
+  "ts": 1793569676.8015845
  },
  "https://www.vinted.es/items/10208842662-the-police-every-breath-you-take-promozionale-non-in-vendita": {
   "precio": 4.0,
@@ -1699,6 +1735,10 @@
   "precio": 15.0,
   "ts": 1793504143.6091297
  },
+ "https://www.vinted.es/items/10604167798-vinyle-original-tracy-chapman-complet": {
+  "precio": 22.0,
+  "ts": 1793569900.580417
+ },
  "https://www.vinted.es/items/10607582547-the-cure-boys-dont-cry-lp-vinile": {
   "precio": 20.0,
   "ts": 1793503791.6864676
@@ -1767,6 +1807,10 @@
   "precio": 22.0,
   "ts": 1793554277.7509189
  },
+ "https://www.vinted.es/items/10618879824-lp-the-doors-waiting-for-the-sun-gatefold-elektra-w-42041-italy-1977": {
+  "precio": 20.0,
+  "ts": 1793569599.266476
+ },
  "https://www.vinted.es/items/10620982135-vinile-33-giri-louis-armstrong-what-a-wonderful-world": {
   "precio": 6.0,
   "ts": 1793554309.723458
@@ -1779,6 +1823,10 @@
   "precio": 15.0,
   "ts": 1793554886.1154487
  },
+ "https://www.vinted.es/items/10622648014-the-doors-red-rocks-vinyl-lp": {
+  "precio": 18.95,
+  "ts": 1793569598.8596644
+ },
  "https://www.vinted.es/items/10623160225-the-police-synchronicity": {
   "precio": 18.0,
   "ts": 1793554983.553183
@@ -1790,6 +1838,22 @@
  "https://www.vinted.es/items/10623525749-fundas-interiores-originales-queen-greatest-hits-ii-edicion-espana-1991-parlophone": {
   "precio": 15.0,
   "ts": 1793554607.3764617
+ },
+ "https://www.vinted.es/items/10623984974-the-police-reggatta-de-blanc-original-1979-uk-vinyl-lp-am-records-amlh-64792": {
+  "precio": 18.0,
+  "ts": 1793569677.2109394
+ },
+ "https://www.vinted.es/items/10624453517-miles-davis-kind-of-blue-lp-180g-2015-columbia": {
+  "precio": 17.0,
+  "ts": 1793569064.9474154
+ },
+ "https://www.vinted.es/items/10627292617-vinile-sinead-oconnor-i-do-not-want-what-i-havent-got-1990-prima-stampa-italiana": {
+  "precio": 27.0,
+  "ts": 1793569429.3171086
+ },
+ "https://www.vinted.es/items/10628380438-vinile-tracy-chapman-crossroads": {
+  "precio": 10.0,
+  "ts": 1793569899.7221963
  },
  "https://www.vinted.es/items/2874223762-the-police-reggatta-de-blanc": {
   "precio": 12.0,
@@ -2007,6 +2071,10 @@
   "precio": 10.0,
   "ts": 1793503049.8316033
  },
+ "https://www.vinted.es/items/8322244344-lou-reed-transformer": {
+  "precio": 25.0,
+  "ts": 1793568974.9508054
+ },
  "https://www.vinted.es/items/8322654017-the-police-every-breath-you-take-remix": {
   "precio": 15.0,
   "ts": 1793503913.1315377
@@ -2099,6 +2167,10 @@
   "precio": 15.0,
   "ts": 1793530709.9965987
  },
+ "https://www.vinted.es/items/9038432290-sinead-oconnor-lo-sigillato-180-gr-i-do-not-want-what-i-havent-got": {
+  "precio": 29.0,
+  "ts": 1793569430.2367299
+ },
  "https://www.vinted.es/items/9081710861-miles-davis-y-kind-of-blue-la-creacion-de-una-obra-maestra-ashley-kahn": {
   "precio": 18.0,
   "ts": 1793503303.9343605
@@ -2159,6 +2231,10 @@
   "precio": 4.0,
   "ts": 1792660613.8414762
  },
+ "https://www.vinted.es/items/9529528946-the-police-reggatta-de-blanc-vinile-lp-originale-33-giri": {
+  "precio": 18.0,
+  "ts": 1793569677.6156833
+ },
  "https://www.vinted.es/items/9533795548-the-police-every-breath-you-take": {
   "precio": 5.0,
   "ts": 1792660835.293538
@@ -2170,6 +2246,10 @@
  "https://www.vinted.es/items/9558065083-john-coltrane-blue-train-lp": {
   "precio": 18.0,
   "ts": 1792660178.3919373
+ },
+ "https://www.vinted.es/items/9592119516-lou-reed-transformer-vinilo": {
+  "precio": 25.0,
+  "ts": 1793568974.5552678
  },
  "https://www.vinted.es/items/9630002597-i-do-not-want-what-i-havent-got-sinead-oconnor": {
   "precio": 24.0,
@@ -2266,6 +2346,10 @@
  "https://www.vinted.es/items/9925869580-vinile-sinead-oconnor-i-do-not-want-what-i-havent-got": {
   "precio": 23.5,
   "ts": 1793503672.0940356
+ },
+ "https://www.vinted.es/items/9934310906-lou-reed-transformer": {
+  "precio": 25.0,
+  "ts": 1793568974.1519375
  },
  "https://www.vinted.es/items/9939251994-the-rolling-stones-sticky-fingers": {
   "precio": 22.0,
