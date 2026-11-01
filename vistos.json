@@ -3,6 +3,14 @@
   "precio": 7.0,
   "ts": 1792660062.718905
  },
+ "https://es.wallapop.com/item/lp-the-rolling-stones-sticky-fingers-1318993190": {
+  "precio": 15.0,
+  "ts": 1793503973.75705
+ },
+ "https://es.wallapop.com/item/nirvana-nevermind-vinile-1319107851": {
+  "precio": 19.0,
+  "ts": 1793503476.41324
+ },
  "https://es.wallapop.com/item/vinile-a-love-supreme-john-coltrane-1315197238": {
   "precio": 18.0,
   "ts": 1792532342.7917101
@@ -62,6 +70,10 @@
  "https://es.wallapop.com/item/vinilo-the-beatles-rock-n-roll-music-vol-1-1315570004": {
   "precio": 5.0,
   "ts": 1792594611.116297
+ },
+ "https://es.wallapop.com/item/vinilo-the-doors-13-1318998799": {
+  "precio": 13.0,
+  "ts": 1793503837.657356
  },
  "https://es.wallapop.com/item/vinilo-the-police-synchronicity-1318825638": {
   "precio": 10.0,
@@ -223,6 +235,10 @@
   "precio": 3.56,
   "ts": 1792659895.4137414
  },
+ "https://www.discogs.com/sell/release/13798237?sort=price%2Casc": {
+  "precio": 8.87,
+  "ts": 1793504139.6994545
+ },
  "https://www.discogs.com/sell/release/14013500": {
   "precio": 11.87,
   "ts": 1792550143.3665502
@@ -266,6 +282,10 @@
  "https://www.discogs.com/sell/release/14887729": {
   "precio": 15.0,
   "ts": 1792532492.9177861
+ },
+ "https://www.discogs.com/sell/release/14901379?sort=price%2Casc": {
+  "precio": 5.91,
+  "ts": 1793503233.8439207
  },
  "https://www.discogs.com/sell/release/14960909?sort=price%2Casc": {
   "precio": 5.0,
@@ -371,6 +391,10 @@
   "precio": 4.44,
   "ts": 1792636777.2093952
  },
+ "https://www.discogs.com/sell/release/2144452?sort=price%2Casc": {
+  "precio": 0.79,
+  "ts": 1793503406.2570448
+ },
  "https://www.discogs.com/sell/release/2163123?sort=price%2Casc": {
   "precio": 1.17,
   "ts": 1792660234.0434177
@@ -470,6 +494,10 @@
  "https://www.discogs.com/sell/release/2803597?sort=price%2Casc": {
   "precio": 7.0,
   "ts": 1792570593.1846647
+ },
+ "https://www.discogs.com/sell/release/2835805?sort=price%2Casc": {
+  "precio": 7.0,
+  "ts": 1793503885.7058773
  },
  "https://www.discogs.com/sell/release/28426030?sort=price%2Casc": {
   "precio": 7.12,
@@ -635,6 +663,10 @@
   "precio": 8.0,
   "ts": 1792623646.4700315
  },
+ "https://www.discogs.com/sell/release/4018700?sort=price%2Casc": {
+  "precio": 5.0,
+  "ts": 1793503572.9670718
+ },
  "https://www.discogs.com/sell/release/4039395?sort=price%2Casc": {
   "precio": 6.5,
   "ts": 1792612629.2945123
@@ -743,9 +775,17 @@
   "precio": 8.81,
   "ts": 1792532742.7905843
  },
+ "https://www.discogs.com/sell/release/5888310?sort=price%2Casc": {
+  "precio": 8.81,
+  "ts": 1793503996.5309389
+ },
  "https://www.discogs.com/sell/release/5999264": {
   "precio": 13.36,
   "ts": 1792550527.4999099
+ },
+ "https://www.discogs.com/sell/release/6223461?sort=price%2Casc": {
+  "precio": 6.53,
+  "ts": 1793503861.4613154
  },
  "https://www.discogs.com/sell/release/6402138": {
   "precio": 20.46,
@@ -791,6 +831,14 @@
   "precio": 8.9,
   "ts": 1792532760.5997896
  },
+ "https://www.discogs.com/sell/release/6682762?sort=price%2Casc": {
+  "precio": 4.45,
+  "ts": 1793503026.5523872
+ },
+ "https://www.discogs.com/sell/release/6748812?sort=price%2Casc": {
+  "precio": 7.75,
+  "ts": 1793503549.3530934
+ },
  "https://www.discogs.com/sell/release/6869093?sort=price%2Casc": {
   "precio": 3.98,
   "ts": 1792660209.0428426
@@ -822,6 +870,10 @@
  "https://www.discogs.com/sell/release/736266": {
   "precio": 17.59,
   "ts": 1792550294.501023
+ },
+ "https://www.discogs.com/sell/release/751778?sort=price%2Casc": {
+  "precio": 3.17,
+  "ts": 1793504091.9752715
  },
  "https://www.discogs.com/sell/release/760558": {
   "precio": 21.35,
@@ -915,6 +967,10 @@
   "precio": 3.37,
   "ts": 1792692604.1962833
  },
+ "https://www.discogs.com/sell/release/9043488?sort=price%2Casc": {
+  "precio": 5.0,
+  "ts": 1793503604.47832
+ },
  "https://www.discogs.com/sell/release/9107249": {
   "precio": 11.81,
   "ts": 1792536615.2478414
@@ -974,6 +1030,10 @@
  "https://www.vinted.es/items/10047887092-miles-davis-kind-of-blue-crystal-clear": {
   "precio": 20.0,
   "ts": 1792680891.480582
+ },
+ "https://www.vinted.es/items/10060776693-lp-the-runaways": {
+  "precio": 22.5,
+  "ts": 1793503999.7636228
  },
  "https://www.vinted.es/items/10118923676-queen-samantha-greatest-hits-vinile-lp": {
   "precio": 8.0,
@@ -1055,6 +1115,10 @@
   "precio": 21.95,
   "ts": 1792594512.961914
  },
+ "https://www.vinted.es/items/10257789292-the-cure-disintegration": {
+  "precio": 20.0,
+  "ts": 1793503811.4678
+ },
  "https://www.vinted.es/items/10259066506-vinile-chet-baker-sings-it-could-happen-to-you": {
   "precio": 15.0,
   "ts": 1792659898.815539
@@ -1107,9 +1171,17 @@
   "precio": 10.0,
   "ts": 1792570279.783811
  },
+ "https://www.vinted.es/items/10317213878-dire-straits-making-movies": {
+  "precio": 15.0,
+  "ts": 1793503050.6070478
+ },
  "https://www.vinted.es/items/10328767928-vinile-tracy-chapman": {
   "precio": 22.0,
   "ts": 1792661059.9284053
+ },
+ "https://www.vinted.es/items/10329882892-vinilo-van-morrison-moondance-lp-serie-pioneros": {
+  "precio": 15.0,
+  "ts": 1793504167.4416826
  },
  "https://www.vinted.es/items/10346037183-lp-the-beatles-rocknroll-music-vol-1-e-vol-2": {
   "precio": 16.0,
@@ -1188,8 +1260,8 @@
   "ts": 1792570597.7070262
  },
  "https://www.vinted.es/items/10397552675-tracy-chapman-vinilo": {
-  "precio": 15.0,
-  "ts": 1792594872.4099061
+  "precio": 14.0,
+  "ts": 1793504143.195475
  },
  "https://www.vinted.es/items/10399220451-dire-straits-making-movies": {
   "precio": 12.5,
@@ -1263,6 +1335,10 @@
   "precio": 20.0,
   "ts": 1792624115.5814395
  },
+ "https://www.vinted.es/items/10449338144-green-day-american-idiot-2xlps-vinyl": {
+  "precio": 21.95,
+  "ts": 1793503123.1878686
+ },
  "https://www.vinted.es/items/10449412408-dire-straits-making-movies-lp": {
   "precio": 14.0,
   "ts": 1792573400.5761127
@@ -1286,6 +1362,10 @@
  "https://www.vinted.es/items/10455019951-vinyle-33t-the-doors-la-woman-pressage-allemand-elektra-rs-alsdorf": {
   "precio": 16.0,
   "ts": 1792570801.2925084
+ },
+ "https://www.vinted.es/items/10455021441-mink-deville-coup-de-grace-lp": {
+  "precio": 18.0,
+  "ts": 1793503326.1144245
  },
  "https://www.vinted.es/items/10455618276-the-runaways-and-now": {
   "precio": 20.0,
@@ -1368,8 +1448,8 @@
   "ts": 1792612562.6314163
  },
  "https://www.vinted.es/items/10476831985-miles-davis-kind-of-blue-lp-vinile": {
-  "precio": 20.0,
-  "ts": 1792660278.7437003
+  "precio": 18.0,
+  "ts": 1793503303.5466638
  },
  "https://www.vinted.es/items/10477080697-nirvana-nevermind-lp": {
   "precio": 19.0,
@@ -1423,6 +1503,10 @@
   "precio": 9.99,
   "ts": 1792723379.0674357
  },
+ "https://www.vinted.es/items/10503343522-dire-straits-brothers-in-arms-lp-1985": {
+  "precio": 15.0,
+  "ts": 1793503029.847033
+ },
  "https://www.vinted.es/items/10508515743-the-doors-essendo-un-offerta-non-accetto-acquisti-di-un-solo-disco-minimo-2-dischi": {
   "precio": 8.0,
   "ts": 1792850366.6382172
@@ -1435,9 +1519,25 @@
   "precio": 7.0,
   "ts": 1793032630.531175
  },
+ "https://www.vinted.es/items/10523154163-the-clash-london-calling-vinile-4lp": {
+  "precio": 25.0,
+  "ts": 1793503741.8911593
+ },
  "https://www.vinted.es/items/10523855136-lp-open-the-doors-to-your-heart-job-orquestra": {
   "precio": 4.0,
   "ts": 1792937808.497838
+ },
+ "https://www.vinted.es/items/10529169327-vinilo-tracy-chapman": {
+  "precio": 15.0,
+  "ts": 1793504144.0055428
+ },
+ "https://www.vinted.es/items/10532837513-creedence-clearwater-revival-cosmos-factory-lp-1976": {
+  "precio": 18.0,
+  "ts": 1793503009.2626011
+ },
+ "https://www.vinted.es/items/10542621222-dire-straits-making-movies": {
+  "precio": 15.0,
+  "ts": 1793503050.2151225
  },
  "https://www.vinted.es/items/10546198456-the-doors-lotto-2-lp-morrison-hotel-the-soft-parade-stampe-italiane": {
   "precio": 10.0,
@@ -1450,6 +1550,10 @@
  "https://www.vinted.es/items/10548583375-the-doors-star-collection": {
   "precio": 10.0,
   "ts": 1793053262.9943693
+ },
+ "https://www.vinted.es/items/10550522282-the-police-reggatta-de-blanc-lp-1985": {
+  "precio": 15.0,
+  "ts": 1793503918.2658763
  },
  "https://www.vinted.es/items/10555274465-tracy-chapman-fast-car": {
   "precio": 6.5,
@@ -1479,6 +1583,10 @@
   "precio": 3.5,
   "ts": 1793307867.5126617
  },
+ "https://www.vinted.es/items/10581452959-disco-de-vinil-lp-cat-stevens-tea-for-the-tillerman": {
+  "precio": 15.0,
+  "ts": 1793502909.4759748
+ },
  "https://www.vinted.es/items/10583973494-vinyle-runaways": {
   "precio": 15.0,
   "ts": 1793286279.9590213
@@ -1495,9 +1603,53 @@
   "precio": 9.5,
   "ts": 1793307577.2247107
  },
+ "https://www.vinted.es/items/10599298714-bob-dylan-highway-61-revisited-lp-vinyl": {
+  "precio": 15.0,
+  "ts": 1793502850.0038035
+ },
+ "https://www.vinted.es/items/10599736403-vinile-tracy-chapman-crossroads-1989": {
+  "precio": 15.0,
+  "ts": 1793504143.6091297
+ },
+ "https://www.vinted.es/items/10607582547-the-cure-boys-dont-cry-lp-vinile": {
+  "precio": 20.0,
+  "ts": 1793503791.6864676
+ },
  "https://www.vinted.es/items/10608399634-job-orquestra-open-the-doors-to-your-heart": {
   "precio": 10.0,
   "ts": 1793476499.1408532
+ },
+ "https://www.vinted.es/items/10611101384-nirvana-mtv-unplugged-in-new-york-lp": {
+  "precio": 22.0,
+  "ts": 1793503454.3110585
+ },
+ "https://www.vinted.es/items/10612955938-vinile-ristampa-lou-reed-transformer-anno-1972": {
+  "precio": 18.0,
+  "ts": 1793503212.6429017
+ },
+ "https://www.vinted.es/items/10613159759-lp-the-doors-la-woman": {
+  "precio": 17.0,
+  "ts": 1793503840.4472632
+ },
+ "https://www.vinted.es/items/10613429064-the-doors-the-soft-parade-vinyl-germany": {
+  "precio": 15.0,
+  "ts": 1793503840.0750964
+ },
+ "https://www.vinted.es/items/10613468878-the-doors-la-woman-vinyl-canada": {
+  "precio": 15.0,
+  "ts": 1793503839.6830442
+ },
+ "https://www.vinted.es/items/2874223762-the-police-reggatta-de-blanc": {
+  "precio": 12.0,
+  "ts": 1793503917.4996762
+ },
+ "https://www.vinted.es/items/2992613520-bob-dylan-highway-61-revisited-1965": {
+  "precio": 15.0,
+  "ts": 1793502850.3902252
+ },
+ "https://www.vinted.es/items/3193515972-vinile-the-who-whos-next": {
+  "precio": 15.0,
+  "ts": 1793504074.9957273
  },
  "https://www.vinted.es/items/3440604572-louis-armstrong-and-his-hot-five-muskrat-ramble-1925-1926": {
   "precio": 10.0,
@@ -1511,9 +1663,17 @@
   "precio": 8.0,
   "ts": 1793116459.1085565
  },
+ "https://www.vinted.es/items/4028853569-bob-dylan-highway-61-revisited-spartiti": {
+  "precio": 18.0,
+  "ts": 1793502850.7915678
+ },
  "https://www.vinted.es/items/4158779526-lp-mink-deville-coup-de-grace": {
   "precio": 10.0,
   "ts": 1793324135.7822506
+ },
+ "https://www.vinted.es/items/4234711393-vinile-33-giri-the-velvet-underground-loaded-ft-lou-reed": {
+  "precio": 25.0,
+  "ts": 1793504051.3084202
  },
  "https://www.vinted.es/items/5057060358-louis-armstrong-the-hot-fives-volume-i": {
   "precio": 7.0,
@@ -1531,6 +1691,18 @@
   "precio": 10.0,
   "ts": 1793307677.4519777
  },
+ "https://www.vinted.es/items/5830270809-lp-vinile-album-creedence-clearwater-revival-cosmos-factory-usato": {
+  "precio": 15.0,
+  "ts": 1793503008.7926855
+ },
+ "https://www.vinted.es/items/5839719809-vinilo-sinead-oconnor-i-do-not-want-what-i-havent-got": {
+  "precio": 22.0,
+  "ts": 1793503671.7216933
+ },
+ "https://www.vinted.es/items/5851553537-the-police-every-breath-you-takemurder-by-numbers": {
+  "precio": 12.0,
+  "ts": 1793503912.3435836
+ },
  "https://www.vinted.es/items/5873867104-vinile-di-louis-armstrong-what-a-wonderful-world": {
   "precio": 12.99,
   "ts": 1792680832.0883312
@@ -1547,6 +1719,18 @@
   "precio": 8.0,
   "ts": 1793115660.7111666
  },
+ "https://www.vinted.es/items/6454494422-john-coltrane-blue-train": {
+  "precio": 18.0,
+  "ts": 1793503184.9123082
+ },
+ "https://www.vinted.es/items/6528373207-cuadro-the-beatles-abbey-road": {
+  "precio": 17.9,
+  "ts": 1793503718.2723262
+ },
+ "https://www.vinted.es/items/6549859573-cuadro-the-rolling-stones-sticky-fingers": {
+  "precio": 17.9,
+  "ts": 1793503975.7484329
+ },
  "https://www.vinted.es/items/6818563136-rock-punk-mink-deville-coup-de-graceano-1981disco-vinilofabricado-alemania": {
   "precio": 14.0,
   "ts": 1793347327.2800498
@@ -1554,6 +1738,18 @@
  "https://www.vinted.es/items/6837102957-louis-armstrong-what-a-wonderful-world-give-me-your-kisses": {
   "precio": 10.0,
   "ts": 1792660212.6467679
+ },
+ "https://www.vinted.es/items/6927711709-the-police-reggatta-de-blanc-lp": {
+  "precio": 14.99,
+  "ts": 1793503917.8815386
+ },
+ "https://www.vinted.es/items/7056592987-vinilo-the-police-synchronicity": {
+  "precio": 12.0,
+  "ts": 1793503941.913405
+ },
+ "https://www.vinted.es/items/7093839964-cat-stevens-tea-for-the-tillerman-1970-lp": {
+  "precio": 15.0,
+  "ts": 1793502910.2234237
  },
  "https://www.vinted.es/items/7636272854-33-giri-ella-fitzgerald-and-louis-armstrong-porgy-bess-vinile": {
   "precio": 10.0,
@@ -1571,25 +1767,69 @@
   "precio": 10.0,
   "ts": 1793133368.4882617
  },
+ "https://www.vinted.es/items/7766694374-vinilo-lou-reed-transformer": {
+  "precio": 16.0,
+  "ts": 1793503212.2607
+ },
  "https://www.vinted.es/items/7798780462-mink-deville-coup-de-grace": {
   "precio": 10.0,
   "ts": 1793307292.809953
+ },
+ "https://www.vinted.es/items/7952310778-cosmos-factory-creedence-clearwater-revival-2015-re": {
+  "precio": 18.0,
+  "ts": 1793503009.645411
+ },
+ "https://www.vinted.es/items/7984481088-lp-billie-holiday-lady-in-satin": {
+  "precio": 18.0,
+  "ts": 1793502806.8919766
  },
  "https://www.vinted.es/items/8009136754-louis-armstrong-the-hot-fives-volume-i-vinyl-lp-compilation-remastered-europe-1988-jazz": {
   "precio": 8.0,
   "ts": 1792660203.136652
  },
+ "https://www.vinted.es/items/8013758829-chet-baker-sings-and-plays": {
+  "precio": 20.0,
+  "ts": 1793502946.2605295
+ },
  "https://www.vinted.es/items/8039475874-disco-45-giri-vinile-louis-armstrong-what-a-wonderful-world-cabaret-1967": {
   "precio": 10.9,
   "ts": 1792660213.0526698
+ },
+ "https://www.vinted.es/items/8115228693-disco-vinil-billie-holiday-lady-in-satin": {
+  "precio": 15.0,
+  "ts": 1793502806.518006
  },
  "https://www.vinted.es/items/8175376585-mink-deville-coup-de-grace-lp": {
   "precio": 11.0,
   "ts": 1793324136.5973635
  },
+ "https://www.vinted.es/items/8252941196-chet-baker-sings-e-play": {
+  "precio": 20.0,
+  "ts": 1793502945.8676262
+ },
+ "https://www.vinted.es/items/8280871094-copertina-album-vinile-dire-straits-making-movies": {
+  "precio": 10.0,
+  "ts": 1793503049.8316033
+ },
+ "https://www.vinted.es/items/8322654017-the-police-every-breath-you-take-remix": {
+  "precio": 15.0,
+  "ts": 1793503913.1315377
+ },
  "https://www.vinted.es/items/8492515692-ella-fitzgerald-and-louis-armstrong-complete-decca-duets": {
   "precio": 14.0,
   "ts": 1792660065.7061515
+ },
+ "https://www.vinted.es/items/8515645698-the-housemartins-now-thats-what-i-call-quite-good-2xlp-1st-italy-press-1988-pop-soul-80s": {
+  "precio": 30.0,
+  "ts": 1793503864.7558732
+ },
+ "https://www.vinted.es/items/8610182020-mink-deville-coup-de-grace-germany-1981": {
+  "precio": 20.0,
+  "ts": 1793503326.5135412
+ },
+ "https://www.vinted.es/items/8630614007-vinile-cat-stevens-tea-for-the-tillerman-lp-originale": {
+  "precio": 15.0,
+  "ts": 1793502909.8515353
  },
  "https://www.vinted.es/items/8644450408-the-police-every-breath-you-take-the-sinles-45": {
   "precio": 10.0,
@@ -1603,9 +1843,17 @@
   "precio": 3.0,
   "ts": 1793116458.2096324
  },
+ "https://www.vinted.es/items/8705092028-the-police-every-breath-you-take": {
+  "precio": 15.0,
+  "ts": 1793503912.7243514
+ },
  "https://www.vinted.es/items/8724785913-the-police-every-breath-you-take": {
   "precio": 10.0,
   "ts": 1793133367.774326
+ },
+ "https://www.vinted.es/items/8776287163-the-police-synchronicity-1983-europe": {
+  "precio": 15.0,
+  "ts": 1793503942.2964888
  },
  "https://www.vinted.es/items/8781942151-louis-armstrong-and-his-hot-five-irish-black-bottom-1926-lp": {
   "precio": 18.0,
@@ -1619,9 +1867,17 @@
   "precio": 5.0,
   "ts": 1793116284.969611
  },
+ "https://www.vinted.es/items/8933365029-tom-petty-damn-the-torpedoes-vinile-33giri": {
+  "precio": 14.0,
+  "ts": 1793504095.8866317
+ },
  "https://www.vinted.es/items/8958639871-mink-deville-coup-de-grace": {
   "precio": 15.0,
   "ts": 1793371822.6302629
+ },
+ "https://www.vinted.es/items/9081710861-miles-davis-y-kind-of-blue-la-creacion-de-una-obra-maestra-ashley-kahn": {
+  "precio": 18.0,
+  "ts": 1793503303.9343605
  },
  "https://www.vinted.es/items/9095447437-the-rolling-stones-sticky-fingers-digipack-sconto-week-end-30": {
   "precio": 12.0,
@@ -1655,6 +1911,14 @@
   "precio": 1.0,
   "ts": 1793116522.8610685
  },
+ "https://www.vinted.es/items/9423762052-petite-fleur-composto-da-sidney-bechet": {
+  "precio": 9.99,
+  "ts": 1793503658.1925647
+ },
+ "https://www.vinted.es/items/9450940493-the-police-synchronicity-1983-vg-vg-am-records-amlx-63735": {
+  "precio": 15.95,
+  "ts": 1793503942.6835003
+ },
  "https://www.vinted.es/items/9475891106-petite-fleur": {
   "precio": 4.0,
   "ts": 1792660613.8414762
@@ -1671,6 +1935,10 @@
   "precio": 18.0,
   "ts": 1792660178.3919373
  },
+ "https://www.vinted.es/items/9630002597-i-do-not-want-what-i-havent-got-sinead-oconnor": {
+  "precio": 24.0,
+  "ts": 1793503672.507777
+ },
  "https://www.vinted.es/items/9661485895-cherie-currie-call-me-at-midnight-1978-french-promo-the-runaways-punk-hard-pop": {
   "precio": 13.0,
   "ts": 1793116547.102122
@@ -1678,6 +1946,14 @@
  "https://www.vinted.es/items/9673115400-van-morrison-moondance": {
   "precio": 20.0,
   "ts": 1792570952.214207
+ },
+ "https://www.vinted.es/items/9728616031-the-velvet-underground-loaded-midi-mid-20-049": {
+  "precio": 20.0,
+  "ts": 1793504050.5484784
+ },
+ "https://www.vinted.es/items/9733240567-the-velvet-underground-loaded": {
+  "precio": 25.0,
+  "ts": 1793504050.9245393
  },
  "https://www.vinted.es/items/9776406098-the-strokes-is-this-it-rock-inde-new-yorkais-2001": {
   "precio": 7.5,
@@ -1747,6 +2023,10 @@
   "precio": 25.0,
   "ts": 1792570015.2461977
  },
+ "https://www.vinted.es/items/9925869580-vinile-sinead-oconnor-i-do-not-want-what-i-havent-got": {
+  "precio": 23.5,
+  "ts": 1793503672.0940356
+ },
  "https://www.vinted.es/items/9939251994-the-rolling-stones-sticky-fingers": {
   "precio": 22.0,
   "ts": 1792570858.1797712
@@ -1774,6 +2054,10 @@
  "https://www.vinted.es/items/9985506858-vinile-7-savage-dont-cry-tonight-1983-originale-italo-disco-discomagic": {
   "precio": 15.0,
   "ts": 1792623940.3633075
+ },
+ "https://www.vinted.es/items/9985749908-lou-reed-transformer": {
+  "precio": 19.9,
+  "ts": 1793503213.023837
  },
  "https://www.vinted.es/items/9996189833-bob-dylan-vinile-lp-highway-61-revisited": {
   "precio": 20.0,
