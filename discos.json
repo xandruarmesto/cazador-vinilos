@@ -1,8 +1,18 @@
 [
   {
     "artista": "Al Green",
-    "disco": "Let's Stay Together - 28\n/amestar Al Green - I'm Still in Love with You - 28\n/amestar Al Green - Greatest Hits",
+    "disco": "Greatest Hits",
     "max_precio": 25
+  },
+  {
+    "artista": "Al Green",
+    "disco": "I'm Still in Love with You",
+    "max_precio": 28
+  },
+  {
+    "artista": "Al Green",
+    "disco": "Let's Stay Together",
+    "max_precio": 28
   },
   {
     "artista": "Amy Winehouse",
@@ -47,13 +57,18 @@
   },
   {
     "artista": "Cat Stevens",
-    "disco": "Tea for the Tillerman",
-    "max_precio": 18
+    "disco": "Greatest Hits",
+    "max_precio": 24
   },
   {
     "artista": "Cat Stevens",
-    "disco": "Tea for the Tillerman - 28\n/amestar Cat Stevens - Teaser and the Firecat - 26\n/amestar Cat Stevens - Greatest Hits",
-    "max_precio": 24
+    "disco": "Tea for the Tillerman",
+    "max_precio": 28
+  },
+  {
+    "artista": "Cat Stevens",
+    "disco": "Teaser and the Firecat",
+    "max_precio": 26
   },
   {
     "artista": "Charlie Parker",
@@ -128,7 +143,12 @@
   },
   {
     "artista": "Janis Joplin",
-    "disco": "Cheap Thrills - 28\n/amestar Janis Joplin - Pearl",
+    "disco": "Cheap Thrills",
+    "max_precio": 28
+  },
+  {
+    "artista": "Janis Joplin",
+    "disco": "Pearl",
     "max_precio": 30
   },
   {
@@ -143,8 +163,15 @@
   },
   {
     "artista": "Johnny Cash",
-    "disco": "At Folsom Prison - 28\n/amestar Mumford and Sons - Sigh No More - 26\n/amestar La MODA - Salvavida (45º)",
+    "disco": "At Folsom Prison",
     "max_precio": 28
+  },
+  {
+    "artista": "La MODA",
+    "disco": "Salvavida (45º)",
+    "max_precio": 28,
+    "alias": ["Salvavida"],
+    "alias_artista": ["La M.O.D.A."]
   },
   {
     "artista": "Lou Reed",
@@ -192,6 +219,11 @@
     "artista": "Mose Allison",
     "disco": "I Don't Worry About a Thing",
     "max_precio": 20
+  },
+  {
+    "artista": "Mumford and Sons",
+    "disco": "Sigh No More",
+    "max_precio": 26
   },
   {
     "artista": "Nacho Vegas",
@@ -379,7 +411,7 @@
     "excluir": ["queens", "noise", "waitin", "live", "japan", "cherry"]
   },
   {
-    "artista": "The Simths",
+    "artista": "The Smiths",
     "disco": "Best",
     "max_precio": 25
   },
