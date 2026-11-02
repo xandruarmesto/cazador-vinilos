@@ -132,6 +132,16 @@
     "comprado": "2026-10-22"
   },
   {
+    "artista": "Guns N' Roses",
+    "disco": "Appetite for Destruction",
+    "max_precio": 28
+  },
+  {
+    "artista": "Guns N' Roses",
+    "disco": "Use Your Illusion I",
+    "max_precio": 32
+  },
+  {
     "artista": "Iván Ferreiro",
     "disco": "Canciones para el tiempo y la distancia",
     "max_precio": 25

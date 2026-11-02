@@ -711,6 +711,10 @@
   "precio": 9.46,
   "ts": 1792532104.8901289
  },
+ "https://www.discogs.com/sell/release/3541536?sort=price%2Casc": {
+  "precio": 9.9,
+  "ts": 1793609165.141812
+ },
  "https://www.discogs.com/sell/release/35591521?sort=price%2Casc": {
   "precio": 5.93,
   "ts": 1792570973.1371312
@@ -1251,9 +1255,17 @@
   "precio": 17.0,
   "ts": 1792660277.8880658
  },
+ "https://www.vinted.es/items/10171527275-guns-n-roses-appetite-for-destruction": {
+  "precio": 25.0,
+  "ts": 1793609119.9606175
+ },
  "https://www.vinted.es/items/10191173742-vinyl-dire-straits-brothers-in-arms": {
   "precio": 18.0,
   "ts": 1792570255.5402105
+ },
+ "https://www.vinted.es/items/10191190959-vinile-lp-cheap-thrills-big-brother-and-the-holding-company-janis-joplin": {
+  "precio": 20.0,
+  "ts": 1793609180.3932853
  },
  "https://www.vinted.es/items/10192844481-lp-the-teaser-and-the-firecat-cat-stevens": {
   "precio": 7.0,
@@ -1375,6 +1387,10 @@
   "precio": 15.0,
   "ts": 1793503050.6070478
  },
+ "https://www.vinted.es/items/10320557610-cat-stevens-tea-for-the-tillerman": {
+  "precio": 22.5,
+  "ts": 1793608862.74092
+ },
  "https://www.vinted.es/items/10328767928-vinile-tracy-chapman": {
   "precio": 22.0,
   "ts": 1792661059.9284053
@@ -1418,6 +1434,10 @@
  "https://www.vinted.es/items/10363476367-vinile-tracy-chapman-crossroads-1989": {
   "precio": 15.0,
   "ts": 1792612977.545404
+ },
+ "https://www.vinted.es/items/10366709400-cat-stevens-teaser-and-the-firecat": {
+  "precio": 10.0,
+  "ts": 1793608888.9391851
  },
  "https://www.vinted.es/items/10367440475-vinile-33lp-crossroads-di-tracy-chapman1989": {
   "precio": 22.0,
@@ -1815,6 +1835,14 @@
   "precio": 9.99,
   "ts": 1793174020.7982264
  },
+ "https://www.vinted.es/items/10567008951-guns-n-roses-appetite-for-destruction-vinile": {
+  "precio": 25.0,
+  "ts": 1793609119.539052
+ },
+ "https://www.vinted.es/items/10569059885-guns-n-roses-appetite-for-destruction-lp": {
+  "precio": 22.0,
+  "ts": 1793609119.1155891
+ },
  "https://www.vinted.es/items/10574227030-busta-interna-queen-a-night-at-the-opera": {
   "precio": 10.0,
   "ts": 1793220739.5129395
@@ -1842,6 +1870,10 @@
  "https://www.vinted.es/items/10589017123-jeff-hill-band-lp-chiswick-powerpop-punk-pub-rock-new-wave-ramones-101-ers-undertones": {
   "precio": 9.5,
   "ts": 1793307577.2247107
+ },
+ "https://www.vinted.es/items/10597163262-disco-33-giri-cat-stevens-teaser-and-the-firecat": {
+  "precio": 9.9,
+  "ts": 1793608888.0709717
  },
  "https://www.vinted.es/items/10599298714-bob-dylan-highway-61-revisited-lp-vinyl": {
   "precio": 15.0,
@@ -2019,6 +2051,10 @@
   "precio": 25.0,
   "ts": 1793504051.3084202
  },
+ "https://www.vinted.es/items/4469575955-cat-stevens-tea-for-the-tillerman-vgvg1971uk": {
+  "precio": 22.0,
+  "ts": 1793608862.2893856
+ },
  "https://www.vinted.es/items/4744876315-vinile-janis-joplin-pearl": {
   "precio": 11.99,
   "ts": 1793606574.486688
@@ -2034,6 +2070,10 @@
  "https://www.vinted.es/items/5194645232-sinead-oconnor-i-do-not-want-what-i-havent-got": {
   "precio": 25.0,
   "ts": 1793554723.3159544
+ },
+ "https://www.vinted.es/items/5365902352-sinead-oconnor-i-do-not-want-what-i-havent-got-vinile-33-giri-lp": {
+  "precio": 35.0,
+  "ts": 1793609756.825047
  },
  "https://www.vinted.es/items/5474185153-sinead-oconnor-i-do-not-want-what-i-havent-got-vinyl": {
   "precio": 20.0,
@@ -2131,6 +2171,18 @@
   "precio": 15.0,
   "ts": 1793502910.2234237
  },
+ "https://www.vinted.es/items/7335492780-vinile-cat-stevens-tea-for-the-tillerman": {
+  "precio": 20.0,
+  "ts": 1793608861.8577428
+ },
+ "https://www.vinted.es/items/7347805519-vinile-cat-stevens-greatest-hits": {
+  "precio": 6.5,
+  "ts": 1793608836.9142387
+ },
+ "https://www.vinted.es/items/7368778411-sinead-oconnor-i-do-not-want-what-i-havent-got": {
+  "precio": 35.0,
+  "ts": 1793609756.3833606
+ },
  "https://www.vinted.es/items/7530927704-cat-stevens-greatest-hits-lp-12-1975": {
   "precio": 3.0,
   "ts": 1793606270.369995
@@ -2191,9 +2243,17 @@
   "precio": 15.0,
   "ts": 1793502806.518006
  },
+ "https://www.vinted.es/items/8122101708-janis-joplin-big-brother-cheap-thrills-vinyl-lp-new-mint-sealed": {
+  "precio": 20.0,
+  "ts": 1793609180.8231528
+ },
  "https://www.vinted.es/items/8145793663-lp-33-lou-reed-transformer": {
   "precio": 24.95,
   "ts": 1793554278.748842
+ },
+ "https://www.vinted.es/items/8146297819-cat-stevens-greatest-hits": {
+  "precio": 7.0,
+  "ts": 1793608837.7694597
  },
  "https://www.vinted.es/items/8159090769-nirvana-nevermind-vinile": {
   "precio": 22.0,
@@ -2206,6 +2266,10 @@
  "https://www.vinted.es/items/8175376585-mink-deville-coup-de-grace-lp": {
   "precio": 11.0,
   "ts": 1793324136.5973635
+ },
+ "https://www.vinted.es/items/8213237006-vinilo-sinead-oconnor-i-do-not-want-what-i-havent-got": {
+  "precio": 35.0,
+  "ts": 1793609755.9642746
  },
  "https://www.vinted.es/items/8252941196-chet-baker-sings-e-play": {
   "precio": 20.0,
@@ -2303,6 +2367,10 @@
   "precio": 9.0,
   "ts": 1793606321.4267747
  },
+ "https://www.vinted.es/items/8884697888-cat-stevens-greatest-hits-lp-1975-198-italy-repress": {
+  "precio": 7.0,
+  "ts": 1793608837.3356488
+ },
  "https://www.vinted.es/items/8887962279-bob-dylan-highway-61-revisited-lp": {
   "precio": 19.0,
   "ts": 1793530513.8646429
@@ -2334,6 +2402,10 @@
  "https://www.vinted.es/items/9012833031-dire-straits-making-movies": {
   "precio": 15.0,
   "ts": 1793530709.9965987
+ },
+ "https://www.vinted.es/items/9017317261-cat-stevens-teaser-and-the-firecat": {
+  "precio": 9.9,
+  "ts": 1793608888.4922526
  },
  "https://www.vinted.es/items/9038432290-sinead-oconnor-lo-sigillato-180-gr-i-do-not-want-what-i-havent-got": {
   "precio": 29.0,
@@ -2375,9 +2447,17 @@
   "precio": 10.0,
   "ts": 1793307292.1712224
  },
+ "https://www.vinted.es/items/9278841323-lp-janis-joplin-cheap-thrills": {
+  "precio": 22.0,
+  "ts": 1793609181.3094108
+ },
  "https://www.vinted.es/items/9300808485-dire-straits-making-movies-coton-rock": {
   "precio": 7.5,
   "ts": 1793260348.737941
+ },
+ "https://www.vinted.es/items/9327041399-janis-joplin-pearl-lp": {
+  "precio": 22.0,
+  "ts": 1793609193.3793857
  },
  "https://www.vinted.es/items/9340489868-miniaturas-disco-de-vinilo-sticky-fingers-the-rolling-stones": {
   "precio": 1.0,
@@ -2406,6 +2486,14 @@
  "https://www.vinted.es/items/9533795548-the-police-every-breath-you-take": {
   "precio": 5.0,
   "ts": 1792660835.293538
+ },
+ "https://www.vinted.es/items/9543984099-janis-joplin-pearl-lp-vinile": {
+  "precio": 20.0,
+  "ts": 1793609192.849196
+ },
+ "https://www.vinted.es/items/9546875061-janis-joplin-pearl-vinile-lp-33-giri-1971": {
+  "precio": 20.0,
+  "ts": 1793609192.3980849
  },
  "https://www.vinted.es/items/9550869883-tracy-chapman-crossroads-lp-1989": {
   "precio": 10.0,
