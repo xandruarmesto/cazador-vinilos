@@ -8,12 +8,19 @@ import requests
 
 TELEGRAM_TOKEN = (os.environ.get("TELEGRAM_TOKEN") or "").strip()
 TELEGRAM_CHAT_ID = (os.environ.get("TELEGRAM_CHAT_ID") or "").strip()
+# Varios usuarios con el mismo bot: secret TELEGRAM_USUARIOS = "chat_id:nombre,chat_id:nombre"
+# (el primero es quien administra). Si no existe, se usa TELEGRAM_CHAT_ID con el nombre
+# de NOMBRE_PRINCIPAL. Cada usuario tiene su lista en listas/<nombre>.json y su memoria
+# de anuncios avisados en vistos/<nombre>.json.
+TELEGRAM_USUARIOS = (os.environ.get("TELEGRAM_USUARIOS") or "").strip()
+NOMBRE_PRINCIPAL = (os.environ.get("NOMBRE_PRINCIPAL") or "xandru").strip()
 DISCOGS_TOKEN = (os.environ.get("DISCOGS_TOKEN") or "").strip()  # opcional
 
 UA = ("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
       "(KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36")
 
-ARCHIVO_VISTOS = "vistos.json"
+CARPETA_LISTAS = "listas"
+CARPETA_VISTOS = "vistos"
 DIAS_MEMORIA = 60          # se olvidan los anuncios pasados estos días
 MAX_AVISOS_POR_WEB = 3     # máximo de anuncios nuevos por disco y web en cada pasada
 
@@ -56,10 +63,49 @@ def sin_secretos(texto):
     """Quita los tokens de cualquier texto que vaya al log (el log es público
     si el repositorio lo es). GitHub ya los oculta, pero así no dependemos de ello."""
     texto = str(texto)
-    for secreto in (TELEGRAM_TOKEN, DISCOGS_TOKEN, TELEGRAM_CHAT_ID):
+    secretos = [TELEGRAM_TOKEN, DISCOGS_TOKEN, TELEGRAM_CHAT_ID]
+    secretos += [p.split(":")[0].strip() for p in TELEGRAM_USUARIOS.split(",") if ":" in p]
+    for secreto in secretos:
         if secreto:
             texto = texto.replace(secreto, "***")
     return texto
+
+
+def cargar_usuarios():
+    """Lista de usuarios [{'chat', 'nombre', 'lista', 'vistos'}]; el primero administra."""
+    pares = []
+    for parte in TELEGRAM_USUARIOS.split(","):
+        if ":" in parte:
+            chat, nombre = (x.strip() for x in parte.rsplit(":", 1))
+            if chat and nombre:
+                pares.append((chat, nombre))
+    if not pares and TELEGRAM_CHAT_ID:
+        pares = [(TELEGRAM_CHAT_ID, NOMBRE_PRINCIPAL)]
+    usuarios = []
+    for chat, nombre in pares:
+        limpio = re.sub(r"[^a-z0-9_-]+", "-", _normalizar_nombre(nombre)).strip("-") or f"usuario{len(usuarios) + 1}"
+        usuarios.append({"chat": chat, "nombre": limpio,
+                         "lista": os.path.join(CARPETA_LISTAS, f"{limpio}.json"),
+                         "vistos": os.path.join(CARPETA_VISTOS, f"{limpio}.json")})
+    return usuarios
+
+
+def _normalizar_nombre(texto):
+    import unicodedata
+    return unicodedata.normalize("NFKD", texto).encode("ascii", "ignore").decode().lower()
+
+
+def migrar_archivos_antiguos(usuarios):
+    """La versión de un solo usuario guardaba discos.json y vistos.json en la raíz.
+    Se pasan, una sola vez, a la carpeta del usuario principal."""
+    if not usuarios:
+        return
+    principal = usuarios[0]
+    for viejo, nuevo in (("discos.json", principal["lista"]), ("vistos.json", principal["vistos"])):
+        if os.path.exists(viejo) and not os.path.exists(nuevo):
+            os.makedirs(os.path.dirname(nuevo), exist_ok=True)
+            os.replace(viejo, nuevo)
+            print(f"📦 {viejo} trasladado a {nuevo}")
 
 
 def registrar_error(web, detalle):
@@ -68,20 +114,21 @@ def registrar_error(web, detalle):
     print(f"⚠️  [{web}] {detalle}")
 
 
-def cargar_lista_discos(filename="discos.json"):
+def cargar_lista_discos(filename):
+    """Devuelve la lista (puede estar vacía) o None si el archivo está mal escrito."""
     try:
         with open(filename, "r", encoding="utf-8") as f:
             return json.load(f)
     except Exception as e:
         print(f"Error al cargar {filename}: {e}")
-        return []
+        return None
 
 
 # ---------------------------------------------------------------- Memoria
 
-def cargar_vistos():
+def cargar_vistos(archivo):
     try:
-        with open(ARCHIVO_VISTOS, "r", encoding="utf-8") as f:
+        with open(archivo, "r", encoding="utf-8") as f:
             vistos = json.load(f)
     except (FileNotFoundError, json.JSONDecodeError):
         vistos = {}
@@ -89,8 +136,9 @@ def cargar_vistos():
     return {k: v for k, v in vistos.items() if v.get("ts", 0) >= limite}
 
 
-def guardar_vistos(vistos):
-    with open(ARCHIVO_VISTOS, "w", encoding="utf-8") as f:
+def guardar_vistos(vistos, archivo):
+    os.makedirs(os.path.dirname(archivo) or ".", exist_ok=True)
+    with open(archivo, "w", encoding="utf-8") as f:
         json.dump(vistos, f, ensure_ascii=False, indent=1, sort_keys=True)
 
 
@@ -102,13 +150,18 @@ def es_nuevo(vistos, res):
 
 # ---------------------------------------------------------------- Telegram
 
-def enviar_telegram(mensaje, silencioso=False, responder_a=None):
+_chat_actual = {"id": None}   # a quién se responde mientras se procesan sus órdenes
+
+
+def enviar_telegram(mensaje, silencioso=False, responder_a=None, chat=None):
     """Envía en HTML (más robusto que Markdown: un '_' o '*' en el título
     de un anuncio ya no rompe el mensaje). Con silencioso=True el mensaje
     llega sin sonido ni vibración."""
     url = f"https://api.telegram.org/bot{TELEGRAM_TOKEN}/sendMessage"
+    if chat is None:
+        chat = _chat_actual["id"] or (cargar_usuarios() or [{"chat": TELEGRAM_CHAT_ID}])[0]["chat"]
     payload = {
-        "chat_id": TELEGRAM_CHAT_ID,
+        "chat_id": chat,
         "text": mensaje,
         "parse_mode": "HTML",
         "disable_web_page_preview": False,
@@ -126,7 +179,7 @@ def enviar_telegram(mensaje, silencioso=False, responder_a=None):
         if res.status_code == 429:  # demasiados mensajes seguidos
             espera = res.json().get("parameters", {}).get("retry_after", 5)
             time.sleep(espera + 1)
-            return enviar_telegram(mensaje, silencioso, responder_a)
+            return enviar_telegram(mensaje, silencioso, responder_a, chat)
     except Exception as e:
         print(f"❌ Excepción conectando a Telegram: {sin_secretos(e)}")
     stats["fallos_telegram"] += 1
@@ -136,10 +189,10 @@ def enviar_telegram(mensaje, silencioso=False, responder_a=None):
 def comprobar_telegram():
     """Diagnóstico completo del bot antes de buscar nada."""
     print("\n========== DIAGNÓSTICO TELEGRAM ==========")
-    if not TELEGRAM_TOKEN or not TELEGRAM_CHAT_ID:
-        print("❌ Faltan los secrets TELEGRAM_TOKEN y/o TELEGRAM_CHAT_ID en GitHub "
+    if not TELEGRAM_TOKEN or not cargar_usuarios():
+        print("❌ Faltan los secrets TELEGRAM_TOKEN y/o TELEGRAM_CHAT_ID (o TELEGRAM_USUARIOS) en GitHub "
               "(Settings → Secrets and variables → Actions → pestaña 'Secrets', no 'Variables').")
-        print(f"   TELEGRAM_TOKEN presente: {bool(TELEGRAM_TOKEN)} | TELEGRAM_CHAT_ID presente: {bool(TELEGRAM_CHAT_ID)}")
+        print(f"   TELEGRAM_TOKEN presente: {bool(TELEGRAM_TOKEN)} | usuarios configurados: {len(cargar_usuarios())}")
         sys.exit(1)
     if ":" not in TELEGRAM_TOKEN:
         print("❌ El token no tiene el formato de BotFather (123456789:AA...). ¿Has pegado otra cosa?")
@@ -156,9 +209,15 @@ def comprobar_telegram():
         sys.exit(1)
     print("✅ Token válido.")   # sin nombre del bot ni chat_id: el log puede ser público
 
-    r = requests.get(f"{api}/getChat", params={"chat_id": TELEGRAM_CHAT_ID}, timeout=15)
+    usuarios = cargar_usuarios()
+    for u in usuarios[1:]:   # los demás usuarios: solo se avisa si fallan
+        rr = requests.get(f"{api}/getChat", params={"chat_id": u["chat"]}, timeout=15)
+        print(f"{'✅' if rr.status_code == 200 else '⚠️ '} Usuario «{u['nombre']}»: "
+              + ("el bot puede escribirle." if rr.status_code == 200
+                 else "el bot NO puede escribirle (¿le ha enviado /start?)."))
+    r = requests.get(f"{api}/getChat", params={"chat_id": usuarios[0]["chat"]}, timeout=15)
     if r.status_code == 200:
-        print("✅ El bot puede escribir en tu chat.")
+        print(f"✅ El bot puede escribir a «{usuarios[0]['nombre']}» (administrador).")
         return
 
     print(f"❌ El bot NO puede escribir en ese chat_id ({r.status_code}): {sin_secretos(r.text)}")
@@ -216,8 +275,9 @@ _NO_VINILO = re.compile(
 # Formatos que NO son un LP: singles y EPs de 7", 10", maxis, 45 rpm…
 # Ojo: "singles" en plural (p. ej. "The Singles", un recopilatorio) NO se descarta.
 _NO_LP = re.compile(
-    r"(?<![\d.,])(7|10)\s?(\"|”|″|''|’’|pulgadas|pulg\.?|inch(es)?|in)(?![\w])"
+    r"(?<![\d.,])(7|10)\s?(\"|”|“|″|''|’’|´´|``|pulgadas|pulg\.?|inch(es)?|in)(?![\w])"
     r"|\b45\s?(rpm|r\.p\.m\.?|vueltas|rev|giri|tours?|t|u/?min|upm|toeren)\b"
+    r"|(?<![\d.,])45\s?(\"|”|“|″|''|’’|´´|``)"   # "45''" (45 rpm escrito como si fueran pulgadas)
     r"|\b(single|sencillo|singolo|maxi|maxisingle|maxi-single|ep|flexi|flexidisc)\b",
     re.I)
 
@@ -584,7 +644,7 @@ def buscar_discogs(item):
 #   /llista                          lista los discos que se buscan (/llista compraos: los comprados)
 #   /axuda                           recuerda todas las órdenes
 
-def guardar_discos(discos, filename="discos.json"):
+def guardar_discos(discos, filename):
     def fmt(o):
         lineas = [f"    {json.dumps(k, ensure_ascii=False)}: "
                   f"{json.dumps(v, ensure_ascii=False).replace(chr(34) + ',' + chr(34), chr(34) + ', ' + chr(34))}"
@@ -595,6 +655,7 @@ def guardar_discos(discos, filename="discos.json"):
     def clave(texto):
         return unicodedata.normalize("NFKD", texto).encode("ascii", "ignore").decode().lower()
     discos.sort(key=lambda d: (clave(d["artista"]), clave(d["disco"])))  # orden alfabético
+    os.makedirs(os.path.dirname(filename) or ".", exist_ok=True)
     with open(filename, "w", encoding="utf-8") as f:
         f.write("[\n" + ",\n".join(fmt(d) for d in discos) + "\n]\n")
 
@@ -670,7 +731,8 @@ AYUDA_BOT = (
     "🎵 <b>Órdenes del Cazador de Vinilos</b>\n\n"
     "/llista — discos que estoy buscando\n"
     "/llista compraos — discos que ya compraste\n"
-    "/amestar Artista - Disco - 15 — añadir un disco a la búsqueda (o cambiar su límite)\n"
+    "/amestar Artista - Disco - 15 — añadir un disco a la búsqueda (o cambiar su límite).\n"
+    "   Puedes mandar varios en un mensaje, uno por línea\n"
     "comprado — respondiendo a un aviso; también «comprado 15» con lo que pagaste\n"
     "/comprado Artista Disco — marcar como comprado (vale aproximado)\n"
     "/registrar Artista - Disco 12€ — apuntar una compra que no estaba en la lista\n"
@@ -741,156 +803,252 @@ def buscar_aproximado(texto, discos):
     return d1, None
 
 
-def procesar_comandos(discos):
-    """Lee los mensajes que le has escrito al bot desde la última pasada.
-    Devuelve True si ha cambiado algo en discos.json."""
+def _partir_ordenes(texto):
+    """Separa un mensaje en órdenes, una por línea. Las líneas sin "/" detrás de
+    un /amestar, /buscar o /registrar se toman como más discos de esa misma orden:
+        /amestar
+        Blur - The Best - 20
+        Duke Ellington - Best - 18"""
+    ordenes, anterior = [], None
+    for linea in str(texto).splitlines():
+        linea = linea.strip()
+        if not linea:
+            continue
+        palabra = linea.split()[0].lower().lstrip("/").split("@")[0]
+        if linea.startswith("/") or palabra in ("comprado", "descomprado"):
+            anterior = palabra if palabra in ("amestar", "buscar", "registrar") else None
+            if anterior and len(linea.split()) == 1:
+                continue          # "/amestar" solo, con los discos en las líneas siguientes
+            ordenes.append(linea)
+        elif anterior:
+            ordenes.append(f"/{anterior} {linea}")
+        else:
+            ordenes.append(linea)
+    return ordenes
+
+
+def procesar_comandos(usuarios, listas):
+    """Lee los mensajes escritos al bot desde la última pasada. Cada usuario
+    trabaja sobre su propia lista (listas[nombre]). Devuelve los nombres de
+    los usuarios cuya lista ha cambiado."""
+    por_chat = {str(u["chat"]): u for u in usuarios}
     api = f"https://api.telegram.org/bot{TELEGRAM_TOKEN}"
     try:
         r = requests.get(f"{api}/getUpdates", params={"timeout": 0}, timeout=20)
         updates = r.json().get("result", [])
     except Exception as e:
         print(f"⚠️  No se pudieron leer los mensajes de Telegram: {sin_secretos(repr(e))}")
-        return False
+        return set()
     if not updates:
-        return False
+        return set()
 
-    por_nombre = {f"{d['artista']} - {d['disco']}".lower(): d for d in discos}
-    cambiado = False
+    cambiados, desconocidos = set(), set()
     for u in updates:
         m = u.get("message") or {}
-        if str(m.get("chat", {}).get("id")) != str(TELEGRAM_CHAT_ID):
-            continue  # solo obedecemos a tu chat
-        texto = (m.get("text") or "").strip()
-        orden = texto.split()[0].lower().lstrip("/").split("@")[0] if texto else ""
-        if orden in ("llista", "lista", "listado"):
-            enviar_lista(discos, texto, m.get("message_id"))
+        chat = str(m.get("chat", {}).get("id"))
+        usuario = por_chat.get(chat)
+        if not usuario:
+            # Alguien que no está dado de alta: no obedece, pero le dice su número
+            # para que se lo pase al administrador (una vez por pasada).
+            if chat not in desconocidos and m.get("chat", {}).get("type") == "private":
+                desconocidos.add(chat)
+                enviar_telegram("👋 Este bot es privado.\nSi te han invitado, pásale este número a "
+                                f"quien lo administra: <code>{html.escape(chat)}</code>", chat=chat)
             continue
-        if orden in ("axuda", "ayuda", "help", "start"):
-            enviar_telegram(AYUDA_BOT, responder_a=m.get("message_id"))
-            continue
-        if orden in ("registrar", "buscar", "amestar"):
-            cambiado |= alta_desde_telegram(orden, texto, discos, por_nombre, m.get("message_id"))
-            continue
-        if orden not in ("comprado", "descomprado"):
-            continue
-        # "comprado 15" (respondiendo a un aviso) o "/comprado Nirvana Nevermind 15€"
-        texto, pagado = _separar_precio(texto, exigir_euro=len(texto.split()) > 2)
-        # ¿A qué disco se refiere? Primero, al aviso al que responde…
-        nombre = None
-        citado = (m.get("reply_to_message") or {}).get("text") or ""
-        mt = re.search(r"Buscado:\s*(.+)", citado)
-        if mt:
-            nombre = mt.group(1).strip()
-        # …y si no, a lo escrito detrás de la orden: "/comprado Nirvana - Nevermind"
-        if not nombre and " " in texto:
-            nombre = texto.split(" ", 1)[1].strip()
-        disco = por_nombre.get((nombre or "").lower())
-        if not disco and nombre:
-            disco, dudas = buscar_aproximado(nombre, discos)
-            if dudas:
-                opciones = "\n".join(f"• /{orden} {html.escape(d['artista'])} - {html.escape(d['disco'])}"
-                                      for d in dudas)
-                enviar_telegram(f"🤔 «{html.escape(nombre)}» podría ser varios discos. "
-                                f"¿Cuál de estos?\n{opciones}", responder_a=m.get("message_id"))
+        _chat_actual["id"] = usuario["chat"]
+        discos = listas[usuario["nombre"]]
+        por_nombre = {f"{d['artista']} - {d['disco']}".lower(): d for d in discos}
+        cambiado = False
+        # Un mensaje puede traer varias órdenes, una por línea:
+        #   /amestar Blur - The Best - 20
+        #   /amestar Duke Ellington - Best - 18
+        for texto in _partir_ordenes(m.get("text") or ""):
+            orden = texto.split()[0].lower().lstrip("/").split("@")[0] if texto else ""
+            if orden in ("llista", "lista", "listado"):
+                enviar_lista(discos, texto, m.get("message_id"))
                 continue
-        if not disco:
-            enviar_telegram(f"❓ No encuentro «{html.escape(nombre or texto)}» en la lista. "
-                            "Responde «comprado» a un aviso o escribe /comprado Artista Disco.\n"
-                            "Si es un disco que no estaba en la lista (p. ej. de un pack), usa:\n"
-                            "/registrar Artista - Disco 12€",
-                            responder_a=m.get("message_id"))
-            continue
-        nombre = f"{disco['artista']} - {disco['disco']}"
-        if orden == "comprado":
-            disco["comprado"] = hoy().isoformat()
-            if pagado is not None:
-                disco["precio_pagado"] = pagado
-            enviar_telegram(f"✅ <b>{html.escape(nombre)}</b> marcado como comprado. "
-                            "Ya no lo buscaré. ¡Que lo disfrutes!"
-                            + (aviso_modo_ahorro() if MODO_AHORRO else ""),
-                            responder_a=m.get("message_id"))
-        else:
-            disco.pop("comprado", None)
-            disco.pop("precio_pagado", None)
-            enviar_telegram(f"🔁 Vuelvo a buscar <b>{html.escape(nombre)}</b>.",
-                            responder_a=m.get("message_id"))
-        cambiado = True
+            if orden in ("axuda", "ayuda", "help", "start"):
+                enviar_telegram(AYUDA_BOT, responder_a=m.get("message_id"))
+                continue
+            if orden in ("registrar", "buscar", "amestar"):
+                cambiado |= alta_desde_telegram(orden, texto, discos, por_nombre, m.get("message_id"))
+                continue
+            if orden not in ("comprado", "descomprado"):
+                continue
+            # "comprado 15" (respondiendo a un aviso) o "/comprado Nirvana Nevermind 15€"
+            texto, pagado = _separar_precio(texto, exigir_euro=len(texto.split()) > 2)
+            # ¿A qué disco se refiere? Primero, al aviso al que responde…
+            nombre = None
+            citado = (m.get("reply_to_message") or {}).get("text") or ""
+            mt = re.search(r"Buscado:\s*(.+)", citado)
+            if mt:
+                nombre = mt.group(1).strip()
+            # …y si no, a lo escrito detrás de la orden: "/comprado Nirvana - Nevermind"
+            if not nombre and " " in texto:
+                nombre = texto.split(" ", 1)[1].strip()
+            disco = por_nombre.get((nombre or "").lower())
+            if not disco and nombre:
+                disco, dudas = buscar_aproximado(nombre, discos)
+                if dudas:
+                    opciones = "\n".join(f"• /{orden} {html.escape(d['artista'])} - {html.escape(d['disco'])}"
+                                          for d in dudas)
+                    enviar_telegram(f"🤔 «{html.escape(nombre)}» podría ser varios discos. "
+                                    f"¿Cuál de estos?\n{opciones}", responder_a=m.get("message_id"))
+                    continue
+            if not disco:
+                enviar_telegram(f"❓ No encuentro «{html.escape(nombre or texto)}» en la lista. "
+                                "Responde «comprado» a un aviso o escribe /comprado Artista Disco.\n"
+                                "Si es un disco que no estaba en la lista (p. ej. de un pack), usa:\n"
+                                "/registrar Artista - Disco 12€",
+                                responder_a=m.get("message_id"))
+                continue
+            nombre = f"{disco['artista']} - {disco['disco']}"
+            if orden == "comprado":
+                disco["comprado"] = hoy().isoformat()
+                if pagado is not None:
+                    disco["precio_pagado"] = pagado
+                enviar_telegram(f"✅ <b>{html.escape(nombre)}</b> marcado como comprado. "
+                                "Ya no lo buscaré. ¡Que lo disfrutes!"
+                                + (aviso_modo_ahorro() if MODO_AHORRO else ""),
+                                responder_a=m.get("message_id"))
+            else:
+                disco.pop("comprado", None)
+                disco.pop("precio_pagado", None)
+                enviar_telegram(f"🔁 Vuelvo a buscar <b>{html.escape(nombre)}</b>.",
+                                responder_a=m.get("message_id"))
+            cambiado = True
+        if cambiado:
+            cambiados.add(usuario["nombre"])
+    _chat_actual["id"] = None
 
     # Confirmar a Telegram que ya hemos leído estos mensajes
     try:
         requests.get(f"{api}/getUpdates", params={"offset": updates[-1]["update_id"] + 1, "timeout": 0}, timeout=20)
     except Exception:
         pass
-    return cambiado
+    return cambiados
 
 
 # ---------------------------------------------------------------- main
 
+_CAMPOS_PERSONALES = {"max_precio", "max_precio_discogs", "gran_chollo", "comprado",
+                      "precio_pagado", "fuera_de_lista"}
+
+
+def plan_de_busqueda(usuarios, listas):
+    """Agrupa los discos de todos los usuarios para buscar cada uno UNA vez.
+    Dos usuarios comparten búsqueda si piden el mismo disco con los mismos ajustes
+    (alias, excluir, formato…); el límite de la búsqueda es el más alto de ellos
+    y luego cada uno recibe solo lo que entra en su propio límite."""
+    plan = {}
+    for u in usuarios:
+        for it in listas[u["nombre"]]:
+            if it.get("comprado"):
+                continue
+            base = {k: v for k, v in it.items() if k not in _CAMPOS_PERSONALES}
+            clave = json.dumps(base, sort_keys=True, ensure_ascii=False).lower()
+            p = plan.setdefault(clave, {"base": base, "quien": []})
+            p["quien"].append((u, it))
+    for p in plan.values():
+        busq = dict(p["base"])
+        busq["max_precio"] = max(it["max_precio"] for _, it in p["quien"])
+        busq["max_precio_discogs"] = max(limite_de("Discogs", it) for _, it in p["quien"])
+        p["item"] = busq
+    return list(plan.values())
+
+
 def main():
     print("Iniciando rastreo de vinilos...")
     comprobar_telegram()
+    usuarios = cargar_usuarios()
+    principal = usuarios[0]
 
     if os.environ.get("TEST_TELEGRAM") == "1":
-        enviar_telegram("🧪 Mensaje de prueba del Cazador de Vinilos: Telegram funciona.")
+        enviar_telegram("🧪 Mensaje de prueba del Cazador de Vinilos: Telegram funciona.",
+                        chat=principal["chat"])
 
-    todos = cargar_lista_discos()
-    if not todos:
-        print("Lista vacía o inválida.")
-        sys.exit(1)
-    if procesar_comandos(todos):
-        guardar_discos(todos)
-        print("📝 discos.json actualizado con los cambios pedidos por Telegram.")
-    discos = [d for d in todos if not d.get("comprado")]
-    compras = compras_del_mes(todos)
-    ahorro = MODO_AHORRO and bool(compras)
-    if ahorro:
-        print(f"🧘 Modo ahorro: {len(compras)} compra(s) este mes; solo se avisa de grandes chollos.")
+    migrar_archivos_antiguos(usuarios)
+    listas = {}
+    for u in usuarios:
+        if not os.path.exists(u["lista"]):
+            guardar_discos([], u["lista"])   # lista nueva y vacía: se rellena con /amestar
+        lista = cargar_lista_discos(u["lista"])
+        if not isinstance(lista, list):
+            print(f"❌ {u['lista']} no es válido (revisa comas y comillas).")
+            sys.exit(1)
+        listas[u["nombre"]] = lista
+
+    for nombre in procesar_comandos(usuarios, listas):
+        u = next(x for x in usuarios if x["nombre"] == nombre)
+        guardar_discos(listas[nombre], u["lista"])
+        print(f"📝 {u['lista']} actualizado con los cambios pedidos por Telegram.")
+
+    ahorro, vistos = {}, {}
+    for u in usuarios:
+        n = u["nombre"]
+        lista = listas[n]
+        compras = compras_del_mes(lista)
+        ahorro[n] = MODO_AHORRO and bool(compras)
+        vistos[n] = cargar_vistos(u["vistos"])
+        print(f"👤 {n}: {sum(1 for d in lista if not d.get('comprado'))} discos buscados, "
+              f"{sum(1 for d in lista if d.get('comprado'))} comprados, "
+              f"{len(vistos[n])} anuncios en memoria"
+              + (f", 🧘 modo ahorro ({len(compras)} compra(s) este mes)" if ahorro[n] else ""))
     callados = 0
-    print(f"Discos comprados (no se buscan): {len(todos) - len(discos)}")
 
+    plan = plan_de_busqueda(usuarios, listas)
     webs = [("Wallapop", "🎵", buscar_wallapop), ("Vinted", "🛍️", buscar_vinted)]
     if DISCOGS_TOKEN:
         webs.append(("Discogs", "💿", buscar_discogs))
-    print(f"Rastreando {len(discos)} discos en {', '.join(w[0] for w in webs)}...")
-
-    vistos = cargar_vistos()
-    print(f"Memoria: {len(vistos)} anuncios ya avisados en los últimos {DIAS_MEMORIA} días.")
+    print(f"Rastreando {len(plan)} discos en {', '.join(w[0] for w in webs)}...")
 
     try:
-        for item in discos:
-            print(f"\n🔎 {item['artista']} - {item['disco']} (≤ {item['max_precio']} €)")
-            for nombre, emoji, buscar in webs:
+        for p in plan:
+            item = p["item"]
+            para = ", ".join(u["nombre"] for u, _ in p["quien"])
+            print(f"\n🔎 {item['artista']} - {item['disco']} (≤ {item['max_precio']} €)"
+                  + (f" · para: {para}" if len(usuarios) > 1 else ""))
+            for web, emoji, buscar in webs:
                 resultados = sorted(buscar(item), key=lambda x: x["precio"])
-                nuevos = [r for r in resultados if es_nuevo(vistos, r)]
-                if resultados:
-                    print(f"   {nombre}: {len(nuevos)} nuevos de {len(resultados)}")
-                for res in nuevos[:MAX_AVISOS_POR_WEB]:
-                    previo = vistos.get(res["link"])
-                    msg = formatear(nombre, emoji, item, res)
-                    if previo:
-                        msg = "📉 <b>¡Ha bajado de precio!</b> (antes " + f"{previo['precio']:.2f} €)\n" + msg
-                    gran = es_gran_chollo(nombre, item, res)
-                    if ahorro and not gran:
-                        callados += 1   # no se marca como visto: si sigue a la venta, llegará el mes que viene
-                        continue
-                    if enviar_telegram(msg, silencioso=AVISOS_NORMALES_SILENCIOSOS and not gran):
-                        vistos[res["link"]] = {"precio": res["precio"], "ts": time.time()}
+                for u, suyo in p["quien"]:
+                    n = u["nombre"]
+                    limite = limite_de(web, suyo)
+                    suyos = [r for r in resultados
+                             if 0 < r.get("precio_total", r["precio"]) <= limite]
+                    nuevos = [r for r in suyos if es_nuevo(vistos[n], r)]
+                    if suyos:
+                        print(f"   {web}: {len(nuevos)} nuevos de {len(suyos)}"
+                              + (f" para {n}" if len(usuarios) > 1 else ""))
+                    for res in nuevos[:MAX_AVISOS_POR_WEB]:
+                        previo = vistos[n].get(res["link"])
+                        msg = formatear(web, emoji, suyo, res)
+                        if previo:
+                            msg = "📉 <b>¡Ha bajado de precio!</b> (antes " + f"{previo['precio']:.2f} €)\n" + msg
+                        gran = es_gran_chollo(web, suyo, res)
+                        if ahorro[n] and not gran:
+                            callados += 1   # no se marca como visto: si sigue a la venta, llegará el mes que viene
+                            continue
+                        if enviar_telegram(msg, silencioso=AVISOS_NORMALES_SILENCIOSOS and not gran,
+                                           chat=u["chat"]):
+                            vistos[n][res["link"]] = {"precio": res["precio"], "ts": time.time()}
                 time.sleep(1)  # no saturar las webs
     finally:
-        guardar_vistos(vistos)  # se guarda aunque algo falle a mitad
+        for u in usuarios:   # se guarda aunque algo falle a mitad
+            guardar_vistos(vistos[u["nombre"]], u["vistos"])
 
     # ---- Resumen: si algo ha fallado, el workflow sale en ROJO en GitHub
     print("\n========== RESUMEN ==========")
     print(f"Mensajes enviados: {stats['ok']}  |  Fallos de Telegram: {stats['fallos_telegram']}"
-          + (f"  |  Avisos normales retenidos por el modo ahorro: {callados}" if ahorro else ""))
+          + (f"  |  Avisos normales retenidos por el modo ahorro: {callados}" if callados else ""))
     for web, errores in stats["errores_web"].items():
         print(f"{web}: {len(errores)} errores (primero: {errores[0]})")
 
-    fallo_total = [w for w, e in stats["errores_web"].items() if len(e) >= len(discos)]
+    fallo_total = [w for w, e in stats["errores_web"].items() if plan and len(e) >= len(plan)]
     if stats["fallos_telegram"] or fallo_total:
         if fallo_total:
             enviar_telegram("⚠️ Cazador de Vinilos: no se ha podido consultar "
-                            + ", ".join(fallo_total) + ". Revisa el log de GitHub Actions.")
+                            + ", ".join(fallo_total) + ". Revisa el log de GitHub Actions.",
+                            chat=principal["chat"])
         sys.exit(1)
 
 
