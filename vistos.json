@@ -63,6 +63,10 @@
   "precio": 14.0,
   "ts": 1792680821.589323
  },
+ "https://es.wallapop.com/item/vinilo-lp-louis-armstrong-hot-fives-vol-3-cbs-1319582608": {
+  "precio": 19.0,
+  "ts": 1793582128.7262616
+ },
  "https://es.wallapop.com/item/vinilo-lp-louis-armstrong-the-hot-fives-cbs1988-nm-1315593158": {
   "precio": 14.0,
   "ts": 1792660200.4028492
@@ -215,6 +219,10 @@
   "precio": 23.72,
   "ts": 1792536562.5796402
  },
+ "https://www.discogs.com/sell/release/1291700?sort=price%2Casc": {
+  "precio": 2.65,
+  "ts": 1793582154.9821644
+ },
  "https://www.discogs.com/sell/release/13106728": {
   "precio": 21.99,
   "ts": 1792550176.8061447
@@ -222,6 +230,10 @@
  "https://www.discogs.com/sell/release/1312327": {
   "precio": 10.92,
   "ts": 1792536763.2760737
+ },
+ "https://www.discogs.com/sell/release/13127343?sort=price%2Casc": {
+  "precio": 7.97,
+  "ts": 1793581765.1517217
  },
  "https://www.discogs.com/sell/release/13248100?sort=price%2Casc": {
   "precio": 4.99,
@@ -1071,6 +1083,10 @@
   "precio": 13.35,
   "ts": 1792532174.2596633
  },
+ "https://www.discogs.com/sell/release/990627?sort=price%2Casc": {
+  "precio": 8.99,
+  "ts": 1793582437.2141197
+ },
  "https://www.discogs.com/sell/release/993128": {
   "precio": 24.7,
   "ts": 1792536562.9923987
@@ -1635,6 +1651,10 @@
   "precio": 20.0,
   "ts": 1793530669.2845478
  },
+ "https://www.vinted.es/items/10512182035-vinyle-lp-album-tracy-chapman-pop-folk-rock": {
+  "precio": 22.0,
+  "ts": 1793583080.321125
+ },
  "https://www.vinted.es/items/10521558353-the-cranberries-no-need-to-argue-originele-editie": {
   "precio": 7.0,
   "ts": 1793032630.531175
@@ -1855,6 +1875,10 @@
   "precio": 10.0,
   "ts": 1793569899.7221963
  },
+ "https://www.vinted.es/items/10629377143-the-beatles-abbey-road": {
+  "precio": 22.0,
+  "ts": 1793582667.0447345
+ },
  "https://www.vinted.es/items/2874223762-the-police-reggatta-de-blanc": {
   "precio": 12.0,
   "ts": 1793503917.4996762
@@ -1938,6 +1962,10 @@
  "https://www.vinted.es/items/5873867104-vinile-di-louis-armstrong-what-a-wonderful-world": {
   "precio": 12.99,
   "ts": 1792680832.0883312
+ },
+ "https://www.vinted.es/items/5942268254-lou-reed-transformer": {
+  "precio": 25.0,
+  "ts": 1793582105.9335787
  },
  "https://www.vinted.es/items/6035869262-sinead-oconnor-i-do-not-want-what-i-havent-got": {
   "precio": 15.0,
@@ -2054,6 +2082,14 @@
  "https://www.vinted.es/items/8145793663-lp-33-lou-reed-transformer": {
   "precio": 24.95,
   "ts": 1793554278.748842
+ },
+ "https://www.vinted.es/items/8159090769-nirvana-nevermind-vinile": {
+  "precio": 22.0,
+  "ts": 1793582366.3972435
+ },
+ "https://www.vinted.es/items/8163388784-lou-reed-transformer": {
+  "precio": 25.0,
+  "ts": 1793582105.5218635
  },
  "https://www.vinted.es/items/8175376585-mink-deville-coup-de-grace-lp": {
   "precio": 11.0,
@@ -2363,6 +2399,10 @@
   "precio": 5.0,
   "ts": 1792660064.8940015
  },
+ "https://www.vinted.es/items/9966764795-tracy-chapman-crossroads-vinyl": {
+  "precio": 22.0,
+  "ts": 1793583081.1019642
+ },
  "https://www.vinted.es/items/9970876094-por-siempre-beatles-odeon-1-j-060-04973-m-espana-1971-mono": {
   "precio": 22.0,
   "ts": 1792573788.1867652
@@ -2374,6 +2414,10 @@
  "https://www.vinted.es/items/9977708961-vinyle-the-police-synchronicity": {
   "precio": 13.0,
   "ts": 1792660884.9407752
+ },
+ "https://www.vinted.es/items/9983015416-tracy-chapman-crossroads-1989-lp-vinil-vynil-vg": {
+  "precio": 22.0,
+  "ts": 1793583080.7149284
  },
  "https://www.vinted.es/items/9985506858-vinile-7-savage-dont-cry-tonight-1983-originale-italo-disco-discomagic": {
   "precio": 15.0,
