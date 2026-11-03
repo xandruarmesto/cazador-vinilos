@@ -19,6 +19,10 @@
   "precio": 24.0,
   "ts": 1793671602.5284212
  },
+ "https://es.wallapop.com/item/lp-1971-janis-joplin-pearl-1320460525": {
+  "precio": 25.0,
+  "ts": 1793746249.1147168
+ },
  "https://es.wallapop.com/item/lp-ella-and-louis-ella-fitzgerald-louis-1319442688": {
   "precio": 20.0,
   "ts": 1793554164.7982016
@@ -127,6 +131,10 @@
   "precio": 18.0,
   "ts": 1792594740.614278
  },
+ "https://es.wallapop.com/item/vinilo-lp-tracy-chapman-crossroads-1320405574": {
+  "precio": 11.0,
+  "ts": 1793747269.777037
+ },
  "https://es.wallapop.com/item/vinilo-pearl-janis-joplin-1319968805": {
   "precio": 15.0,
   "ts": 1793649743.6913517
@@ -222,6 +230,10 @@
  "https://www.discogs.com/sell/release/1185718": {
   "precio": 13.9,
   "ts": 1792532627.453385
+ },
+ "https://www.discogs.com/sell/release/1196597?sort=price%2Casc": {
+  "precio": 2.49,
+  "ts": 1793746341.5788498
  },
  "https://www.discogs.com/sell/release/12032445": {
   "precio": 21.37,
@@ -591,6 +603,10 @@
   "precio": 9.78,
   "ts": 1793607639.270759
  },
+ "https://www.discogs.com/sell/release/2256617?sort=price%2Casc": {
+  "precio": 7.94,
+  "ts": 1793746868.1231344
+ },
  "https://www.discogs.com/sell/release/22814468": {
   "precio": 15.13,
   "ts": 1792549901.2454123
@@ -859,6 +875,10 @@
   "precio": 8.9,
   "ts": 1792570233.5014343
  },
+ "https://www.discogs.com/sell/release/3623808?sort=price%2Casc": {
+  "precio": 1.02,
+  "ts": 1793746067.4943736
+ },
  "https://www.discogs.com/sell/release/36440865": {
   "precio": 21.36,
   "ts": 1792550176.4189627
@@ -914,6 +934,10 @@
  "https://www.discogs.com/sell/release/3958354?sort=price%2Casc": {
   "precio": 8.0,
   "ts": 1792623646.4700315
+ },
+ "https://www.discogs.com/sell/release/3964013?sort=price%2Casc": {
+  "precio": 5.93,
+  "ts": 1793745740.1629462
  },
  "https://www.discogs.com/sell/release/4018700?sort=price%2Casc": {
   "precio": 5.0,
@@ -974,6 +998,10 @@
  "https://www.discogs.com/sell/release/448766?sort=price%2Casc": {
   "precio": 6.43,
   "ts": 1793649839.0689762
+ },
+ "https://www.discogs.com/sell/release/451342?sort=price%2Casc": {
+  "precio": 6.23,
+  "ts": 1793747115.2721393
  },
  "https://www.discogs.com/sell/release/4521089": {
   "precio": 6.88,
@@ -1050,6 +1078,10 @@
  "https://www.discogs.com/sell/release/551010?sort=price%2Casc": {
   "precio": 2.67,
   "ts": 1793696000.812048
+ },
+ "https://www.discogs.com/sell/release/555058?sort=price%2Casc": {
+  "precio": 8.9,
+  "ts": 1793745779.4896286
  },
  "https://www.discogs.com/sell/release/5577902?sort=price%2Casc": {
   "precio": 1.8,
@@ -1426,6 +1458,10 @@
  "https://www.vinted.es/items/10108883509-vinile-lp-sinead-oconnor-i-do-not-want-what-i-havent-got": {
   "precio": 28.0,
   "ts": 1793569429.820354
+ },
+ "https://www.vinted.es/items/10110092163-vinilo-queen-a-night-at-the-opera": {
+  "precio": 12.0,
+  "ts": 1793746659.2477953
  },
  "https://www.vinted.es/items/10118923676-queen-samantha-greatest-hits-vinile-lp": {
   "precio": 8.0,
@@ -2339,6 +2375,18 @@
   "precio": 22.0,
   "ts": 1793727673.0454721
  },
+ "https://www.vinted.es/items/10654270845-cat-stevens-greatest-hits-33-giri": {
+  "precio": 9.0,
+  "ts": 1793745912.1105127
+ },
+ "https://www.vinted.es/items/10655160952-lp-1971-janis-joplin-pearl": {
+  "precio": 25.0,
+  "ts": 1793746251.42862
+ },
+ "https://www.vinted.es/items/10656445578-the-undertones-hypnotised-lp-punk-rock-77-ramones-clash-slf-999": {
+  "precio": 14.0,
+  "ts": 1793746714.0357893
+ },
  "https://www.vinted.es/items/2779449228-cat-stevens-teaser-and-the-firecat": {
   "precio": 12.0,
   "ts": 1793671207.7148302
@@ -2354,6 +2402,10 @@
  "https://www.vinted.es/items/3193515972-vinile-the-who-whos-next": {
   "precio": 15.0,
   "ts": 1793504074.9957273
+ },
+ "https://www.vinted.es/items/3357227729-vinilo-teaser-and-the-firecat-cat-stevens": {
+  "precio": 16.0,
+  "ts": 1793745960.8523111
  },
  "https://www.vinted.es/items/3440604572-louis-armstrong-and-his-hot-five-muskrat-ramble-1925-1926": {
   "precio": 10.0,
@@ -2539,6 +2591,10 @@
   "precio": 15.0,
   "ts": 1793502910.2234237
  },
+ "https://www.vinted.es/items/7236941725-janis-joplin-pearl-lp-quadraphonic-mega-rare-spain-1974": {
+  "precio": 29.95,
+  "ts": 1793746252.3573482
+ },
  "https://www.vinted.es/items/7335492780-vinile-cat-stevens-tea-for-the-tillerman": {
   "precio": 20.0,
   "ts": 1793608861.8577428
@@ -2566,6 +2622,10 @@
  "https://www.vinted.es/items/7580060260-janis-joplin-pearl": {
   "precio": 22.0,
   "ts": 1793649746.4389248
+ },
+ "https://www.vinted.es/items/7618845852-cat-stevens-greatest-hits": {
+  "precio": 10.0,
+  "ts": 1793745913.0842538
  },
  "https://www.vinted.es/items/7636272854-33-giri-ella-fitzgerald-and-louis-armstrong-porgy-bess-vinile": {
   "precio": 10.0,
@@ -2686,6 +2746,10 @@
  "https://www.vinted.es/items/8259894373-the-police-reggatta-de-blanc": {
   "precio": 15.0,
   "ts": 1793531566.9970546
+ },
+ "https://www.vinted.es/items/8266116929-janis-joplin-pearl-lp-quadraphonic-rare-spain-1974": {
+  "precio": 29.95,
+  "ts": 1793746251.8969104
  },
  "https://www.vinted.es/items/8270594373-janis-joplin-pearl": {
   "precio": 29.9,
@@ -2875,6 +2939,14 @@
   "precio": 14.0,
   "ts": 1793347326.5054557
  },
+ "https://www.vinted.es/items/9211205407-vinilo-cat-stevens-the-teaser-and-the-firecat-the-teaser-and-the-firecat": {
+  "precio": 15.0,
+  "ts": 1793745960.4060886
+ },
+ "https://www.vinted.es/items/9225913671-vinilo-lp-cat-stevens-greatest-hits": {
+  "precio": 10.0,
+  "ts": 1793745912.622977
+ },
  "https://www.vinted.es/items/9232865200-vinilo-lp-love-of-lesbian-1999-o-como-generar-incendios": {
   "precio": 25.0,
   "ts": 1792660237.3720539
@@ -2911,6 +2983,10 @@
   "precio": 9.99,
   "ts": 1793503658.1925647
  },
+ "https://www.vinted.es/items/9433265738-cat-stevens-teaser-and-the-firecat-lp-vinile-stampa-dellepoca": {
+  "precio": 15.0,
+  "ts": 1793745959.9567015
+ },
  "https://www.vinted.es/items/9450940493-the-police-synchronicity-1983-vg-vg-am-records-amlx-63735": {
   "precio": 15.95,
   "ts": 1793503942.6835003
@@ -2918,6 +2994,10 @@
  "https://www.vinted.es/items/9475891106-petite-fleur": {
   "precio": 4.0,
   "ts": 1792660613.8414762
+ },
+ "https://www.vinted.es/items/9490302317-vinile-the-police-reggatta-de-blanc": {
+  "precio": 15.0,
+  "ts": 1793747040.7510958
  },
  "https://www.vinted.es/items/9529528946-the-police-reggatta-de-blanc-vinile-lp-originale-33-giri": {
   "precio": 18.0,
