@@ -287,6 +287,10 @@
   "precio": 16.0,
   "ts": 1792532204.0189676
  },
+ "https://www.discogs.com/sell/release/1271357?sort=price%2Casc": {
+  "precio": 1.76,
+  "ts": 1793765871.877741
+ },
  "https://www.discogs.com/sell/release/12746579": {
   "precio": 12.0,
   "ts": 1792532257.378146
@@ -367,6 +371,10 @@
   "precio": 9.99,
   "ts": 1793727793.537874
  },
+ "https://www.discogs.com/sell/release/1376806?sort=price%2Casc": {
+  "precio": 3.52,
+  "ts": 1793764584.496163
+ },
  "https://www.discogs.com/sell/release/13789331?sort=price%2Casc": {
   "precio": 3.56,
   "ts": 1792659895.4137414
@@ -375,9 +383,13 @@
   "precio": 8.87,
   "ts": 1793504139.6994545
  },
+ "https://www.discogs.com/sell/release/1389126?sort=price%2Casc": {
+  "precio": 1.0,
+  "ts": 1793764649.63068
+ },
  "https://www.discogs.com/sell/release/13990721?sort=price%2Casc": {
-  "precio": 1.79,
-  "ts": 1793606118.08419
+  "precio": 1.77,
+  "ts": 1793764456.6612175
  },
  "https://www.discogs.com/sell/release/14013500": {
   "precio": 11.87,
@@ -766,6 +778,10 @@
  "https://www.discogs.com/sell/release/3052492": {
   "precio": 18.82,
   "ts": 1792536955.30285
+ },
+ "https://www.discogs.com/sell/release/3111135?sort=price%2Casc": {
+  "precio": 13.0,
+  "ts": 1793764968.0072312
  },
  "https://www.discogs.com/sell/release/3146367": {
   "precio": 3.55,
@@ -2387,6 +2403,10 @@
   "precio": 14.0,
   "ts": 1793746714.0357893
  },
+ "https://www.vinted.es/items/1635199184-pearl-janis-joplin-disco-in-vinile-33-giri": {
+  "precio": 30.0,
+  "ts": 1793764995.6206477
+ },
  "https://www.vinted.es/items/2779449228-cat-stevens-teaser-and-the-firecat": {
   "precio": 12.0,
   "ts": 1793671207.7148302
@@ -2463,6 +2483,10 @@
   "precio": 8.0,
   "ts": 1793671159.31254
  },
+ "https://www.vinted.es/items/5153762316-vinile-lp-janis-joplin-pearl": {
+  "precio": 30.0,
+  "ts": 1793764996.2563257
+ },
  "https://www.vinted.es/items/5164152931-disco-vinil-grande-sinead-oconnor-i-do-not-want-what-i-havent-got": {
   "precio": 30.0,
   "ts": 1793607132.943664
@@ -2474,6 +2498,10 @@
  "https://www.vinted.es/items/5249347358-lp-janis-joplin-e-cheap-thrills-sigillato": {
   "precio": 25.0,
   "ts": 1793671496.391606
+ },
+ "https://www.vinted.es/items/5295387373-album-greatest-hits-cat-stevens": {
+  "precio": 10.0,
+  "ts": 1793764627.2139292
  },
  "https://www.vinted.es/items/5321527966-vinil-cat-stevens-teaser-and-the-firecat": {
   "precio": 10.0,
@@ -2522,6 +2550,10 @@
  "https://www.vinted.es/items/5873867104-vinile-di-louis-armstrong-what-a-wonderful-world": {
   "precio": 12.99,
   "ts": 1792680832.0883312
+ },
+ "https://www.vinted.es/items/5887895017-cat-stevens-greatest-hits-estado-vg-vg-1976": {
+  "precio": 10.0,
+  "ts": 1793764626.5729377
  },
  "https://www.vinted.es/items/5942268254-lou-reed-transformer": {
   "precio": 25.0,
@@ -2614,6 +2646,10 @@
  "https://www.vinted.es/items/7443216453-cat-stevens-greatest-hits": {
   "precio": 8.0,
   "ts": 1793649397.9867868
+ },
+ "https://www.vinted.es/items/7488754748-cat-stevens-greatest-hits-vinile": {
+  "precio": 10.0,
+  "ts": 1793764625.847376
  },
  "https://www.vinted.es/items/7530927704-cat-stevens-greatest-hits-lp-12-1975": {
   "precio": 3.0,
@@ -2967,6 +3003,10 @@
   "precio": 7.5,
   "ts": 1793260348.737941
  },
+ "https://www.vinted.es/items/9320413730-cat-stevens-the-teaser-and-the-firecat-vinile-vinileria": {
+  "precio": 20.0,
+  "ts": 1793764680.3408258
+ },
  "https://www.vinted.es/items/9327041399-janis-joplin-pearl-lp": {
   "precio": 22.0,
   "ts": 1793609193.3793857
@@ -2999,6 +3039,10 @@
   "precio": 15.0,
   "ts": 1793747040.7510958
  },
+ "https://www.vinted.es/items/9505443956-cat-stevens-teaser-and-the-firecat": {
+  "precio": 18.0,
+  "ts": 1793764679.71392
+ },
  "https://www.vinted.es/items/9529528946-the-police-reggatta-de-blanc-vinile-lp-originale-33-giri": {
   "precio": 18.0,
   "ts": 1793569677.6156833
@@ -3022,6 +3066,10 @@
  "https://www.vinted.es/items/9558065083-john-coltrane-blue-train-lp": {
   "precio": 18.0,
   "ts": 1792660178.3919373
+ },
+ "https://www.vinted.es/items/9560803188-cat-stevens-teaser-and-the-firecat": {
+  "precio": 17.0,
+  "ts": 1793764679.0613801
  },
  "https://www.vinted.es/items/9592119516-lou-reed-transformer-vinilo": {
   "precio": 25.0,
