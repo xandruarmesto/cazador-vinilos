@@ -83,6 +83,10 @@
   "precio": 15.0,
   "ts": 1792830581.5721486
  },
+ "https://es.wallapop.com/item/vinilo-bob-marley-legend-1320728132": {
+  "precio": 15.0,
+  "ts": 1793819218.9641893
+ },
  "https://es.wallapop.com/item/vinilo-bob-marley-legend-best-of-1319685376": {
   "precio": 15.9,
   "ts": 1793649370.6243079
@@ -102,6 +106,10 @@
  "https://es.wallapop.com/item/vinilo-dire-straits-brothers-in-arms-1319867561": {
   "precio": 11.95,
   "ts": 1793649556.8482163
+ },
+ "https://es.wallapop.com/item/vinilo-dire-straits-brothers-in-arms-1320708136": {
+  "precio": 5.0,
+  "ts": 1793819421.9261918
  },
  "https://es.wallapop.com/item/vinilo-dire-straits-making-movies-1315430677": {
   "precio": 10.0,
@@ -146,6 +154,10 @@
  "https://es.wallapop.com/item/vinilo-pearl-janis-joplin-1319968805": {
   "precio": 15.0,
   "ts": 1793649743.6913517
+ },
+ "https://es.wallapop.com/item/vinilo-queen-greatest-hits-1320783602": {
+  "precio": 20.0,
+  "ts": 1793820093.6220675
  },
  "https://es.wallapop.com/item/vinilo-the-beatles-rock-n-roll-music-vol-1-1315570004": {
   "precio": 5.0,
@@ -784,8 +796,8 @@
   "ts": 1792636125.5643232
  },
  "https://www.discogs.com/sell/release/3029710?sort=price%2Casc": {
-  "precio": 8.1,
-  "ts": 1793607204.6619468
+  "precio": 8.01,
+  "ts": 1793820297.6261504
  },
  "https://www.discogs.com/sell/release/30328208": {
   "precio": 22.0,
@@ -1347,9 +1359,17 @@
   "precio": 5.93,
   "ts": 1792550015.5054424
  },
+ "https://www.discogs.com/sell/release/8097391?sort=price%2Casc": {
+  "precio": 2.67,
+  "ts": 1793819271.8534503
+ },
  "https://www.discogs.com/sell/release/8308889?sort=price%2Casc": {
   "precio": 6.22,
   "ts": 1792661008.067727
+ },
+ "https://www.discogs.com/sell/release/8337928?sort=price%2Casc": {
+  "precio": 8.01,
+  "ts": 1793819715.8285384
  },
  "https://www.discogs.com/sell/release/8341955?sort=price%2Casc": {
   "precio": 5.34,
@@ -2475,6 +2495,34 @@
   "precio": 15.0,
   "ts": 1793792990.3311367
  },
+ "https://www.vinted.es/items/10661494201-oasis-whats-the-story-morning-glory": {
+  "precio": 9.99,
+  "ts": 1793820037.675955
+ },
+ "https://www.vinted.es/items/10662897694-vinile-the-doors-13": {
+  "precio": 20.0,
+  "ts": 1793820407.538393
+ },
+ "https://www.vinted.es/items/10663975355-the-doors-best-of": {
+  "precio": 16.99,
+  "ts": 1793820406.2525074
+ },
+ "https://www.vinted.es/items/10664247301-vinile-bob-dylan-highway-61-revisited": {
+  "precio": 20.0,
+  "ts": 1793819183.6172917
+ },
+ "https://www.vinted.es/items/10665465034-the-police-reggatta-de-blanc": {
+  "precio": 15.0,
+  "ts": 1793820488.4762352
+ },
+ "https://www.vinted.es/items/10666506643-janis-joplin-cheap-thrills-big-brother-and-the-holding-company": {
+  "precio": 13.0,
+  "ts": 1793819605.991565
+ },
+ "https://www.vinted.es/items/10667364702-33t-the-doors": {
+  "precio": 18.0,
+  "ts": 1793820406.8998702
+ },
  "https://www.vinted.es/items/1635199184-pearl-janis-joplin-disco-in-vinile-33-giri": {
   "precio": 30.0,
   "ts": 1793764995.6206477
@@ -2518,6 +2566,10 @@
  "https://www.vinted.es/items/3649365844-the-police-the-singles-tratto-dall-lp-every-breath-you-take": {
   "precio": 8.0,
   "ts": 1793116459.1085565
+ },
+ "https://www.vinted.es/items/3786087554-vinile-cat-stevens-greatest-hits": {
+  "precio": 11.0,
+  "ts": 1793819248.702494
  },
  "https://www.vinted.es/items/3845069249-cat-stevens-greatest-hits": {
   "precio": 8.0,
@@ -2708,8 +2760,8 @@
   "ts": 1793502910.2234237
  },
  "https://www.vinted.es/items/7122088640-vinile-33-cat-stevens-teaser-and-the-firecat": {
-  "precio": 25.0,
-  "ts": 1793792898.4089901
+  "precio": 15.0,
+  "ts": 1793819300.6534097
  },
  "https://www.vinted.es/items/7236941725-janis-joplin-pearl-lp-quadraphonic-mega-rare-spain-1974": {
   "precio": 29.95,
@@ -2746,6 +2798,10 @@
  "https://www.vinted.es/items/7580060260-janis-joplin-pearl": {
   "precio": 22.0,
   "ts": 1793649746.4389248
+ },
+ "https://www.vinted.es/items/7609076944-cat-stevens-greatest-hits": {
+  "precio": 11.0,
+  "ts": 1793819248.0714545
  },
  "https://www.vinted.es/items/7618845852-cat-stevens-greatest-hits": {
   "precio": 10.0,
@@ -2906,6 +2962,10 @@
  "https://www.vinted.es/items/8515645698-the-housemartins-now-thats-what-i-call-quite-good-2xlp-1st-italy-press-1988-pop-soul-80s": {
   "precio": 30.0,
   "ts": 1793503864.7558732
+ },
+ "https://www.vinted.es/items/8567931918-vinile-cat-stevens-greatest-hits": {
+  "precio": 11.0,
+  "ts": 1793819247.44328
  },
  "https://www.vinted.es/items/8610182020-mink-deville-coup-de-grace-germany-1981": {
   "precio": 20.0,
