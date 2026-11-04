@@ -91,6 +91,10 @@
   "precio": 12.0,
   "ts": 1793198685.5975173
  },
+ "https://es.wallapop.com/item/vinilo-cosmo-s-factory-creedence-clearwater-1320648811": {
+  "precio": 15.0,
+  "ts": 1793792988.3817554
+ },
  "https://es.wallapop.com/item/vinilo-cream-wheels-of-fire-1315430473": {
   "precio": 20.0,
   "ts": 1792532684.5798714
@@ -102,6 +106,10 @@
  "https://es.wallapop.com/item/vinilo-dire-straits-making-movies-1315430677": {
   "precio": 10.0,
   "ts": 1792532276.8763301
+ },
+ "https://es.wallapop.com/item/vinilo-guns-n-roses-appetite-for-destruction-1320544154": {
+  "precio": 25.0,
+  "ts": 1793793123.027195
  },
  "https://es.wallapop.com/item/vinilo-john-coltrane-blue-train-1319653988": {
   "precio": 12.0,
@@ -146,6 +154,10 @@
  "https://es.wallapop.com/item/vinilo-the-doors-13-1318998799": {
   "precio": 13.0,
   "ts": 1793503837.657356
+ },
+ "https://es.wallapop.com/item/vinilo-the-doors-the-history-vol-1-1320616635": {
+  "precio": 19.9,
+  "ts": 1793793918.978218
  },
  "https://es.wallapop.com/item/vinilo-the-police-reggatta-de-blanc-1979-1319465699": {
   "precio": 18.0,
@@ -456,8 +468,8 @@
   "ts": 1792660260.007368
  },
  "https://www.discogs.com/sell/release/15084698?sort=price%2Casc": {
-  "precio": 1.27,
-  "ts": 1793649466.892179
+  "precio": 1.24,
+  "ts": 1793792918.0025046
  },
  "https://www.discogs.com/sell/release/15152687": {
   "precio": 6.5,
@@ -487,6 +499,10 @@
   "precio": 19.3,
   "ts": 1792536677.762223
  },
+ "https://www.discogs.com/sell/release/1535865?sort=price%2Casc": {
+  "precio": 4.45,
+  "ts": 1793793816.8865607
+ },
  "https://www.discogs.com/sell/release/15443692": {
   "precio": 5.0,
   "ts": 1792536598.2476697
@@ -502,6 +518,10 @@
  "https://www.discogs.com/sell/release/1593234": {
   "precio": 5.29,
   "ts": 1792549997.8533454
+ },
+ "https://www.discogs.com/sell/release/1593234?sort=price%2Casc": {
+  "precio": 4.86,
+  "ts": 1793793027.1395879
  },
  "https://www.discogs.com/sell/release/15999105": {
   "precio": 11.87,
@@ -835,6 +855,10 @@
   "precio": 16.6,
   "ts": 1792536616.1455176
  },
+ "https://www.discogs.com/sell/release/3311257?sort=price%2Casc": {
+  "precio": 5.0,
+  "ts": 1793792685.9969447
+ },
  "https://www.discogs.com/sell/release/3336752?sort=price%2Casc": {
   "precio": 3.03,
   "ts": 1793727627.4049785
@@ -963,6 +987,10 @@
   "precio": 6.5,
   "ts": 1792612629.2945123
  },
+ "https://www.discogs.com/sell/release/4095517?sort=price%2Casc": {
+  "precio": 3.0,
+  "ts": 1793793485.4049916
+ },
  "https://www.discogs.com/sell/release/4098734?sort=price%2Casc": {
   "precio": 1.77,
   "ts": 1793554980.1000674
@@ -1058,6 +1086,10 @@
  "https://www.discogs.com/sell/release/5208267?sort=price%2Casc": {
   "precio": 6.23,
   "ts": 1792570923.4422698
+ },
+ "https://www.discogs.com/sell/release/531009?sort=price%2Casc": {
+  "precio": 0.86,
+  "ts": 1793792871.1731937
  },
  "https://www.discogs.com/sell/release/5310894?sort=price%2Casc": {
   "precio": 3.6,
@@ -1208,8 +1240,8 @@
   "ts": 1793503549.3530934
  },
  "https://www.discogs.com/sell/release/6819143?sort=price%2Casc": {
-  "precio": 5.08,
-  "ts": 1793696485.977061
+  "precio": 5.07,
+  "ts": 1793793192.4635038
  },
  "https://www.discogs.com/sell/release/6869093?sort=price%2Casc": {
   "precio": 3.98,
@@ -1466,6 +1498,10 @@
  "https://www.vinted.es/items/10098184439-vinyle-33t-tracy-chapman-vintage": {
   "precio": 20.0,
   "ts": 1793555174.5593765
+ },
+ "https://www.vinted.es/items/10099181321-cat-stevens-teaser-and-the-firecat": {
+  "precio": 25.0,
+  "ts": 1793792898.0230541
  },
  "https://www.vinted.es/items/10099212388-janis-joplin-pearl": {
   "precio": 25.0,
@@ -2191,6 +2227,10 @@
   "precio": 22.0,
   "ts": 1793503454.3110585
  },
+ "https://www.vinted.es/items/10611135732-john-coltrane-blue-train-yellow-vinyl-lp": {
+  "precio": 16.0,
+  "ts": 1793793242.2765398
+ },
  "https://www.vinted.es/items/10611701618-33-giri-dire-straits-making-movies": {
   "precio": 16.0,
   "ts": 1793530710.3844883
@@ -2355,6 +2395,10 @@
   "precio": 18.0,
   "ts": 1793671693.732015
  },
+ "https://www.vinted.es/items/10642066957-cat-stevens-teaser-and-the-firecat": {
+  "precio": 25.0,
+  "ts": 1793792897.610239
+ },
  "https://www.vinted.es/items/10645284243-vinile-nirvana-nevermind": {
   "precio": 19.99,
   "ts": 1793696851.4129567
@@ -2403,9 +2447,41 @@
   "precio": 14.0,
   "ts": 1793746714.0357893
  },
+ "https://www.vinted.es/items/10658493992-the-doors-seattle-center-coliseum-1970-lp": {
+  "precio": 20.0,
+  "ts": 1793793921.5442047
+ },
+ "https://www.vinted.es/items/10658516569-the-doors-live-at-seattle-center-coliseum-1970-lp": {
+  "precio": 20.0,
+  "ts": 1793793921.1363056
+ },
+ "https://www.vinted.es/items/10658737447-dire-straits-making-movies": {
+  "precio": 12.0,
+  "ts": 1793793030.4674742
+ },
+ "https://www.vinted.es/items/10659783163-guns-n-roses-appetite-for-destruction": {
+  "precio": 15.0,
+  "ts": 1793793125.1594768
+ },
+ "https://www.vinted.es/items/10659872165-guns-n-roses-appetite-for-destruction-black-vinyl": {
+  "precio": 28.0,
+  "ts": 1793793127.1430278
+ },
+ "https://www.vinted.es/items/10660275713-guns-n-roses-appetite-for-destruction": {
+  "precio": 22.0,
+  "ts": 1793793126.737737
+ },
+ "https://www.vinted.es/items/10660591146-creedence-clearwater-revival-cosmos-factory-lp-album": {
+  "precio": 15.0,
+  "ts": 1793792990.3311367
+ },
  "https://www.vinted.es/items/1635199184-pearl-janis-joplin-disco-in-vinile-33-giri": {
   "precio": 30.0,
   "ts": 1793764995.6206477
+ },
+ "https://www.vinted.es/items/2583440526-cat-stevens-greatest-hits": {
+  "precio": 10.0,
+  "ts": 1793792850.423583
  },
  "https://www.vinted.es/items/2779449228-cat-stevens-teaser-and-the-firecat": {
   "precio": 12.0,
@@ -2451,9 +2527,17 @@
   "precio": 8.0,
   "ts": 1793671159.7815614
  },
+ "https://www.vinted.es/items/4009853827-cat-stevens-greatest-hits": {
+  "precio": 10.0,
+  "ts": 1793792850.0320787
+ },
  "https://www.vinted.es/items/4028853569-bob-dylan-highway-61-revisited-spartiti": {
   "precio": 18.0,
   "ts": 1793502850.7915678
+ },
+ "https://www.vinted.es/items/4045593018-vinile-cat-stevens-greatest-hits": {
+  "precio": 10.0,
+  "ts": 1793792849.624957
  },
  "https://www.vinted.es/items/4158779526-lp-mink-deville-coup-de-grace": {
   "precio": 10.0,
@@ -2622,6 +2706,10 @@
  "https://www.vinted.es/items/7093839964-cat-stevens-tea-for-the-tillerman-1970-lp": {
   "precio": 15.0,
   "ts": 1793502910.2234237
+ },
+ "https://www.vinted.es/items/7122088640-vinile-33-cat-stevens-teaser-and-the-firecat": {
+  "precio": 25.0,
+  "ts": 1793792898.4089901
  },
  "https://www.vinted.es/items/7236941725-janis-joplin-pearl-lp-quadraphonic-mega-rare-spain-1974": {
   "precio": 29.95,
