@@ -198,7 +198,8 @@
     "artista": "Louis Armstrong",
     "disco": "What a Wonderful World",
     "max_precio": 18,
-    "excluir": ["single", "7"]
+    "excluir": ["single", "7"],
+    "comprado": "2026-11-05"
   },
   {
     "artista": "Love of Lesbian",

@@ -195,6 +195,10 @@
   "precio": 21.99,
   "ts": 1793869611.4910028
  },
+ "https://es.wallapop.com/item/vinilo-tracy-chapman-crossroads-1321140722": {
+  "precio": 12.0,
+  "ts": 1793902264.6112769
+ },
  "https://es.wallapop.com/item/vinilo-tracy-chapman-crossroads-1989-1315388619": {
   "precio": 15.0,
   "ts": 1792532780.6827123
@@ -372,8 +376,8 @@
   "ts": 1792532292.4331994
  },
  "https://www.discogs.com/sell/release/13350750?sort=price%2Casc": {
-  "precio": 5.4,
-  "ts": 1793649767.3205721
+  "precio": 5.34,
+  "ts": 1793901294.6296382
  },
  "https://www.discogs.com/sell/release/13397638": {
   "precio": 13.34,
@@ -2603,6 +2607,10 @@
   "precio": 5.0,
   "ts": 1793868852.6622727
  },
+ "https://www.vinted.es/items/10678807616-tracy-chapman-fast-car": {
+  "precio": 5.0,
+  "ts": 1793902266.8441458
+ },
  "https://www.vinted.es/items/1635199184-pearl-janis-joplin-disco-in-vinile-33-giri": {
   "precio": 30.0,
   "ts": 1793764995.6206477
@@ -2691,6 +2699,10 @@
   "precio": 11.99,
   "ts": 1793606574.486688
  },
+ "https://www.vinted.es/items/4889962776-cat-stevens-greatest-hits": {
+  "precio": 13.0,
+  "ts": 1793900943.4556398
+ },
  "https://www.vinted.es/items/5057060358-louis-armstrong-the-hot-fives-volume-i": {
   "precio": 7.0,
   "ts": 1792660202.6092262
@@ -2710,6 +2722,10 @@
  "https://www.vinted.es/items/5194645232-sinead-oconnor-i-do-not-want-what-i-havent-got": {
   "precio": 25.0,
   "ts": 1793554723.3159544
+ },
+ "https://www.vinted.es/items/5218879568-cat-stevens-greatest-hits": {
+  "precio": 14.0,
+  "ts": 1793900943.9276328
  },
  "https://www.vinted.es/items/5249347358-lp-janis-joplin-e-cheap-thrills-sigillato": {
   "precio": 25.0,
@@ -3270,6 +3286,10 @@
  "https://www.vinted.es/items/9423762052-petite-fleur-composto-da-sidney-bechet": {
   "precio": 9.99,
   "ts": 1793503658.1925647
+ },
+ "https://www.vinted.es/items/9432006484-vinilo-cat-stevens-greatest-hits": {
+  "precio": 13.0,
+  "ts": 1793900942.945056
  },
  "https://www.vinted.es/items/9433265738-cat-stevens-teaser-and-the-firecat-lp-vinile-stampa-dellepoca": {
   "precio": 15.0,
