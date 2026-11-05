@@ -119,6 +119,10 @@
   "precio": 25.0,
   "ts": 1793793123.027195
  },
+ "https://es.wallapop.com/item/vinilo-janis-joplin-pearl-1320871321": {
+  "precio": 25.0,
+  "ts": 1793839655.8996632
+ },
  "https://es.wallapop.com/item/vinilo-john-coltrane-blue-train-1319653988": {
   "precio": 12.0,
   "ts": 1793649792.342225
@@ -535,6 +539,10 @@
   "precio": 4.86,
   "ts": 1793793027.1395879
  },
+ "https://www.discogs.com/sell/release/15965487?sort=price%2Casc": {
+  "precio": 2.69,
+  "ts": 1793839328.6661153
+ },
  "https://www.discogs.com/sell/release/15999105": {
   "precio": 11.87,
   "ts": 1792536615.6723418
@@ -618,6 +626,10 @@
  "https://www.discogs.com/sell/release/20332672?sort=price%2Casc": {
   "precio": 2.57,
   "ts": 1793606596.3686292
+ },
+ "https://www.discogs.com/sell/release/2085881?sort=price%2Casc": {
+  "precio": 7.28,
+  "ts": 1793840245.0980968
  },
  "https://www.discogs.com/sell/release/2100475?sort=price%2Casc": {
   "precio": 4.44,
@@ -886,6 +898,10 @@
  "https://www.discogs.com/sell/release/3407398?sort=price%2Casc": {
   "precio": 0.45,
   "ts": 1793554465.3421972
+ },
+ "https://www.discogs.com/sell/release/3414065?sort=price%2Casc": {
+  "precio": 4.99,
+  "ts": 1793840745.898739
  },
  "https://www.discogs.com/sell/release/34256551": {
   "precio": 17.95,
@@ -1272,8 +1288,8 @@
   "ts": 1792550227.3195748
  },
  "https://www.discogs.com/sell/release/7207232?sort=price%2Casc": {
-  "precio": 4.5,
-  "ts": 1793671342.4201024
+  "precio": 4.45,
+  "ts": 1793839492.7551565
  },
  "https://www.discogs.com/sell/release/7236002": {
   "precio": 2.66,
@@ -1294,6 +1310,10 @@
  "https://www.discogs.com/sell/release/736266": {
   "precio": 17.59,
   "ts": 1792550294.501023
+ },
+ "https://www.discogs.com/sell/release/7510783?sort=price%2Casc": {
+  "precio": 2.67,
+  "ts": 1793839352.3454816
  },
  "https://www.discogs.com/sell/release/751778?sort=price%2Casc": {
   "precio": 3.17,
@@ -1446,6 +1466,10 @@
  "https://www.discogs.com/sell/release/9943580": {
   "precio": 18.0,
   "ts": 1792532204.5027256
+ },
+ "https://www.discogs.com/sell/release/996205?sort=price%2Casc": {
+  "precio": 6.01,
+  "ts": 1793840653.9807534
  },
  "https://www.vinted.es/items/10003258825-lp-dire-straits-making-movies-repress": {
   "precio": 15.0,
@@ -2503,6 +2527,10 @@
   "precio": 20.0,
   "ts": 1793820407.538393
  },
+ "https://www.vinted.es/items/10662914659-the-doors": {
+  "precio": 20.0,
+  "ts": 1793840393.7332835
+ },
  "https://www.vinted.es/items/10663975355-the-doors-best-of": {
   "precio": 16.99,
   "ts": 1793820406.2525074
@@ -2522,6 +2550,30 @@
  "https://www.vinted.es/items/10667364702-33t-the-doors": {
   "precio": 18.0,
   "ts": 1793820406.8998702
+ },
+ "https://www.vinted.es/items/10667981984-bob-dylan-highway-61-revisited-lp-vinyl": {
+  "precio": 15.0,
+  "ts": 1793839245.0066895
+ },
+ "https://www.vinted.es/items/10668263317-vinyle-dire-straits-making-movies": {
+  "precio": 14.0,
+  "ts": 1793839496.2029355
+ },
+ "https://www.vinted.es/items/10668707536-the-doors-la-woman-vinyle-33-tours-vintage-rock": {
+  "precio": 20.0,
+  "ts": 1793840393.4428172
+ },
+ "https://www.vinted.es/items/10670077429-vinilo-the-police-every-breath-you-take-the-singles": {
+  "precio": 12.0,
+  "ts": 1793840464.8067057
+ },
+ "https://www.vinted.es/items/10670083787-vinilo-cat-stevens-greatest-hits": {
+  "precio": 10.0,
+  "ts": 1793839307.0057411
+ },
+ "https://www.vinted.es/items/10670214532-vinilo-dire-straits-making-movies": {
+  "precio": 12.0,
+  "ts": 1793839495.9143553
  },
  "https://www.vinted.es/items/1635199184-pearl-janis-joplin-disco-in-vinile-33-giri": {
   "precio": 30.0,
@@ -3087,6 +3139,10 @@
   "precio": 15.0,
   "ts": 1793371822.6302629
  },
+ "https://www.vinted.es/items/8977675699-cat-stevens-greatest-hits": {
+  "precio": 12.0,
+  "ts": 1793839307.6205065
+ },
  "https://www.vinted.es/items/9012833031-dire-straits-making-movies": {
   "precio": 15.0,
   "ts": 1793530709.9965987
@@ -3167,6 +3223,10 @@
   "precio": 20.0,
   "ts": 1793530669.666093
  },
+ "https://www.vinted.es/items/9372330595-the-runaways-lote-de-2-lp-vinilo-12": {
+  "precio": 23.95,
+  "ts": 1793840546.3132942
+ },
  "https://www.vinted.es/items/9423762052-petite-fleur-composto-da-sidney-bechet": {
   "precio": 9.99,
   "ts": 1793503658.1925647
@@ -3178,6 +3238,10 @@
  "https://www.vinted.es/items/9450940493-the-police-synchronicity-1983-vg-vg-am-records-amlx-63735": {
   "precio": 15.95,
   "ts": 1793503942.6835003
+ },
+ "https://www.vinted.es/items/9470559822-greatest-hits-cat-stevens-1975": {
+  "precio": 12.0,
+  "ts": 1793839307.3078012
  },
  "https://www.vinted.es/items/9475891106-petite-fleur": {
   "precio": 4.0,
