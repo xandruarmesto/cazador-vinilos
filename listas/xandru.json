@@ -68,7 +68,8 @@
   {
     "artista": "Cat Stevens",
     "disco": "Teaser and the Firecat",
-    "max_precio": 26
+    "max_precio": 26,
+    "comprado": "2026-11-06"
   },
   {
     "artista": "Charlie Parker",
