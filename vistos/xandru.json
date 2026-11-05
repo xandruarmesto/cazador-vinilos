@@ -83,6 +83,10 @@
   "precio": 15.0,
   "ts": 1792830581.5721486
  },
+ "https://es.wallapop.com/item/vinilo-bob-dylan-highway-61-revisited-1320964889": {
+  "precio": 15.0,
+  "ts": 1793868325.2899747
+ },
  "https://es.wallapop.com/item/vinilo-bob-marley-legend-1320728132": {
   "precio": 15.0,
   "ts": 1793819218.9641893
@@ -186,6 +190,10 @@
  "https://es.wallapop.com/item/vinilo-the-police-synchronicity-1319751869": {
   "precio": 15.0,
   "ts": 1793650589.4708722
+ },
+ "https://es.wallapop.com/item/vinilo-the-rolling-stones-sticky-fingers-1320980219": {
+  "precio": 21.99,
+  "ts": 1793869611.4910028
  },
  "https://es.wallapop.com/item/vinilo-tracy-chapman-crossroads-1989-1315388619": {
   "precio": 15.0,
@@ -624,8 +632,8 @@
   "ts": 1792680850.1448247
  },
  "https://www.discogs.com/sell/release/20332672?sort=price%2Casc": {
-  "precio": 2.57,
-  "ts": 1793606596.3686292
+  "precio": 2.54,
+  "ts": 1793868731.8226035
  },
  "https://www.discogs.com/sell/release/2085881?sort=price%2Casc": {
   "precio": 7.28,
@@ -746,6 +754,10 @@
  "https://www.discogs.com/sell/release/26046358": {
   "precio": 20.0,
   "ts": 1792532701.005942
+ },
+ "https://www.discogs.com/sell/release/2660094?sort=price%2Casc": {
+  "precio": 6.23,
+  "ts": 1793869373.962819
  },
  "https://www.discogs.com/sell/release/2663595?sort=price%2Casc": {
   "precio": 6.99,
@@ -1203,6 +1215,10 @@
   "precio": 13.36,
   "ts": 1792550527.4999099
  },
+ "https://www.discogs.com/sell/release/6216461?sort=price%2Casc": {
+  "precio": 1.81,
+  "ts": 1793868401.8515563
+ },
  "https://www.discogs.com/sell/release/6223461?sort=price%2Casc": {
   "precio": 6.53,
   "ts": 1793503861.4613154
@@ -1268,8 +1284,8 @@
   "ts": 1793503549.3530934
  },
  "https://www.discogs.com/sell/release/6819143?sort=price%2Casc": {
-  "precio": 5.07,
-  "ts": 1793793192.4635038
+  "precio": 5.06,
+  "ts": 1793868708.2251797
  },
  "https://www.discogs.com/sell/release/6869093?sort=price%2Casc": {
   "precio": 3.98,
@@ -2575,6 +2591,18 @@
   "precio": 12.0,
   "ts": 1793839495.9143553
  },
+ "https://www.vinted.es/items/10670804639-vinilo-creedence-clearwater-revival-cosmos-factory-ed-espana": {
+  "precio": 20.0,
+  "ts": 1793868517.1723535
+ },
+ "https://www.vinted.es/items/10671926678-doppio-lp-the-housemartins-now-thats-what-i-call-quite-good": {
+  "precio": 25.0,
+  "ts": 1793869508.0281935
+ },
+ "https://www.vinted.es/items/10672564266-louis-armstrong-what-a-wonderful-world-vinile": {
+  "precio": 5.0,
+  "ts": 1793868852.6622727
+ },
  "https://www.vinted.es/items/1635199184-pearl-janis-joplin-disco-in-vinile-33-giri": {
   "precio": 30.0,
   "ts": 1793764995.6206477
@@ -2763,6 +2791,10 @@
   "precio": 16.0,
   "ts": 1793554959.4521708
  },
+ "https://www.vinted.es/items/6345323128-cat-stevens-greatest-hits-vinile-33-giri": {
+  "precio": 12.0,
+  "ts": 1793868381.9319537
+ },
  "https://www.vinted.es/items/6345437904-dire-straits-brothers-in-arms": {
   "precio": 8.0,
   "ts": 1793115660.7111666
@@ -2878,6 +2910,10 @@
  "https://www.vinted.es/items/7741460756-the-police-every-breath-you-take-the-singles": {
   "precio": 10.0,
   "ts": 1793133368.4882617
+ },
+ "https://www.vinted.es/items/7764075080-cat-stevens-greatest-hits-lp": {
+  "precio": 12.0,
+  "ts": 1793868381.3422337
  },
  "https://www.vinted.es/items/7766694374-vinilo-lou-reed-transformer": {
   "precio": 16.0,
@@ -2998,6 +3034,10 @@
  "https://www.vinted.es/items/8322654017-the-police-every-breath-you-take-remix": {
   "precio": 15.0,
   "ts": 1793503913.1315377
+ },
+ "https://www.vinted.es/items/8397297595-cat-stevens-greatest-hits-lp": {
+  "precio": 12.0,
+  "ts": 1793868380.8323593
  },
  "https://www.vinted.es/items/8491646391-disco-janis-joplin-pearl": {
   "precio": 18.0,
