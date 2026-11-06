@@ -1443,6 +1443,10 @@
   "precio": 18.83,
   "ts": 1792532186.6197927
  },
+ "https://www.discogs.com/sell/release/8812891?sort=price%2Casc": {
+  "precio": 1.5,
+  "ts": 1793971786.3861048
+ },
  "https://www.discogs.com/sell/release/8863995?sort=price%2Casc": {
   "precio": 2.66,
   "ts": 1793728324.1355968
@@ -2608,12 +2612,16 @@
   "ts": 1793868852.6622727
  },
  "https://www.vinted.es/items/10678807616-tracy-chapman-fast-car": {
-  "precio": 5.0,
-  "ts": 1793902266.8441458
+  "precio": 4.0,
+  "ts": 1793973084.7773972
  },
  "https://www.vinted.es/items/10682915435-sinead-oconnor-i-do-not-want-what-i-havent-got-lp-vinile-ensign-1990-nothing-compares-2-u": {
   "precio": 7.0,
   "ts": 1793920740.3145242
+ },
+ "https://www.vinted.es/items/10686942930-guns-n-roses-appetite-for-destruction": {
+  "precio": 14.0,
+  "ts": 1793972013.8101497
  },
  "https://www.vinted.es/items/1635199184-pearl-janis-joplin-disco-in-vinile-33-giri": {
   "precio": 30.0,
