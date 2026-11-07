@@ -87,6 +87,21 @@
     "max_precio": 22
   },
   {
+    "artista": "Counting Crows",
+    "disco": "Films About Ghosts",
+    "max_precio": 30
+  },
+  {
+    "artista": "Counting Crows",
+    "disco": "Recovering the Satellites",
+    "max_precio": 28
+  },
+  {
+    "artista": "Crash Test Dummies",
+    "disco": "God Shuffled His Feet",
+    "max_precio": 26
+  },
+  {
     "artista": "Creedence Clearwater Revival",
     "disco": "Chronicle",
     "max_precio": 22
