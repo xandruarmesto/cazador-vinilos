@@ -127,6 +127,11 @@
     "max_precio": 25
   },
   {
+    "artista": "Dusty Springfield",
+    "disco": "Dusty in Memphis",
+    "max_precio": 28
+  },
+  {
     "artista": "Ella Fitzgerald",
     "disco": "Ella and Louis",
     "max_precio": 20
@@ -261,6 +266,11 @@
     "artista": "Nacho Vegas",
     "disco": "La Zona Sucia",
     "max_precio": 22
+  },
+  {
+    "artista": "Nancy Sinatra",
+    "disco": "Boots",
+    "max_precio": 26
   },
   {
     "artista": "Nat King Cole",
