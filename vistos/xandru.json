@@ -615,6 +615,10 @@
   "precio": 1.5,
   "ts": 1792532256.3320184
  },
+ "https://www.discogs.com/sell/release/18918394?sort=price%2Casc": {
+  "precio": 3.6,
+  "ts": 1794159442.8174982
+ },
  "https://www.discogs.com/sell/release/1907378": {
   "precio": 11.0,
   "ts": 1792532679.3253224
@@ -2671,6 +2675,18 @@
   "precio": 10.0,
   "ts": 1794136472.3461585
  },
+ "https://www.vinted.es/items/10716459851-disco-vinile-33-giri-the-doors": {
+  "precio": 12.0,
+  "ts": 1794159886.7160356
+ },
+ "https://www.vinted.es/items/10716681324-dischi-vinile-33-giri-the-doors": {
+  "precio": 12.0,
+  "ts": 1794159886.0549283
+ },
+ "https://www.vinted.es/items/10719452775-the-doors-apocalypse-don-fardon-indian": {
+  "precio": 5.0,
+  "ts": 1794159885.5879657
+ },
  "https://www.vinted.es/items/1635199184-pearl-janis-joplin-disco-in-vinile-33-giri": {
   "precio": 30.0,
   "ts": 1793764995.6206477
@@ -3364,8 +3380,8 @@
   "ts": 1793503942.6835003
  },
  "https://www.vinted.es/items/9470559822-greatest-hits-cat-stevens-1975": {
-  "precio": 12.0,
-  "ts": 1793839307.3078012
+  "precio": 7.0,
+  "ts": 1794158805.095704
  },
  "https://www.vinted.es/items/9475891106-petite-fleur": {
   "precio": 4.0,
