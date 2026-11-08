@@ -499,6 +499,10 @@
   "precio": 1.24,
   "ts": 1793792918.0025046
  },
+ "https://www.discogs.com/sell/release/15102564?sort=price%2Casc": {
+  "precio": 1.9,
+  "ts": 1794108239.1484585
+ },
  "https://www.discogs.com/sell/release/15152687": {
   "precio": 6.5,
   "ts": 1792532292.9235423
@@ -2616,8 +2620,8 @@
   "ts": 1793868852.6622727
  },
  "https://www.vinted.es/items/10678807616-tracy-chapman-fast-car": {
-  "precio": 4.0,
-  "ts": 1793973084.7773972
+  "precio": 3.0,
+  "ts": 1794109616.982461
  },
  "https://www.vinted.es/items/10682915435-sinead-oconnor-i-do-not-want-what-i-havent-got-lp-vinile-ensign-1990-nothing-compares-2-u": {
   "precio": 7.0,
