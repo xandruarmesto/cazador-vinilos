@@ -330,6 +330,16 @@
     "max_precio": 25
   },
   {
+    "artista": "Radiohead",
+    "disco": "In Rainbows",
+    "max_precio": 32
+  },
+  {
+    "artista": "Radiohead",
+    "disco": "OK Computer",
+    "max_precio": 35
+  },
+  {
     "artista": "Ramones",
     "disco": "Ramones",
     "max_precio": 18
@@ -464,8 +474,13 @@
   },
   {
     "artista": "The Who",
+    "disco": "Meaty Beaty Big and Bouncy",
+    "max_precio": 25
+  },
+  {
+    "artista": "The Who",
     "disco": "Who's Next",
-    "max_precio": 20
+    "max_precio": 30
   },
   {
     "artista": "Tom Petty",

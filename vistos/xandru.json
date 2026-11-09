@@ -155,6 +155,10 @@
   "precio": 18.0,
   "ts": 1792594740.614278
  },
+ "https://es.wallapop.com/item/vinilo-lp-the-police-reggatta-de-blanc-1322596984": {
+  "precio": 10.0,
+  "ts": 1794256814.1138036
+ },
  "https://es.wallapop.com/item/vinilo-lp-tracy-chapman-crossroads-1320405574": {
   "precio": 11.0,
   "ts": 1793747269.777037
@@ -1239,6 +1243,10 @@
   "precio": 13.36,
   "ts": 1792550527.4999099
  },
+ "https://www.discogs.com/sell/release/6103465?sort=price%2Casc": {
+  "precio": 3.57,
+  "ts": 1794255446.299683
+ },
  "https://www.discogs.com/sell/release/6216461?sort=price%2Casc": {
   "precio": 1.81,
   "ts": 1793868401.8515563
@@ -1735,6 +1743,10 @@
   "precio": 20.0,
   "ts": 1792570748.5793288
  },
+ "https://www.vinted.es/items/10283376456-miniaturas-disco-de-vinilo-ok-computer-radiohead": {
+  "precio": 1.0,
+  "ts": 1794256459.908731
+ },
  "https://www.vinted.es/items/10301588410-ella-fitzgerald-louis-armstrong-ella-and-louis": {
   "precio": 20.0,
   "ts": 1792680696.5379431
@@ -2143,9 +2155,17 @@
   "precio": 20.0,
   "ts": 1793530514.2635775
  },
+ "https://www.vinted.es/items/10501883108-radiohead-ok-computer-cover": {
+  "precio": 9.99,
+  "ts": 1794256460.6429734
+ },
  "https://www.vinted.es/items/10503343522-dire-straits-brothers-in-arms-lp-1985": {
   "precio": 15.0,
   "ts": 1793503029.847033
+ },
+ "https://www.vinted.es/items/10504398242-radiohead-ok-computer": {
+  "precio": 9.99,
+  "ts": 1794256460.2928438
  },
  "https://www.vinted.es/items/10508515743-the-doors-essendo-un-offerta-non-accetto-acquisti-di-un-solo-disco-minimo-2-dischi": {
   "precio": 8.0,
@@ -2711,6 +2731,14 @@
   "precio": 6.0,
   "ts": 1794174581.0856383
  },
+ "https://www.vinted.es/items/10734767500-dire-straits-making-movies-vinyl": {
+  "precio": 5.0,
+  "ts": 1794255788.1540956
+ },
+ "https://www.vinted.es/items/10736524547-the-doors-lp-vinyl": {
+  "precio": 12.0,
+  "ts": 1794256741.14349
+ },
  "https://www.vinted.es/items/1635199184-pearl-janis-joplin-disco-in-vinile-33-giri": {
   "precio": 30.0,
   "ts": 1793764995.6206477
@@ -2918,6 +2946,10 @@
  "https://www.vinted.es/items/6345437904-dire-straits-brothers-in-arms": {
   "precio": 8.0,
   "ts": 1793115660.7111666
+ },
+ "https://www.vinted.es/items/6362365282-the-who-meaty-beaty-big-and-bouncy": {
+  "precio": 13.0,
+  "ts": 1794256983.1254687
  },
  "https://www.vinted.es/items/6454494422-john-coltrane-blue-train": {
   "precio": 18.0,
