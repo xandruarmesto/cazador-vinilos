@@ -583,6 +583,10 @@
   "precio": 17.8,
   "ts": 1792537232.8480537
  },
+ "https://www.discogs.com/sell/release/1646233?sort=price%2Casc": {
+  "precio": 1.78,
+  "ts": 1794312724.7725487
+ },
  "https://www.discogs.com/sell/release/1662218?sort=price%2Casc": {
   "precio": 2.0,
   "ts": 1793530593.6609006
@@ -790,6 +794,10 @@
  "https://www.discogs.com/sell/release/2663595?sort=price%2Casc": {
   "precio": 6.99,
   "ts": 1792570446.7179525
+ },
+ "https://www.discogs.com/sell/release/2663926?sort=price%2Casc": {
+  "precio": 1.78,
+  "ts": 1794311845.7321618
  },
  "https://www.discogs.com/sell/release/2664044?sort=price%2Casc": {
   "precio": 15.3,
@@ -1208,8 +1216,8 @@
   "ts": 1793745779.4896286
  },
  "https://www.discogs.com/sell/release/5577902?sort=price%2Casc": {
-  "precio": 1.8,
-  "ts": 1793671180.864008
+  "precio": 1.78,
+  "ts": 1794312058.757433
  },
  "https://www.discogs.com/sell/release/5611406": {
   "precio": 23.25,
@@ -2754,6 +2762,14 @@
  "https://www.vinted.es/items/10742175726-vinile-lp-the-who-meaty-beaty-big-and-bouncy-mca-records": {
   "precio": 15.0,
   "ts": 1794284446.814361
+ },
+ "https://www.vinted.es/items/10745865191-guns-n-roses-appetite-for-destruction": {
+  "precio": 14.0,
+  "ts": 1794312391.5621939
+ },
+ "https://www.vinted.es/items/10747165334-disco-vinile-lp-queen-samantha-greatest-hits": {
+  "precio": 12.0,
+  "ts": 1794312890.8353045
  },
  "https://www.vinted.es/items/1635199184-pearl-janis-joplin-disco-in-vinile-33-giri": {
   "precio": 30.0,
