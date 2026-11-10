@@ -31,6 +31,16 @@
     "max_precio": 18
   },
   {
+    "artista": "Bill Withers",
+    "disco": "Just As I Am",
+    "max_precio": 28
+  },
+  {
+    "artista": "Bill Withers",
+    "disco": "Still Bill",
+    "max_precio": 30
+  },
+  {
     "artista": "Billie Holiday",
     "disco": "Lady in Satin",
     "max_precio": 18
@@ -80,6 +90,16 @@
     "artista": "Chet Baker",
     "disco": "Chet Baker Sings",
     "max_precio": 20
+  },
+  {
+    "artista": "Coldplay",
+    "disco": "A Rush of Blood to the Head",
+    "max_precio": 28
+  },
+  {
+    "artista": "Coldplay",
+    "disco": "Parachutes",
+    "max_precio": 25
   },
   {
     "artista": "Counting Crows",

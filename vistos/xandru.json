@@ -635,6 +635,10 @@
   "precio": 7.99,
   "ts": 1792680622.2267473
  },
+ "https://www.discogs.com/sell/release/1949595?sort=price%2Casc": {
+  "precio": 4.8,
+  "ts": 1794282858.8663032
+ },
  "https://www.discogs.com/sell/release/1971501?sort=price%2Casc": {
   "precio": 7.12,
   "ts": 1793568996.1312249
@@ -1128,8 +1132,8 @@
   "ts": 1792660061.1317801
  },
  "https://www.discogs.com/sell/release/475612?sort=price%2Casc": {
-  "precio": 6.19,
-  "ts": 1792636556.9566567
+  "precio": 0.99,
+  "ts": 1794283902.2747786
  },
  "https://www.discogs.com/sell/release/4783985": {
   "precio": 18.67,
@@ -1154,6 +1158,10 @@
  "https://www.discogs.com/sell/release/5208267?sort=price%2Casc": {
   "precio": 6.23,
   "ts": 1792570923.4422698
+ },
+ "https://www.discogs.com/sell/release/526433?sort=price%2Casc": {
+  "precio": 4.0,
+  "ts": 1794284065.0243256
  },
  "https://www.discogs.com/sell/release/531009?sort=price%2Casc": {
   "precio": 0.86,
@@ -2444,8 +2452,8 @@
   "ts": 1793650110.8697758
  },
  "https://www.vinted.es/items/10627292617-vinile-sinead-oconnor-i-do-not-want-what-i-havent-got-1990-prima-stampa-italiana": {
-  "precio": 27.0,
-  "ts": 1793569429.3171086
+  "precio": 18.0,
+  "ts": 1794284044.4247575
  },
  "https://www.vinted.es/items/10628380438-vinile-tracy-chapman-crossroads": {
   "precio": 10.0,
@@ -2738,6 +2746,14 @@
  "https://www.vinted.es/items/10736524547-the-doors-lp-vinyl": {
   "precio": 12.0,
   "ts": 1794256741.14349
+ },
+ "https://www.vinted.es/items/10741917581-33-giri-cat-stevens-greatest-hits": {
+  "precio": 5.0,
+  "ts": 1794283031.9453435
+ },
+ "https://www.vinted.es/items/10742175726-vinile-lp-the-who-meaty-beaty-big-and-bouncy-mca-records": {
+  "precio": 15.0,
+  "ts": 1794284446.814361
  },
  "https://www.vinted.es/items/1635199184-pearl-janis-joplin-disco-in-vinile-33-giri": {
   "precio": 30.0,
@@ -3074,6 +3090,10 @@
  "https://www.vinted.es/items/7798780462-mink-deville-coup-de-grace": {
   "precio": 10.0,
   "ts": 1793307292.809953
+ },
+ "https://www.vinted.es/items/7801049820-coldplay-a-rush-of-blood-to-the-head": {
+  "precio": 6.0,
+  "ts": 1794283109.764427
  },
  "https://www.vinted.es/items/7845448178-cat-stevens-teaser-and-the-firecat": {
   "precio": 14.88,
