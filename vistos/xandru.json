@@ -1,4 +1,8 @@
 {
+ "https://es.wallapop.com/item/cat-stevens-greatest-hits-1322982718": {
+  "precio": 14.0,
+  "ts": 1794338154.7349532
+ },
  "https://es.wallapop.com/item/disco-vinilo-the-doors-l-a-woman-anos-70-1320285573": {
   "precio": 15.0,
   "ts": 1793728061.1102326
@@ -103,6 +107,10 @@
   "precio": 15.0,
   "ts": 1793792988.3817554
  },
+ "https://es.wallapop.com/item/vinilo-cosmo-s-factory-creedence-clearwater-1322969053": {
+  "precio": 8.0,
+  "ts": 1794338346.79441
+ },
  "https://es.wallapop.com/item/vinilo-cream-wheels-of-fire-1315430473": {
   "precio": 20.0,
   "ts": 1792532684.5798714
@@ -162,6 +170,10 @@
  "https://es.wallapop.com/item/vinilo-lp-tracy-chapman-crossroads-1320405574": {
   "precio": 11.0,
   "ts": 1793747269.777037
+ },
+ "https://es.wallapop.com/item/vinilo-mink-deville-coup-de-grace-1322985001": {
+  "precio": 10.0,
+  "ts": 1794338746.2263172
  },
  "https://es.wallapop.com/item/vinilo-pearl-janis-joplin-1319968805": {
   "precio": 15.0,
@@ -707,6 +719,10 @@
   "precio": 8.0,
   "ts": 1793392251.6337154
  },
+ "https://www.discogs.com/sell/release/2306576?sort=price%2Casc": {
+  "precio": 2.7,
+  "ts": 1794338830.3837094
+ },
  "https://www.discogs.com/sell/release/2316981": {
   "precio": 7.56,
   "ts": 1792550210.1480834
@@ -1135,6 +1151,10 @@
   "precio": 6.23,
   "ts": 1792661032.2677495
  },
+ "https://www.discogs.com/sell/release/4629301?sort=price%2Casc": {
+  "precio": 4.78,
+  "ts": 1794338198.6541011
+ },
  "https://www.discogs.com/sell/release/4723734?sort=price%2Casc": {
   "precio": 5.34,
   "ts": 1792660061.1317801
@@ -1490,6 +1510,10 @@
  "https://www.discogs.com/sell/release/8638893": {
   "precio": 18.83,
   "ts": 1792532186.6197927
+ },
+ "https://www.discogs.com/sell/release/869077?sort=price%2Casc": {
+  "precio": 0.89,
+  "ts": 1794338588.4323316
  },
  "https://www.discogs.com/sell/release/8812891?sort=price%2Casc": {
   "precio": 1.5,
@@ -2770,6 +2794,14 @@
  "https://www.vinted.es/items/10747165334-disco-vinile-lp-queen-samantha-greatest-hits": {
   "precio": 12.0,
   "ts": 1794312890.8353045
+ },
+ "https://www.vinted.es/items/10749585257-miles-davis-kind-of-blue-vinyl": {
+  "precio": 10.0,
+  "ts": 1794338726.2069788
+ },
+ "https://www.vinted.es/items/10750580665-the-police-every-breath-you-take": {
+  "precio": 5.0,
+  "ts": 1794339384.3059242
  },
  "https://www.vinted.es/items/1635199184-pearl-janis-joplin-disco-in-vinile-33-giri": {
   "precio": 30.0,
