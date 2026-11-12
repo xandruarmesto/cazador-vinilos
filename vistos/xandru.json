@@ -688,8 +688,8 @@
   "ts": 1793868731.8226035
  },
  "https://www.discogs.com/sell/release/2085881?sort=price%2Casc": {
-  "precio": 7.28,
-  "ts": 1793840245.0980968
+  "precio": 4.52,
+  "ts": 1794494259.4571211
  },
  "https://www.discogs.com/sell/release/2100475?sort=price%2Casc": {
   "precio": 4.44,
@@ -1352,8 +1352,8 @@
   "ts": 1792532777.9076622
  },
  "https://www.discogs.com/sell/release/6601684?sort=price%2Casc": {
-  "precio": 2.72,
-  "ts": 1792693051.9982488
+  "precio": 2.22,
+  "ts": 1794494670.6336112
  },
  "https://www.discogs.com/sell/release/6606240": {
   "precio": 14.24,
@@ -1578,6 +1578,10 @@
  "https://www.discogs.com/sell/release/990627?sort=price%2Casc": {
   "precio": 8.99,
   "ts": 1793582437.2141197
+ },
+ "https://www.discogs.com/sell/release/9909654?sort=price%2Casc": {
+  "precio": 3.9,
+  "ts": 1794493050.3138402
  },
  "https://www.discogs.com/sell/release/993128": {
   "precio": 24.7,
@@ -2508,8 +2512,8 @@
   "ts": 1793650110.8697758
  },
  "https://www.vinted.es/items/10627292617-vinile-sinead-oconnor-i-do-not-want-what-i-havent-got-1990-prima-stampa-italiana": {
-  "precio": 18.0,
-  "ts": 1794284044.4247575
+  "precio": 14.0,
+  "ts": 1794494238.2785654
  },
  "https://www.vinted.es/items/10628380438-vinile-tracy-chapman-crossroads": {
   "precio": 10.0,
@@ -2854,6 +2858,10 @@
  "https://www.vinted.es/items/10770147292-sinead-oconnor-i-do-not-want-what-i-havent-got-vinile-lp-italia-1990": {
   "precio": 15.0,
   "ts": 1794442293.3043754
+ },
+ "https://www.vinted.es/items/10777321980-creedence-clearwater-revival-cosmos-factory-lp": {
+  "precio": 10.0,
+  "ts": 1794493378.3617435
  },
  "https://www.vinted.es/items/1635199184-pearl-janis-joplin-disco-in-vinile-33-giri": {
   "precio": 30.0,

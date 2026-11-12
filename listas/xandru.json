@@ -31,6 +31,21 @@
     "max_precio": 18
   },
   {
+    "artista": "Big Mama Thornton",
+    "disco": "Hound Dog",
+    "max_precio": 25
+  },
+  {
+    "artista": "Big Mama Thornton",
+    "disco": "In Europe",
+    "max_precio": 30
+  },
+  {
+    "artista": "Big Mama Thornton",
+    "disco": "Stronger Than Dirt",
+    "max_precio": 28
+  },
+  {
     "artista": "Bill Withers",
     "disco": "Just As I Am",
     "max_precio": 28
@@ -225,6 +240,21 @@
     "alias_artista": ["La M.O.D.A."]
   },
   {
+    "artista": "Leiva",
+    "disco": "Diciembre",
+    "max_precio": 26
+  },
+  {
+    "artista": "Leiva",
+    "disco": "Monstruos",
+    "max_precio": 28
+  },
+  {
+    "artista": "Leiva",
+    "disco": "Nuclear",
+    "max_precio": 30
+  },
+  {
     "artista": "Lou Reed",
     "disco": "Transformer",
     "max_precio": 25
@@ -333,6 +363,21 @@
     "artista": "Otis Redding",
     "disco": "The Very Best of Otis Redding",
     "max_precio": 25
+  },
+  {
+    "artista": "Pereza",
+    "disco": "Animales",
+    "max_precio": 28
+  },
+  {
+    "artista": "Pereza",
+    "disco": "Aproximaciones",
+    "max_precio": 28
+  },
+  {
+    "artista": "Pereza",
+    "disco": "Aviones",
+    "max_precio": 30
   },
   {
     "artista": "Queen",
