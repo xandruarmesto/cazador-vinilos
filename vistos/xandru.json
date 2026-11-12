@@ -831,6 +831,10 @@
   "precio": 15.3,
   "ts": 1793649268.867013
  },
+ "https://www.discogs.com/sell/release/26790650?sort=price%2Casc": {
+  "precio": 2.0,
+  "ts": 1794441725.5759206
+ },
  "https://www.discogs.com/sell/release/26872253": {
   "precio": 18.69,
   "ts": 1792549817.56678
@@ -2608,8 +2612,8 @@
   "ts": 1793727673.0454721
  },
  "https://www.vinted.es/items/10654270845-cat-stevens-greatest-hits-33-giri": {
-  "precio": 9.0,
-  "ts": 1793745912.1105127
+  "precio": 8.0,
+  "ts": 1794441295.6620636
  },
  "https://www.vinted.es/items/10655160952-lp-1971-janis-joplin-pearl": {
   "precio": 25.0,
@@ -2838,6 +2842,18 @@
  "https://www.vinted.es/items/10758198874-irt-watch-the-closing-doors-12-1983": {
   "precio": 9.0,
   "ts": 1794387689.3883126
+ },
+ "https://www.vinted.es/items/10767929500-the-police-reggatta-de-blanc": {
+  "precio": 10.0,
+  "ts": 1794442520.198939
+ },
+ "https://www.vinted.es/items/10768144150-vinile-33-giri-light-my-fire-the-doors": {
+  "precio": 12.0,
+  "ts": 1794442448.5934205
+ },
+ "https://www.vinted.es/items/10770147292-sinead-oconnor-i-do-not-want-what-i-havent-got-vinile-lp-italia-1990": {
+  "precio": 15.0,
+  "ts": 1794442293.3043754
  },
  "https://www.vinted.es/items/1635199184-pearl-janis-joplin-disco-in-vinile-33-giri": {
   "precio": 30.0,
