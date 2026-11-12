@@ -99,6 +99,10 @@
   "precio": 15.9,
   "ts": 1793649370.6243079
  },
+ "https://es.wallapop.com/item/vinilo-cat-stevens-greatest-hits-1323625944": {
+  "precio": 10.0,
+  "ts": 1794520956.9488835
+ },
  "https://es.wallapop.com/item/vinilo-cosmo-s-factory-creedence-clearwater-1318003774": {
   "precio": 12.0,
   "ts": 1793198685.5975173
@@ -563,6 +567,10 @@
   "precio": 4.45,
   "ts": 1793793816.8865607
  },
+ "https://www.discogs.com/sell/release/15370467?sort=price%2Casc": {
+  "precio": 2.69,
+  "ts": 1794520740.9106452
+ },
  "https://www.discogs.com/sell/release/15443692": {
   "precio": 5.0,
   "ts": 1792536598.2476697
@@ -862,6 +870,10 @@
  "https://www.discogs.com/sell/release/28426030?sort=price%2Casc": {
   "precio": 7.12,
   "ts": 1792660137.9472382
+ },
+ "https://www.discogs.com/sell/release/2844053?sort=price%2Casc": {
+  "precio": 2.0,
+  "ts": 1794520980.0770557
  },
  "https://www.discogs.com/sell/release/2861055?sort=price%2Casc": {
   "precio": 1.19,
@@ -2862,6 +2874,10 @@
  "https://www.vinted.es/items/10777321980-creedence-clearwater-revival-cosmos-factory-lp": {
   "precio": 10.0,
   "ts": 1794493378.3617435
+ },
+ "https://www.vinted.es/items/10780168814-guns-n-roses-appetite-for-destruction": {
+  "precio": 15.0,
+  "ts": 1794521310.7876885
  },
  "https://www.vinted.es/items/1635199184-pearl-janis-joplin-disco-in-vinile-33-giri": {
   "precio": 30.0,
