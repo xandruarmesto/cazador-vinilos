@@ -708,8 +708,8 @@
   "ts": 1793868731.8226035
  },
  "https://www.discogs.com/sell/release/2085881?sort=price%2Casc": {
-  "precio": 4.5,
-  "ts": 1794597501.4186819
+  "precio": 4.48,
+  "ts": 1794645734.1404657
  },
  "https://www.discogs.com/sell/release/2100475?sort=price%2Casc": {
   "precio": 4.44,
@@ -887,6 +887,10 @@
   "precio": 2.0,
   "ts": 1794520980.0770557
  },
+ "https://www.discogs.com/sell/release/2853676?sort=price%2Casc": {
+  "precio": 2.37,
+  "ts": 1794645068.2928555
+ },
  "https://www.discogs.com/sell/release/2861055?sort=price%2Casc": {
   "precio": 1.19,
   "ts": 1792660635.5465844
@@ -1030,6 +1034,10 @@
  "https://www.discogs.com/sell/release/34773242?sort=price%2Casc": {
   "precio": 2.5,
   "ts": 1793649601.272075
+ },
+ "https://www.discogs.com/sell/release/3500576?sort=price%2Casc": {
+  "precio": 4.81,
+  "ts": 1794645803.122574
  },
  "https://www.discogs.com/sell/release/3509085": {
   "precio": 9.46,
@@ -2075,6 +2083,10 @@
   "precio": 16.0,
   "ts": 1792570388.1422343
  },
+ "https://www.vinted.es/items/10446954661-vintage-dubbel-lp-roy-orbison-the-all-time-greatest-hits": {
+  "precio": 6.0,
+  "ts": 1794645675.876006
+ },
  "https://www.vinted.es/items/10448345960-disque-vinyle-33t-pop-tracy-chapman": {
   "precio": 20.0,
   "ts": 1792624115.5814395
@@ -2775,6 +2787,10 @@
   "precio": 14.0,
   "ts": 1793972013.8101497
  },
+ "https://www.vinted.es/items/10690001365-roy-orbison-the-all-time-greatest-hits-2lp-1974-rock-roll-country-pop-rockabilly": {
+  "precio": 6.5,
+  "ts": 1794645676.5278013
+ },
  "https://www.vinted.es/items/10691128025-the-doors-star-collection-2-vinyl": {
   "precio": 10.0,
   "ts": 1793996992.128734
@@ -3106,6 +3122,10 @@
  "https://www.vinted.es/items/5942268254-lou-reed-transformer": {
   "precio": 25.0,
   "ts": 1793582105.9335787
+ },
+ "https://www.vinted.es/items/5993748480-roy-orbison-the-all-time-greatest-hits-of": {
+  "precio": 6.0,
+  "ts": 1794645676.23048
  },
  "https://www.vinted.es/items/6035869262-sinead-oconnor-i-do-not-want-what-i-havent-got": {
   "precio": 15.0,
