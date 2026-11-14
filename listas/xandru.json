@@ -169,12 +169,22 @@
   {
     "artista": "Ella Fitzgerald",
     "disco": "Ella and Louis",
-    "max_precio": 20
+    "max_precio": 30
+  },
+  {
+    "artista": "Ella Fitzgerald",
+    "disco": "Sings the Cole Porter Song Book",
+    "max_precio": 32
   },
   {
     "artista": "Etta James",
     "disco": "At Last!",
-    "max_precio": 20
+    "max_precio": 28
+  },
+  {
+    "artista": "Etta James",
+    "disco": "Tell Mama",
+    "max_precio": 28
   },
   {
     "artista": "Green Day",
@@ -216,6 +226,16 @@
     "artista": "Janis Joplin",
     "disco": "Pearl",
     "max_precio": 30
+  },
+  {
+    "artista": "Jerry Lee Lewis",
+    "disco": "Live at the Star Club Hamburg",
+    "max_precio": 30
+  },
+  {
+    "artista": "Jerry Lee Lewis",
+    "disco": "Original Golden Hits",
+    "max_precio": 24
   },
   {
     "artista": "John Coltrane",
@@ -425,6 +445,16 @@
     "max_precio": 20
   },
   {
+    "artista": "Roy Orbison",
+    "disco": "Crying",
+    "max_precio": 26
+  },
+  {
+    "artista": "Roy Orbison",
+    "disco": "The All-Time Greatest Hits",
+    "max_precio": 24
+  },
+  {
     "artista": "Sidney Bechet",
     "disco": "Petite Fleur",
     "max_precio": 15
@@ -442,7 +472,12 @@
   {
     "artista": "The Beatles",
     "disco": "Abbey Road",
-    "max_precio": 22
+    "max_precio": 32
+  },
+  {
+    "artista": "The Beatles",
+    "disco": "Revolver",
+    "max_precio": 32
   },
   {
     "artista": "The Clash",
@@ -483,6 +518,16 @@
     "artista": "The Housemartins",
     "disco": "Now That's What I Call Quite Good",
     "max_precio": 30
+  },
+  {
+    "artista": "The Mamas and The Papas",
+    "disco": "16 of Their Greatest Hits",
+    "max_precio": 22
+  },
+  {
+    "artista": "The Mamas and The Papas",
+    "disco": "If You Can Believe Your Eyes and Ears",
+    "max_precio": 26
   },
   {
     "artista": "The Offspring",

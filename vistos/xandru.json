@@ -331,6 +331,10 @@
   "precio": 0.89,
   "ts": 1792680692.8758068
  },
+ "https://www.discogs.com/sell/release/12381644?sort=price%2Casc": {
+  "precio": 3.59,
+  "ts": 1794617014.5017846
+ },
  "https://www.discogs.com/sell/release/12416337": {
   "precio": 12.35,
   "ts": 1792532086.5934975
@@ -983,6 +987,10 @@
   "precio": 5.0,
   "ts": 1793792685.9969447
  },
+ "https://www.discogs.com/sell/release/3329903?sort=price%2Casc": {
+  "precio": 3.6,
+  "ts": 1794617830.2775383
+ },
  "https://www.discogs.com/sell/release/3336752?sort=price%2Casc": {
   "precio": 3.03,
   "ts": 1793727627.4049785
@@ -1091,6 +1099,10 @@
   "precio": 6.62,
   "ts": 1792570054.852725
  },
+ "https://www.discogs.com/sell/release/3836161?sort=price%2Casc": {
+  "precio": 2.0,
+  "ts": 1794617191.0234187
+ },
  "https://www.discogs.com/sell/release/3843900": {
   "precio": 11.87,
   "ts": 1792550416.7133768
@@ -1159,6 +1171,10 @@
   "precio": 17.8,
   "ts": 1792532510.1416967
  },
+ "https://www.discogs.com/sell/release/4286032?sort=price%2Casc": {
+  "precio": 2.35,
+  "ts": 1794616704.4302642
+ },
  "https://www.discogs.com/sell/release/4324006?sort=price%2Casc": {
   "precio": 8.26,
   "ts": 1793695978.6912978
@@ -1204,8 +1220,8 @@
   "ts": 1792660061.1317801
  },
  "https://www.discogs.com/sell/release/475612?sort=price%2Casc": {
-  "precio": 0.99,
-  "ts": 1794283902.2747786
+  "precio": 0.49,
+  "ts": 1794617689.9792466
  },
  "https://www.discogs.com/sell/release/4783985": {
   "precio": 18.67,
@@ -1222,6 +1238,10 @@
  "https://www.discogs.com/sell/release/4939433?sort=price%2Casc": {
   "precio": 6.99,
   "ts": 1793606231.773983
+ },
+ "https://www.discogs.com/sell/release/497384?sort=price%2Casc": {
+  "precio": 1.27,
+  "ts": 1794617854.930735
  },
  "https://www.discogs.com/sell/release/5008436?sort=price%2Casc": {
   "precio": 7.99,
@@ -2963,6 +2983,10 @@
   "precio": 10.0,
   "ts": 1793792849.624957
  },
+ "https://www.vinted.es/items/4130684397-disco-de-roy-orbison-the-all-time-greatest-hits": {
+  "precio": 3.0,
+  "ts": 1794617833.7561755
+ },
  "https://www.vinted.es/items/4158779526-lp-mink-deville-coup-de-grace": {
   "precio": 10.0,
   "ts": 1793324135.7822506
@@ -2974,6 +2998,10 @@
  "https://www.vinted.es/items/4234711393-vinile-33-giri-the-velvet-underground-loaded-ft-lou-reed": {
   "precio": 25.0,
   "ts": 1793504051.3084202
+ },
+ "https://www.vinted.es/items/4270277802-roy-orbison-the-all-time-greatest-hits-of-lp-vinyl": {
+  "precio": 5.0,
+  "ts": 1794617834.144732
  },
  "https://www.vinted.es/items/4469575955-cat-stevens-tea-for-the-tillerman-vgvg1971uk": {
   "precio": 22.0,
@@ -3495,6 +3523,10 @@
   "precio": 12.0,
   "ts": 1793839307.6205065
  },
+ "https://www.vinted.es/items/8997633737-roy-orbison-all-time-greatest-hits-lp-vinyl-record": {
+  "precio": 1.0,
+  "ts": 1794617833.3685844
+ },
  "https://www.vinted.es/items/9012833031-dire-straits-making-movies": {
   "precio": 15.0,
   "ts": 1793530709.9965987
@@ -3606,6 +3638,10 @@
  "https://www.vinted.es/items/9490302317-vinile-the-police-reggatta-de-blanc": {
   "precio": 15.0,
   "ts": 1793747040.7510958
+ },
+ "https://www.vinted.es/items/9497210007-jerry-lee-lewis-original-golden-hits-volume-iii-lp-bellaphonsun": {
+  "precio": 5.0,
+  "ts": 1794617194.3404708
  },
  "https://www.vinted.es/items/9505443956-cat-stevens-teaser-and-the-firecat": {
   "precio": 18.0,
