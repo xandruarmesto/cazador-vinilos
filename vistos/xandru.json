@@ -103,6 +103,10 @@
   "precio": 10.0,
   "ts": 1794520956.9488835
  },
+ "https://es.wallapop.com/item/vinilo-cat-stevens-greatest-hits-1324396588": {
+  "precio": 8.0,
+  "ts": 1794693198.9182062
+ },
  "https://es.wallapop.com/item/vinilo-cosmo-s-factory-creedence-clearwater-1318003774": {
   "precio": 12.0,
   "ts": 1793198685.5975173
@@ -1332,8 +1336,8 @@
   "ts": 1792623499.0505273
  },
  "https://www.discogs.com/sell/release/5681576?sort=price%2Casc": {
-  "precio": 6.76,
-  "ts": 1793569498.8792343
+  "precio": 6.2,
+  "ts": 1794694452.0325627
  },
  "https://www.discogs.com/sell/release/5699510": {
   "precio": 9.99,
@@ -1486,6 +1490,10 @@
  "https://www.discogs.com/sell/release/751778?sort=price%2Casc": {
   "precio": 3.17,
   "ts": 1793504091.9752715
+ },
+ "https://www.discogs.com/sell/release/755239?sort=price%2Casc": {
+  "precio": 4.46,
+  "ts": 1794693681.827282
  },
  "https://www.discogs.com/sell/release/760558": {
   "precio": 21.35,
@@ -2940,12 +2948,16 @@
   "ts": 1794521310.7876885
  },
  "https://www.vinted.es/items/10788132091-sinead-oconnor-i-do-not-want-what-i-havent-got-lp-vinyl-1990-spain": {
-  "precio": 18.9,
-  "ts": 1794571505.8193297
+  "precio": 16.9,
+  "ts": 1794694384.449397
  },
  "https://www.vinted.es/items/10792522337-the-who-whos-next-lp": {
   "precio": 14.0,
   "ts": 1794597886.5568793
+ },
+ "https://www.vinted.es/items/10811148561-cat-stevens-greatest-hits": {
+  "precio": 8.0,
+  "ts": 1794693201.1818206
  },
  "https://www.vinted.es/items/1635199184-pearl-janis-joplin-disco-in-vinile-33-giri": {
   "precio": 30.0,
@@ -2958,6 +2970,10 @@
  "https://www.vinted.es/items/2779449228-cat-stevens-teaser-and-the-firecat": {
   "precio": 12.0,
   "ts": 1793671207.7148302
+ },
+ "https://www.vinted.es/items/2812353987-roy-orbison-the-all-time-greatest-hits-2-discos-lp": {
+  "precio": 7.5,
+  "ts": 1794694345.4016466
  },
  "https://www.vinted.es/items/2874223762-the-police-reggatta-de-blanc": {
   "precio": 12.0,
@@ -3311,6 +3327,10 @@
   "precio": 18.0,
   "ts": 1793503009.645411
  },
+ "https://www.vinted.es/items/7963555589-roy-orbison-the-all-time-greatest-hits-of-2xlp-monument-uk-pressing": {
+  "precio": 9.0,
+  "ts": 1794694345.7806501
+ },
  "https://www.vinted.es/items/7984481088-lp-billie-holiday-lady-in-satin": {
   "precio": 18.0,
   "ts": 1793502806.8919766
@@ -3626,6 +3646,10 @@
  "https://www.vinted.es/items/9300808485-dire-straits-making-movies-coton-rock": {
   "precio": 7.5,
   "ts": 1793260348.737941
+ },
+ "https://www.vinted.es/items/9304905519-the-great-roy-orbison-all-time-greatest-hits-1986": {
+  "precio": 7.0,
+  "ts": 1794694344.9806356
  },
  "https://www.vinted.es/items/9320413730-cat-stevens-the-teaser-and-the-firecat-vinile-vinileria": {
   "precio": 20.0,
