@@ -859,6 +859,10 @@
   "precio": 18.69,
   "ts": 1792549817.56678
  },
+ "https://www.discogs.com/sell/release/27217926?sort=price%2Casc": {
+  "precio": 2.0,
+  "ts": 1794673192.6851628
+ },
  "https://www.discogs.com/sell/release/27795255": {
   "precio": 20.25,
   "ts": 1792532341.089741
@@ -1407,6 +1411,10 @@
   "precio": 14.24,
   "ts": 1792532375.2377372
  },
+ "https://www.discogs.com/sell/release/6616952?sort=price%2Casc": {
+  "precio": 0.95,
+  "ts": 1794673673.9475744
+ },
  "https://www.discogs.com/sell/release/6620590": {
   "precio": 17.94,
   "ts": 1792550228.1786678
@@ -1831,6 +1839,10 @@
   "precio": 21.95,
   "ts": 1792594512.961914
  },
+ "https://www.vinted.es/items/10256702818-lp-roy-orbison-the-all-time-greatest-hits": {
+  "precio": 7.0,
+  "ts": 1794674309.3561394
+ },
  "https://www.vinted.es/items/10257789292-the-cure-disintegration": {
   "precio": 20.0,
   "ts": 1793503811.4678
@@ -2038,6 +2050,10 @@
  "https://www.vinted.es/items/10415449930-simon-and-garfunkela-greatest-hits": {
   "precio": 5.0,
   "ts": 1792570571.2150583
+ },
+ "https://www.vinted.es/items/10416004901-dubbel-lp-roy-orbison-the-all-time-greatest-hits": {
+  "precio": 7.0,
+  "ts": 1794674308.8348634
  },
  "https://www.vinted.es/items/10419934372-the-police-reggatta-de-blanc-vinile-lp-33-giri-1979-prima-stampa-italiana-cgd-am": {
   "precio": 18.0,
@@ -3719,6 +3735,10 @@
   "precio": 20.0,
   "ts": 1793504050.5484784
  },
+ "https://www.vinted.es/items/9729128307-roy-orbison-the-all-time-greatest-hits-of-2lp": {
+  "precio": 7.0,
+  "ts": 1794674309.7601504
+ },
  "https://www.vinted.es/items/9733240567-the-velvet-underground-loaded": {
   "precio": 25.0,
   "ts": 1793504050.9245393
@@ -3776,8 +3796,8 @@
   "ts": 1792570128.684685
  },
  "https://www.vinted.es/items/9857593698-vinile-lp-cat-stevens-tea-for-the-tillerman-stampa-italiana-gatefold": {
-  "precio": 20.0,
-  "ts": 1793606295.79667
+  "precio": 14.0,
+  "ts": 1794673171.568198
  },
  "https://www.vinted.es/items/9864147136-sidney-bechet-petite-fleur": {
   "precio": 8.0,
