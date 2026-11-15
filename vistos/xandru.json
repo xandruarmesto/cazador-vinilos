@@ -147,9 +147,17 @@
   "precio": 25.0,
   "ts": 1793839655.8996632
  },
+ "https://es.wallapop.com/item/vinilo-jerry-lee-lewis-original-golden-hits-1324822613": {
+  "precio": 12.0,
+  "ts": 1794781738.8864062
+ },
  "https://es.wallapop.com/item/vinilo-john-coltrane-blue-train-1319653988": {
   "precio": 12.0,
   "ts": 1793649792.342225
+ },
+ "https://es.wallapop.com/item/vinilo-lp-el-reloj-1324511746": {
+  "precio": 10.0,
+  "ts": 1794782659.1360927
  },
  "https://es.wallapop.com/item/vinilo-lp-louis-armstrong-hot-five-periode-1926-1316021829": {
   "precio": 14.0,
@@ -322,6 +330,10 @@
  "https://www.discogs.com/sell/release/12032445": {
   "precio": 21.37,
   "ts": 1792550277.5032542
+ },
+ "https://www.discogs.com/sell/release/12035990?sort=price%2Casc": {
+  "precio": 1.0,
+  "ts": 1794781904.738275
  },
  "https://www.discogs.com/sell/release/12180518": {
   "precio": 16.9,
@@ -1167,6 +1179,10 @@
   "precio": 1.77,
   "ts": 1793554980.1000674
  },
+ "https://www.discogs.com/sell/release/409889?sort=price%2Casc": {
+  "precio": 2.34,
+  "ts": 1794781264.8050513
+ },
  "https://www.discogs.com/sell/release/4104052": {
   "precio": 8.29,
   "ts": 1792532509.6161075
@@ -1795,6 +1811,10 @@
   "precio": 25.0,
   "ts": 1793609119.9606175
  },
+ "https://www.vinted.es/items/10176350919-vinile-madness-one-step-beyond": {
+  "precio": 8.0,
+  "ts": 1794781888.447156
+ },
  "https://www.vinted.es/items/10191173742-vinyl-dire-straits-brothers-in-arms": {
   "precio": 18.0,
   "ts": 1792570255.5402105
@@ -1890,6 +1910,10 @@
  "https://www.vinted.es/items/10274039018-vinyle-33t-dire-straits-making-movies": {
   "precio": 15.0,
   "ts": 1792594221.6689553
+ },
+ "https://www.vinted.es/items/10276265960-madness-one-step-beyond": {
+  "precio": 2.9,
+  "ts": 1794781887.4944654
  },
  "https://www.vinted.es/items/10279467805-the-cure-boys-dont-cry-new-voice-new-mix-7-45-single-portugal": {
   "precio": 20.0,
@@ -2920,8 +2944,8 @@
   "ts": 1794312391.5621939
  },
  "https://www.vinted.es/items/10747165334-disco-vinile-lp-queen-samantha-greatest-hits": {
-  "precio": 12.0,
-  "ts": 1794312890.8353045
+  "precio": 10.0,
+  "ts": 1794782259.9886892
  },
  "https://www.vinted.es/items/10749585257-miles-davis-kind-of-blue-vinyl": {
   "precio": 10.0,
@@ -2946,6 +2970,10 @@
  "https://www.vinted.es/items/10758198874-irt-watch-the-closing-doors-12-1983": {
   "precio": 9.0,
   "ts": 1794387689.3883126
+ },
+ "https://www.vinted.es/items/10760961103-madness-one-step-beyond": {
+  "precio": 3.0,
+  "ts": 1794781887.9631147
  },
  "https://www.vinted.es/items/10767929500-the-police-reggatta-de-blanc": {
   "precio": 10.0,
@@ -2979,9 +3007,17 @@
   "precio": 8.0,
   "ts": 1794693201.1818206
  },
+ "https://www.vinted.es/items/10821440725-the-specials-more": {
+  "precio": 15.0,
+  "ts": 1794782861.001592
+ },
  "https://www.vinted.es/items/10822882110-tracy-chapman-talkin-bout-a-revolution-if-not-now": {
   "precio": 7.0,
   "ts": 1794762817.7364736
+ },
+ "https://www.vinted.es/items/10829475399-vinyle-the-doors": {
+  "precio": 12.0,
+  "ts": 1794782661.4393694
  },
  "https://www.vinted.es/items/1635199184-pearl-janis-joplin-disco-in-vinile-33-giri": {
   "precio": 30.0,

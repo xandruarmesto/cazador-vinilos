@@ -187,6 +187,16 @@
     "max_precio": 28
   },
   {
+    "artista": "Ginebras",
+    "disco": "¿Quién es Billie Max?",
+    "max_precio": 26
+  },
+  {
+    "artista": "Ginebras",
+    "disco": "Ya Dormiré Cuando Me Muera",
+    "max_precio": 26
+  },
+  {
     "artista": "Green Day",
     "disco": "American Idiot",
     "max_precio": 22
@@ -298,6 +308,11 @@
     "max_precio": 25
   },
   {
+    "artista": "Madness",
+    "disco": "One Step Beyond",
+    "max_precio": 25
+  },
+  {
     "artista": "Michael Kiwanuka",
     "disco": "Home Again",
     "max_precio": 22
@@ -400,6 +415,16 @@
     "max_precio": 30
   },
   {
+    "artista": "Pixies",
+    "disco": "Doolittle",
+    "max_precio": 28
+  },
+  {
+    "artista": "Pixies",
+    "disco": "Surfer Rosa",
+    "max_precio": 28
+  },
+  {
     "artista": "Queen",
     "disco": "A Night at the Opera",
     "max_precio": 22
@@ -428,6 +453,11 @@
     "artista": "Ramones",
     "disco": "Ramones",
     "max_precio": 18
+  },
+  {
+    "artista": "Rancid",
+    "disco": "And Out Come the Wolves",
+    "max_precio": 30
   },
   {
     "artista": "Red Hot Chili Peppers",
@@ -463,6 +493,11 @@
     "artista": "Sinead O'Connor",
     "disco": "I Do Not Want What I Haven't Got",
     "max_precio": 35
+  },
+  {
+    "artista": "Ska-P",
+    "disco": "El Vals del Obrero",
+    "max_precio": 28
   },
   {
     "artista": "The Beatles",
@@ -568,9 +603,19 @@
     "excluir": ["queens", "noise", "waitin", "live", "japan", "cherry"]
   },
   {
+    "artista": "The Skatalites",
+    "disco": "Ska Authentic",
+    "max_precio": 30
+  },
+  {
     "artista": "The Smiths",
     "disco": "Best",
     "max_precio": 25
+  },
+  {
+    "artista": "The Specials",
+    "disco": "The Specials",
+    "max_precio": 28
   },
   {
     "artista": "The Strokes",
