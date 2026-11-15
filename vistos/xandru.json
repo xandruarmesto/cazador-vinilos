@@ -236,8 +236,8 @@
   "ts": 1792536711.4838152
  },
  "https://www.discogs.com/sell/release/1017231?sort=price%2Casc": {
-  "precio": 7.06,
-  "ts": 1794387549.1276329
+  "precio": 7.05,
+  "ts": 1794707405.7649376
  },
  "https://www.discogs.com/sell/release/1018597?sort=price%2Casc": {
   "precio": 2.67,
@@ -270,6 +270,10 @@
  "https://www.discogs.com/sell/release/11160643?sort=price%2Casc": {
   "precio": 3.58,
   "ts": 1794386545.9734344
+ },
+ "https://www.discogs.com/sell/release/11167624?sort=price%2Casc": {
+  "precio": 7.0,
+  "ts": 1794707474.8682473
  },
  "https://www.discogs.com/sell/release/11277098?sort=price%2Casc": {
   "precio": 4.85,
@@ -2987,6 +2991,10 @@
   "precio": 15.0,
   "ts": 1793504074.9957273
  },
+ "https://www.vinted.es/items/3314202545-lp-the-all-time-greatest-hits-of-roy-orbison": {
+  "precio": 10.0,
+  "ts": 1794707349.7232509
+ },
  "https://www.vinted.es/items/3357227729-vinilo-teaser-and-the-firecat-cat-stevens": {
   "precio": 16.0,
   "ts": 1793745960.8523111
@@ -3299,6 +3307,10 @@
   "precio": 10.0,
   "ts": 1793133368.4882617
  },
+ "https://www.vinted.es/items/7742618572-vinylplaat-the-all-time-greatest-hits-of-roy-orbison": {
+  "precio": 10.0,
+  "ts": 1794707349.291551
+ },
  "https://www.vinted.es/items/7764075080-cat-stevens-greatest-hits-lp": {
   "precio": 12.0,
   "ts": 1793868381.3422337
@@ -3450,6 +3462,10 @@
  "https://www.vinted.es/items/8515645698-the-housemartins-now-thats-what-i-call-quite-good-2xlp-1st-italy-press-1988-pop-soul-80s": {
   "precio": 30.0,
   "ts": 1793503864.7558732
+ },
+ "https://www.vinted.es/items/8516185454-roy-orbison-the-all-time-greatest-hits-1974-netherlands": {
+  "precio": 10.0,
+  "ts": 1794707348.695647
  },
  "https://www.vinted.es/items/8567931918-vinile-cat-stevens-greatest-hits": {
   "precio": 11.0,
