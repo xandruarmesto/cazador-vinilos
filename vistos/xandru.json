@@ -1,4 +1,8 @@
 {
+ "https://es.wallapop.com/item/1975queen-a-night-at-the-opera-1324589921": {
+  "precio": 12.0,
+  "ts": 1794762111.5595407
+ },
  "https://es.wallapop.com/item/cat-stevens-greatest-hits-1322982718": {
   "precio": 14.0,
   "ts": 1794338154.7349532
@@ -859,6 +863,10 @@
   "precio": 15.3,
   "ts": 1793649268.867013
  },
+ "https://www.discogs.com/sell/release/2667153?sort=price%2Casc": {
+  "precio": 1.11,
+  "ts": 1794761225.1946537
+ },
  "https://www.discogs.com/sell/release/26790650?sort=price%2Casc": {
   "precio": 2.0,
   "ts": 1794441725.5759206
@@ -1590,6 +1598,10 @@
  "https://www.discogs.com/sell/release/8467756": {
   "precio": 19.58,
   "ts": 1792532238.5869343
+ },
+ "https://www.discogs.com/sell/release/8490666?sort=price%2Casc": {
+  "precio": 4.55,
+  "ts": 1794760980.1585643
  },
  "https://www.discogs.com/sell/release/8555437": {
   "precio": 10.0,
@@ -2967,6 +2979,10 @@
   "precio": 8.0,
   "ts": 1794693201.1818206
  },
+ "https://www.vinted.es/items/10822882110-tracy-chapman-talkin-bout-a-revolution-if-not-now": {
+  "precio": 7.0,
+  "ts": 1794762817.7364736
+ },
  "https://www.vinted.es/items/1635199184-pearl-janis-joplin-disco-in-vinile-33-giri": {
   "precio": 30.0,
   "ts": 1793764995.6206477
@@ -3207,6 +3223,10 @@
   "precio": 18.0,
   "ts": 1793503184.9123082
  },
+ "https://www.vinted.es/items/6491047276-roy-orbison-the-all-time-greatest-hits-of-roy-orbison": {
+  "precio": 13.0,
+  "ts": 1794762296.7853327
+ },
  "https://www.vinted.es/items/6528373207-cuadro-the-beatles-abbey-road": {
   "precio": 17.9,
   "ts": 1793503718.2723262
@@ -3214,6 +3234,10 @@
  "https://www.vinted.es/items/6549859573-cuadro-the-rolling-stones-sticky-fingers": {
   "precio": 17.9,
   "ts": 1793503975.7484329
+ },
+ "https://www.vinted.es/items/6620728952-roy-orbison-all-time-greatest-hits": {
+  "precio": 12.5,
+  "ts": 1794762294.5383186
  },
  "https://www.vinted.es/items/6818563136-rock-punk-mink-deville-coup-de-graceano-1981disco-vinilofabricado-alemania": {
   "precio": 14.0,
@@ -3906,6 +3930,10 @@
  "https://www.vinted.es/items/9934310906-lou-reed-transformer": {
   "precio": 25.0,
   "ts": 1793568974.1519375
+ },
+ "https://www.vinted.es/items/9936770214-roy-orbison-all-time-greatest-hits-dubbel-lp-vinyl-1974": {
+  "precio": 13.0,
+  "ts": 1794762296.3014653
  },
  "https://www.vinted.es/items/9939251994-the-rolling-stones-sticky-fingers": {
   "precio": 22.0,
