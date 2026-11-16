@@ -1163,6 +1163,10 @@
   "precio": 5.93,
   "ts": 1793745740.1629462
  },
+ "https://www.discogs.com/sell/release/3964466?sort=price%2Casc": {
+  "precio": 5.46,
+  "ts": 1794802471.3849766
+ },
  "https://www.discogs.com/sell/release/4018700?sort=price%2Casc": {
   "precio": 5.0,
   "ts": 1793503572.9670718
@@ -1478,6 +1482,10 @@
  "https://www.discogs.com/sell/release/6925275": {
   "precio": 13.6,
   "ts": 1792532761.068071
+ },
+ "https://www.discogs.com/sell/release/7064993?sort=price%2Casc": {
+  "precio": 1.19,
+  "ts": 1794802384.1871524
  },
  "https://www.discogs.com/sell/release/7097443": {
   "precio": 7.37,
@@ -2647,6 +2655,10 @@
   "precio": 19.95,
   "ts": 1793649733.884421
  },
+ "https://www.vinted.es/items/10633716868-lp-madness-one-step-beyond-uk-ska": {
+  "precio": 15.0,
+  "ts": 1794801817.9879065
+ },
  "https://www.vinted.es/items/10634320965-janis-joplin-pearl": {
   "precio": 20.0,
   "ts": 1793649745.6921086
@@ -2986,6 +2998,10 @@
  "https://www.vinted.es/items/10770147292-sinead-oconnor-i-do-not-want-what-i-havent-got-vinile-lp-italia-1990": {
   "precio": 15.0,
   "ts": 1794442293.3043754
+ },
+ "https://www.vinted.es/items/10775830591-madness-one-step-beyond-lp-vinyl-1979-germany-stiff-records-ska-2-tone": {
+  "precio": 15.0,
+  "ts": 1794801817.3728666
  },
  "https://www.vinted.es/items/10777321980-creedence-clearwater-revival-cosmos-factory-lp": {
   "precio": 10.0,
@@ -3622,6 +3638,10 @@
  "https://www.vinted.es/items/8867565095-cat-stevens-the-teaser-and-the-firecat-lp-original-1971-island-records": {
   "precio": 14.0,
   "ts": 1793696196.32322
+ },
+ "https://www.vinted.es/items/8872877199-madness-one-step-beyond-lp-italy-repress-1980-ska-80s": {
+  "precio": 15.0,
+  "ts": 1794801818.5207462
  },
  "https://www.vinted.es/items/8884697888-cat-stevens-greatest-hits-lp-1975-198-italy-repress": {
   "precio": 7.0,
