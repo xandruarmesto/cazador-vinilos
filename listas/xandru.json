@@ -400,6 +400,16 @@
     "max_precio": 25
   },
   {
+    "artista": "Percy Sledge",
+    "disco": "Warm & Tender Soul",
+    "max_precio": 24
+  },
+  {
+    "artista": "Percy Sledge",
+    "disco": "When a Man Loves a Woman",
+    "max_precio": 26
+  },
+  {
     "artista": "Pereza",
     "disco": "Animales",
     "max_precio": 28
@@ -497,6 +507,16 @@
   {
     "artista": "Ska-P",
     "disco": "El Vals del Obrero",
+    "max_precio": 28
+  },
+  {
+    "artista": "Solomon Burke",
+    "disco": "Don't Give Up on Me",
+    "max_precio": 30
+  },
+  {
+    "artista": "Solomon Burke",
+    "disco": "Rock 'n' Soul",
     "max_precio": 28
   },
   {
@@ -666,5 +686,20 @@
     "artista": "Vetusta Morla",
     "disco": "Un día en el mundo",
     "max_precio": 25
+  },
+  {
+    "artista": "Wilson Pickett",
+    "disco": "Hey Jude",
+    "max_precio": 26
+  },
+  {
+    "artista": "Wilson Pickett",
+    "disco": "The Exciting Wilson Pickett",
+    "max_precio": 28
+  },
+  {
+    "artista": "Wilson Pickett",
+    "disco": "The Wicked Pickett",
+    "max_precio": 26
   }
 ]

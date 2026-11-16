@@ -471,6 +471,10 @@
   "precio": 9.86,
   "ts": 1792536762.815271
  },
+ "https://www.discogs.com/sell/release/1375738?sort=price%2Casc": {
+  "precio": 3.03,
+  "ts": 1794872658.4548905
+ },
  "https://www.discogs.com/sell/release/13760107?sort=price%2Casc": {
   "precio": 9.99,
   "ts": 1793727793.537874
@@ -1379,6 +1383,10 @@
   "precio": 15.71,
   "ts": 1792536745.885977
  },
+ "https://www.discogs.com/sell/release/5794274?sort=price%2Casc": {
+  "precio": 1.88,
+  "ts": 1794872613.0218523
+ },
  "https://www.discogs.com/sell/release/5888310": {
   "precio": 8.81,
   "ts": 1792532742.7905843
@@ -1387,6 +1395,10 @@
   "precio": 8.81,
   "ts": 1793503996.5309389
  },
+ "https://www.discogs.com/sell/release/5979653?sort=price%2Casc": {
+  "precio": 0.46,
+  "ts": 1794872635.7110093
+ },
  "https://www.discogs.com/sell/release/5999264": {
   "precio": 13.36,
   "ts": 1792550527.4999099
@@ -1394,6 +1406,10 @@
  "https://www.discogs.com/sell/release/6103465?sort=price%2Casc": {
   "precio": 3.57,
   "ts": 1794255446.299683
+ },
+ "https://www.discogs.com/sell/release/6158773?sort=price%2Casc": {
+  "precio": 2.39,
+  "ts": 1794871666.823331
  },
  "https://www.discogs.com/sell/release/6216461?sort=price%2Casc": {
   "precio": 1.81,
@@ -3055,6 +3071,10 @@
   "precio": 14.0,
   "ts": 1794831979.5439985
  },
+ "https://www.vinted.es/items/10847052563-guns-n-roses-appetite-for-destruction": {
+  "precio": 14.0,
+  "ts": 1794871094.690127
+ },
  "https://www.vinted.es/items/1635199184-pearl-janis-joplin-disco-in-vinile-33-giri": {
   "precio": 30.0,
   "ts": 1793764995.6206477
@@ -3298,6 +3318,10 @@
  "https://www.vinted.es/items/6491047276-roy-orbison-the-all-time-greatest-hits-of-roy-orbison": {
   "precio": 13.0,
   "ts": 1794762296.7853327
+ },
+ "https://www.vinted.es/items/6515687014-wilson-pickett-hey-jude": {
+  "precio": 5.0,
+  "ts": 1794872600.3829563
  },
  "https://www.vinted.es/items/6528373207-cuadro-the-beatles-abbey-road": {
   "precio": 17.9,
@@ -3559,6 +3583,10 @@
   "precio": 14.0,
   "ts": 1792660065.7061515
  },
+ "https://www.vinted.es/items/8511607680-vinile-percy-sledge-warm-and-tender-love-when-a-man-loves-a-woman": {
+  "precio": 2.0,
+  "ts": 1794871654.3513176
+ },
  "https://www.vinted.es/items/8514684131-cat-stevens-teaser-and-the-firecat": {
   "precio": 11.0,
   "ts": 1793671207.2680676
@@ -3642,6 +3670,14 @@
  "https://www.vinted.es/items/8825156781-big-brother-the-holding-company-cheap-thrills-janis-joplin-vinyl-lp": {
   "precio": 15.0,
   "ts": 1793606562.488627
+ },
+ "https://www.vinted.es/items/8826536112-mink-deville-coup-de-grace-1981": {
+  "precio": 12.0,
+  "ts": 1794871413.3157363
+ },
+ "https://www.vinted.es/items/8826548199-percy-sledge-when-a-man-loves-a-woman": {
+  "precio": 3.1,
+  "ts": 1794871654.8670385
  },
  "https://www.vinted.es/items/8836161559-sinead-oconnor-i-do-not-want-what-i-havent-got-vinile": {
   "precio": 25.0,
@@ -3775,6 +3811,10 @@
   "precio": 7.0,
   "ts": 1794694344.9806356
  },
+ "https://www.vinted.es/items/9314191486-vinile-percy-sledge-warm-tender-soul": {
+  "precio": 2.0,
+  "ts": 1794871631.5303562
+ },
  "https://www.vinted.es/items/9320413730-cat-stevens-the-teaser-and-the-firecat-vinile-vinileria": {
   "precio": 20.0,
   "ts": 1793764680.3408258
@@ -3790,6 +3830,10 @@
  "https://www.vinted.es/items/9362627538-vinilo-vintage-cosmos-factory-de-la-banda-creedence-clearwater-revival-l": {
   "precio": 20.0,
   "ts": 1793530669.666093
+ },
+ "https://www.vinted.es/items/9369735426-vinile-percy-sledge-star-collection-when-a-man-loves-a-woman": {
+  "precio": 4.0,
+  "ts": 1794871655.3896165
  },
  "https://www.vinted.es/items/9372330595-the-runaways-lote-de-2-lp-vinilo-12": {
   "precio": 23.95,
