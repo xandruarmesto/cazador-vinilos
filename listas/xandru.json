@@ -313,6 +313,16 @@
     "max_precio": 25
   },
   {
+    "artista": "Marvin Gaye",
+    "disco": "Let's Get It On",
+    "max_precio": 30
+  },
+  {
+    "artista": "Marvin Gaye",
+    "disco": "What's Going On",
+    "max_precio": 32
+  },
+  {
     "artista": "Michael Kiwanuka",
     "disco": "Home Again",
     "max_precio": 22
@@ -518,6 +528,16 @@
     "artista": "Solomon Burke",
     "disco": "Rock 'n' Soul",
     "max_precio": 28
+  },
+  {
+    "artista": "The Alan Parsons Project",
+    "disco": "Eye in the Sky",
+    "max_precio": 25
+  },
+  {
+    "artista": "The Alan Parsons Project",
+    "disco": "The Turn of a Friendly Card",
+    "max_precio": 24
   },
   {
     "artista": "The Beatles",

@@ -439,6 +439,10 @@
   "precio": 4.99,
   "ts": 1792594217.339009
  },
+ "https://www.discogs.com/sell/release/13311626?sort=price%2Casc": {
+  "precio": 0.77,
+  "ts": 1794929900.784272
+ },
  "https://www.discogs.com/sell/release/13323260?sort=price%2Casc": {
   "precio": 0.89,
   "ts": 1794356613.9504874
@@ -674,6 +678,10 @@
  "https://www.discogs.com/sell/release/16953198": {
   "precio": 20.0,
   "ts": 1792537249.9617662
+ },
+ "https://www.discogs.com/sell/release/17847658?sort=price%2Casc": {
+  "precio": 2.73,
+  "ts": 1794929296.3164358
  },
  "https://www.discogs.com/sell/release/18124366": {
   "precio": 2.67,
@@ -1555,6 +1563,10 @@
   "precio": 2.67,
   "ts": 1793839352.3454816
  },
+ "https://www.discogs.com/sell/release/7515211?sort=price%2Casc": {
+  "precio": 1.37,
+  "ts": 1794930494.4242501
+ },
  "https://www.discogs.com/sell/release/751778?sort=price%2Casc": {
   "precio": 3.17,
   "ts": 1793504091.9752715
@@ -1706,6 +1718,10 @@
  "https://www.discogs.com/sell/release/9619261": {
   "precio": 13.35,
   "ts": 1792532174.2596633
+ },
+ "https://www.discogs.com/sell/release/962269?sort=price%2Casc": {
+  "precio": 2.5,
+  "ts": 1794929878.3775454
  },
  "https://www.discogs.com/sell/release/9764376?sort=price%2Casc": {
   "precio": 2.67,
@@ -2278,6 +2294,10 @@
  "https://www.vinted.es/items/10464525366-2-magneti-rock-the-clash-london-calling-arctic-monkeys-am-mini-vinili": {
   "precio": 9.99,
   "ts": 1792594661.1588125
+ },
+ "https://www.vinted.es/items/10464907566-the-alan-parsons-project-the-turn-of-a-friendly-card-lp": {
+  "precio": 8.0,
+  "ts": 1794929882.5255947
  },
  "https://www.vinted.es/items/10467550428-the-runaways-school-days-7": {
   "precio": 6.59,
@@ -3099,6 +3119,14 @@
   "precio": 14.0,
   "ts": 1794871094.690127
  },
+ "https://www.vinted.es/items/10850294391-job-orchestra-open-the-doors-33t-disco-soul": {
+  "precio": 6.0,
+  "ts": 1794930071.1104538
+ },
+ "https://www.vinted.es/items/10854845613-the-doors-the-mosquito-label": {
+  "precio": 3.95,
+  "ts": 1794930070.7311912
+ },
  "https://www.vinted.es/items/1635199184-pearl-janis-joplin-disco-in-vinile-33-giri": {
   "precio": 30.0,
   "ts": 1793764995.6206477
@@ -3154,6 +3182,10 @@
  "https://www.vinted.es/items/3786087554-vinile-cat-stevens-greatest-hits": {
   "precio": 11.0,
   "ts": 1793819248.702494
+ },
+ "https://www.vinted.es/items/3839072395-marvin-gaye-lets-get-it-on-disco-vinilo-estado-vg-no-cover-1973": {
+  "precio": 15.0,
+  "ts": 1794929119.7604172
  },
  "https://www.vinted.es/items/3845069249-cat-stevens-greatest-hits": {
   "precio": 8.0,
@@ -3259,6 +3291,10 @@
   "precio": 20.0,
   "ts": 1793324482.9919727
  },
+ "https://www.vinted.es/items/5511417421-percy-sledge-the-ultimate-collection-when-a-man-loves-a-woman": {
+  "precio": 8.0,
+  "ts": 1794929467.0011895
+ },
  "https://www.vinted.es/items/5531050205-cat-stevens-greatest-hits": {
   "precio": 7.0,
   "ts": 1793649397.2975378
@@ -3319,6 +3355,10 @@
   "precio": 18.0,
   "ts": 1793553979.8153985
  },
+ "https://www.vinted.es/items/6302326988-the-alan-parsons-project-the-turn-of-a-friendly-card-1980": {
+  "precio": 6.0,
+  "ts": 1794929881.6695106
+ },
  "https://www.vinted.es/items/6312336310-percy-sledge-free-2-move-when-a-man-loves-a-woman-odissey-italy-2003-funk-soul": {
   "precio": 4.9,
   "ts": 1794895347.773207
@@ -3346,6 +3386,10 @@
  "https://www.vinted.es/items/6491047276-roy-orbison-the-all-time-greatest-hits-of-roy-orbison": {
   "precio": 13.0,
   "ts": 1794762296.7853327
+ },
+ "https://www.vinted.es/items/6510203781-percy-sledge-1972-when-a-man-loves-a-woman-my-special-prayer": {
+  "precio": 8.0,
+  "ts": 1794929466.5891616
  },
  "https://www.vinted.es/items/6515687014-wilson-pickett-hey-jude": {
   "precio": 5.0,
@@ -3567,6 +3611,10 @@
   "precio": 10.0,
   "ts": 1793649446.5212176
  },
+ "https://www.vinted.es/items/8239339033-percy-sledge-when-a-man-loves-a-woman": {
+  "precio": 8.0,
+  "ts": 1794929466.1948726
+ },
  "https://www.vinted.es/items/8246341234-janis-joplin-pearl": {
   "precio": 25.0,
   "ts": 1793696489.0599842
@@ -3590,6 +3638,10 @@
  "https://www.vinted.es/items/8280871094-copertina-album-vinile-dire-straits-making-movies": {
   "precio": 10.0,
   "ts": 1793503049.8316033
+ },
+ "https://www.vinted.es/items/8287622146-the-alan-parsons-project-the-turn-of-a-friendly-card": {
+  "precio": 7.0,
+  "ts": 1794929882.1067486
  },
  "https://www.vinted.es/items/8322244344-lou-reed-transformer": {
   "precio": 25.0,
