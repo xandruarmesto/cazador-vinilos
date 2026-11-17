@@ -1151,6 +1151,10 @@
   "precio": 1.17,
   "ts": 1792809719.4247074
  },
+ "https://www.discogs.com/sell/release/3782253?sort=price%2Casc": {
+  "precio": 6.0,
+  "ts": 1794958215.0935755
+ },
  "https://www.discogs.com/sell/release/3829390": {
   "precio": 6.62,
   "ts": 1792532104.4004014
@@ -2070,6 +2074,10 @@
  "https://www.vinted.es/items/10363476367-vinile-tracy-chapman-crossroads-1989": {
   "precio": 15.0,
   "ts": 1792612977.545404
+ },
+ "https://www.vinted.es/items/10365997587-the-alan-parsons-project-the-turn-of-a-friendly-card-vinile-lp-1980": {
+  "precio": 10.0,
+  "ts": 1794958913.2178457
  },
  "https://www.vinted.es/items/10366709400-cat-stevens-teaser-and-the-firecat": {
   "precio": 10.0,
@@ -3024,8 +3032,8 @@
   "ts": 1794339384.3059242
  },
  "https://www.vinted.es/items/10751976363-sinead-oconnor-i-do-not-want-what-i-havent-got-lp-1990": {
-  "precio": 13.0,
-  "ts": 1794387528.7147892
+  "precio": 12.0,
+  "ts": 1794958834.4470477
  },
  "https://www.vinted.es/items/10752802784-the-doors-starcollection-1972-germany-vinyl-lp": {
   "precio": 6.0,
@@ -3126,6 +3134,10 @@
  "https://www.vinted.es/items/10854845613-the-doors-the-mosquito-label": {
   "precio": 3.95,
   "ts": 1794930070.7311912
+ },
+ "https://www.vinted.es/items/10857181459-vinyl-disco-33-lp-cheap-thrills-janis-joplin": {
+  "precio": 10.9,
+  "ts": 1794957981.3232875
  },
  "https://www.vinted.es/items/1635199184-pearl-janis-joplin-disco-in-vinile-33-giri": {
   "precio": 30.0,
@@ -3459,6 +3471,10 @@
   "precio": 35.0,
   "ts": 1793609756.3833606
  },
+ "https://www.vinted.es/items/7375794701-vinilo-de-percy-sledge-when-a-man-loves-a-woman-1987": {
+  "precio": 10.0,
+  "ts": 1794958524.2343981
+ },
  "https://www.vinted.es/items/7394612593-charlie-parker-with-strings-the-charlie-parker-all-stars-a-charlie-parker-memorial-lp": {
   "precio": 8.0,
   "ts": 1793649469.9283574
@@ -3466,6 +3482,10 @@
  "https://www.vinted.es/items/7443216453-cat-stevens-greatest-hits": {
   "precio": 8.0,
   "ts": 1793649397.9867868
+ },
+ "https://www.vinted.es/items/7459456834-vinilo-de-percy-sledge-when-a-man-loves-a-woman-1987": {
+  "precio": 10.0,
+  "ts": 1794958523.6632237
  },
  "https://www.vinted.es/items/7488754748-cat-stevens-greatest-hits-vinile": {
   "precio": 10.0,
@@ -3530,6 +3550,10 @@
  "https://www.vinted.es/items/7845448178-cat-stevens-teaser-and-the-firecat": {
   "precio": 14.88,
   "ts": 1793696197.137361
+ },
+ "https://www.vinted.es/items/7873900197-lp-percy-sledge-when-a-man-loves-a-woman": {
+  "precio": 10.0,
+  "ts": 1794958523.117356
  },
  "https://www.vinted.es/items/7891342529-big-brother-the-holding-company-cheap-thrills-janis-joplin": {
   "precio": 28.0,
@@ -3611,6 +3635,10 @@
   "precio": 10.0,
   "ts": 1793649446.5212176
  },
+ "https://www.vinted.es/items/8219794547-the-alan-parsons-project-the-turn-of-a-friendly-card": {
+  "precio": 10.0,
+  "ts": 1794958914.2356977
+ },
  "https://www.vinted.es/items/8239339033-percy-sledge-when-a-man-loves-a-woman": {
   "precio": 8.0,
   "ts": 1794929466.1948726
@@ -3642,6 +3670,10 @@
  "https://www.vinted.es/items/8287622146-the-alan-parsons-project-the-turn-of-a-friendly-card": {
   "precio": 7.0,
   "ts": 1794929882.1067486
+ },
+ "https://www.vinted.es/items/8289358508-the-turn-of-a-friendly-card-alan-parsons-project": {
+  "precio": 10.0,
+  "ts": 1794958913.6825619
  },
  "https://www.vinted.es/items/8322244344-lou-reed-transformer": {
   "precio": 25.0,
