@@ -59,6 +59,10 @@
   "precio": 19.0,
   "ts": 1793503476.41324
  },
+ "https://es.wallapop.com/item/portada-del-vinilo-the-police-every-breath-you-1325162275": {
+  "precio": 5.0,
+  "ts": 1794895956.4825215
+ },
  "https://es.wallapop.com/item/vinile-a-love-supreme-john-coltrane-1315197238": {
   "precio": 18.0,
   "ts": 1792532342.7917101
@@ -314,6 +318,10 @@
  "https://www.discogs.com/sell/release/11564441?sort=price%2Casc": {
   "precio": 1.33,
   "ts": 1792570078.4968512
+ },
+ "https://www.discogs.com/sell/release/1181391?sort=price%2Casc": {
+  "precio": 1.19,
+  "ts": 1794895360.3025653
  },
  "https://www.discogs.com/sell/release/11836346": {
   "precio": 21.3,
@@ -1312,8 +1320,8 @@
   "ts": 1793792871.1731937
  },
  "https://www.discogs.com/sell/release/5310894?sort=price%2Casc": {
-  "precio": 3.6,
-  "ts": 1793671032.1523643
+  "precio": 3.59,
+  "ts": 1794894191.3006022
  },
  "https://www.discogs.com/sell/release/5332160": {
   "precio": 11.29,
@@ -1459,6 +1467,10 @@
   "precio": 2.22,
   "ts": 1794494670.6336112
  },
+ "https://www.discogs.com/sell/release/6603618?sort=price%2Casc": {
+  "precio": 2.38,
+  "ts": 1794895344.3347685
+ },
  "https://www.discogs.com/sell/release/6606240": {
   "precio": 14.24,
   "ts": 1792532375.2377372
@@ -1486,6 +1498,10 @@
  "https://www.discogs.com/sell/release/6819143?sort=price%2Casc": {
   "precio": 5.06,
   "ts": 1793868708.2251797
+ },
+ "https://www.discogs.com/sell/release/6827639?sort=price%2Casc": {
+  "precio": 1.82,
+  "ts": 1794894869.560135
  },
  "https://www.discogs.com/sell/release/6869093?sort=price%2Casc": {
   "precio": 3.98,
@@ -1962,6 +1978,10 @@
  "https://www.vinted.es/items/10308591841-tracy-chapman-fast-car": {
   "precio": 3.0,
   "ts": 1792570926.984085
+ },
+ "https://www.vinted.es/items/10311499050-lp-33-gir-percy-sledge-when-a-man-loves-a-woman": {
+  "precio": 7.0,
+  "ts": 1794895348.285484
  },
  "https://www.vinted.es/items/10312153317-vinile-45-giri-louis-armstrong-what-a-wonderful-world-cabaret-probe-1972": {
   "precio": 2.5,
@@ -3071,6 +3091,10 @@
   "precio": 14.0,
   "ts": 1794831979.5439985
  },
+ "https://www.vinted.es/items/10841065210-appetite-for-destruction-lp-guns-n-roses": {
+  "precio": 14.5,
+  "ts": 1794894784.900323
+ },
  "https://www.vinted.es/items/10847052563-guns-n-roses-appetite-for-destruction": {
   "precio": 14.0,
   "ts": 1794871094.690127
@@ -3294,6 +3318,10 @@
  "https://www.vinted.es/items/6141035739-cat-stevens-tea-for-the-tillerman": {
   "precio": 18.0,
   "ts": 1793553979.8153985
+ },
+ "https://www.vinted.es/items/6312336310-percy-sledge-free-2-move-when-a-man-loves-a-woman-odissey-italy-2003-funk-soul": {
+  "precio": 4.9,
+  "ts": 1794895347.773207
  },
  "https://www.vinted.es/items/6318332972-the-police-sting-vinile-reggatta-de-blanc-lp": {
   "precio": 16.0,
@@ -4058,6 +4086,10 @@
  "https://www.vinted.es/items/9939251994-the-rolling-stones-sticky-fingers": {
   "precio": 22.0,
   "ts": 1792570858.1797712
+ },
+ "https://www.vinted.es/items/9954280390-percy-sledge-free-2-move-when-a-man-loves-a-woman-odissey-12-ltd-promo": {
+  "precio": 7.0,
+  "ts": 1794895348.7890522
  },
  "https://www.vinted.es/items/9957158533-vinyle-de-collection-tracy-chapman": {
   "precio": 12.0,
