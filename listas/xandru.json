@@ -61,6 +61,21 @@
     "max_precio": 18
   },
   {
+    "artista": "Blondie",
+    "disco": "Eat to the Beat",
+    "max_precio": 24
+  },
+  {
+    "artista": "Blondie",
+    "disco": "Parallel Lines",
+    "max_precio": 26
+  },
+  {
+    "artista": "Blondie",
+    "disco": "The Best of Blondie",
+    "max_precio": 22
+  },
+  {
     "artista": "Blur",
     "disco": "Parklife",
     "max_precio": 22
@@ -226,6 +241,31 @@
     "artista": "Iván Ferreiro",
     "disco": "Casa",
     "max_precio": 22
+  },
+  {
+    "artista": "Jackie Wilson",
+    "disco": "Greatest Hits",
+    "max_precio": 24
+  },
+  {
+    "artista": "Jackie Wilson",
+    "disco": "Higher and Higher",
+    "max_precio": 30
+  },
+  {
+    "artista": "James Brown",
+    "disco": "Live at the Apollo",
+    "max_precio": 30
+  },
+  {
+    "artista": "James Brown",
+    "disco": "Sex Machine",
+    "max_precio": 32
+  },
+  {
+    "artista": "James Brown",
+    "disco": "The Payback",
+    "max_precio": 34
   },
   {
     "artista": "Janis Joplin",
@@ -505,6 +545,21 @@
     "max_precio": 24
   },
   {
+    "artista": "Sam Cooke",
+    "disco": "Live at the Harlem Square Club",
+    "max_precio": 30
+  },
+  {
+    "artista": "Sam Cooke",
+    "disco": "Night Beat",
+    "max_precio": 28
+  },
+  {
+    "artista": "Sam Cooke",
+    "disco": "Portrait of a Legend",
+    "max_precio": 32
+  },
+  {
     "artista": "Sidney Bechet",
     "disco": "Petite Fleur",
     "max_precio": 15
@@ -527,6 +582,21 @@
   {
     "artista": "Solomon Burke",
     "disco": "Rock 'n' Soul",
+    "max_precio": 28
+  },
+  {
+    "artista": "Texas",
+    "disco": "Southside",
+    "max_precio": 24
+  },
+  {
+    "artista": "Texas",
+    "disco": "The Greatest Hits",
+    "max_precio": 32
+  },
+  {
+    "artista": "Texas",
+    "disco": "White on Blonde",
     "max_precio": 28
   },
   {
@@ -646,6 +716,21 @@
     "artista": "The Skatalites",
     "disco": "Ska Authentic",
     "max_precio": 30
+  },
+  {
+    "artista": "The Smashing Pumpkins",
+    "disco": "Gish",
+    "max_precio": 32
+  },
+  {
+    "artista": "The Smashing Pumpkins",
+    "disco": "Mellon Collie and the Infinite Sadness",
+    "max_precio": 70
+  },
+  {
+    "artista": "The Smashing Pumpkins",
+    "disco": "Siamese Dream",
+    "max_precio": 36
   },
   {
     "artista": "The Smiths",
