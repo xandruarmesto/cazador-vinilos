@@ -199,6 +199,10 @@
   "precio": 11.0,
   "ts": 1793747269.777037
  },
+ "https://es.wallapop.com/item/vinilo-madness-one-step-beyond-1326178503": {
+  "precio": 4.0,
+  "ts": 1795129610.9707391
+ },
  "https://es.wallapop.com/item/vinilo-mink-deville-coup-de-grace-1322985001": {
   "precio": 10.0,
   "ts": 1794338746.2263172
@@ -210,6 +214,10 @@
  "https://es.wallapop.com/item/vinilo-queen-greatest-hits-1320783602": {
   "precio": 20.0,
   "ts": 1793820093.6220675
+ },
+ "https://es.wallapop.com/item/vinilo-the-beatles-abbey-road-1326001614": {
+  "precio": 12.0,
+  "ts": 1795130476.756209
  },
  "https://es.wallapop.com/item/vinilo-the-beatles-rock-n-roll-music-vol-1-1315570004": {
   "precio": 5.0,
@@ -850,6 +858,10 @@
  "https://www.discogs.com/sell/release/23513969": {
   "precio": 16.91,
   "ts": 1792536887.9954352
+ },
+ "https://www.discogs.com/sell/release/2361529?sort=price%2Casc": {
+  "precio": 2.39,
+  "ts": 1795128676.4039743
  },
  "https://www.discogs.com/sell/release/2383628?sort=price%2Casc": {
   "precio": 7.72,
@@ -1671,6 +1683,10 @@
   "precio": 25.0,
   "ts": 1792532592.9802778
  },
+ "https://www.discogs.com/sell/release/780154?sort=price%2Casc": {
+  "precio": 1.0,
+  "ts": 1795130452.8800092
+ },
  "https://www.discogs.com/sell/release/7814742": {
   "precio": 6.23,
   "ts": 1792532609.6438658
@@ -1818,6 +1834,10 @@
  "https://www.discogs.com/sell/release/962269?sort=price%2Casc": {
   "precio": 2.5,
   "ts": 1794929878.3775454
+ },
+ "https://www.discogs.com/sell/release/9671775?sort=price%2Casc": {
+  "precio": 4.1,
+  "ts": 1795129644.8546984
  },
  "https://www.discogs.com/sell/release/9764376?sort=price%2Casc": {
   "precio": 2.67,
@@ -3235,6 +3255,10 @@
   "precio": 15.0,
   "ts": 1794521310.7876885
  },
+ "https://www.vinted.es/items/10783419743-james-brown-live-at-the-apollo-lp-soul-rhythm-n-blues": {
+  "precio": 17.0,
+  "ts": 1795129358.2627435
+ },
  "https://www.vinted.es/items/10788132091-sinead-oconnor-i-do-not-want-what-i-havent-got-lp-vinyl-1990-spain": {
   "precio": 16.9,
   "ts": 1794694384.449397
@@ -3330,6 +3354,10 @@
  "https://www.vinted.es/items/10881321638-the-beatles-revolver": {
   "precio": 19.0,
   "ts": 1795102081.3293197
+ },
+ "https://www.vinted.es/items/10883674244-blondie-parallel-lines-reissue-ristampa-uk-1978": {
+  "precio": 15.0,
+  "ts": 1795128766.0156233
  },
  "https://www.vinted.es/items/1606315910-james-brown-a-sex-machine-parts-1-2": {
   "precio": 5.5,
@@ -3567,6 +3595,10 @@
   "precio": 10.0,
   "ts": 1793764626.5729377
  },
+ "https://www.vinted.es/items/5938045635-vinile-the-turn-of-a-friendly-card-the-alan-parsons-project-1980-ars-39077": {
+  "precio": 12.0,
+  "ts": 1795130434.2927122
+ },
  "https://www.vinted.es/items/5942268254-lou-reed-transformer": {
   "precio": 25.0,
   "ts": 1793582105.9335787
@@ -3598,6 +3630,14 @@
  "https://www.vinted.es/items/6189259479-lp-soul-jackie-wilson-higher-and-higher-canadian-press-hear": {
   "precio": 18.0,
   "ts": 1795014103.6349595
+ },
+ "https://www.vinted.es/items/6275381636-james-brown-live-at-the-apollo": {
+  "precio": 17.0,
+  "ts": 1795129358.8033729
+ },
+ "https://www.vinted.es/items/6275501399-james-brown-live-at-the-apollo": {
+  "precio": 17.0,
+  "ts": 1795129359.2809696
  },
  "https://www.vinted.es/items/6275513905-james-brown-live-at-the-apollo": {
   "precio": 14.0,
@@ -4206,6 +4246,10 @@
  "https://www.vinted.es/items/9176437809-vilo-percy-sledge-when-a-man-loves-a-woman": {
   "precio": 12.0,
   "ts": 1794979694.6117306
+ },
+ "https://www.vinted.es/items/9184902079-mini-vinilo-james-brown-sex-machine-1974": {
+  "precio": 18.0,
+  "ts": 1795129381.8648825
  },
  "https://www.vinted.es/items/9188871070-vinilo-de-mink-deville-coup-de-grace-1981": {
   "precio": 14.0,
