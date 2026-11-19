@@ -299,6 +299,10 @@
   "precio": 7.0,
   "ts": 1794707474.8682473
  },
+ "https://www.discogs.com/sell/release/11267043?sort=price%2Casc": {
+  "precio": 3.18,
+  "ts": 1795064773.5514388
+ },
  "https://www.discogs.com/sell/release/11277098?sort=price%2Casc": {
   "precio": 4.85,
   "ts": 1792660322.1320543
@@ -338,6 +342,10 @@
  "https://www.discogs.com/sell/release/11836346": {
   "precio": 21.3,
   "ts": 1792549834.4344482
+ },
+ "https://www.discogs.com/sell/release/11846908?sort=price%2Casc": {
+  "precio": 4.55,
+  "ts": 1795064451.6146467
  },
  "https://www.discogs.com/sell/release/1185718": {
   "precio": 13.9,
@@ -474,6 +482,10 @@
  "https://www.discogs.com/sell/release/1341313": {
   "precio": 17.0,
   "ts": 1792532814.324583
+ },
+ "https://www.discogs.com/sell/release/13425325?sort=price%2Casc": {
+  "precio": 0.91,
+  "ts": 1795064604.962314
  },
  "https://www.discogs.com/sell/release/13488595?sort=price%2Casc": {
   "precio": 2.22,
@@ -1671,6 +1683,10 @@
   "precio": 22.0,
   "ts": 1792532628.4047027
  },
+ "https://www.discogs.com/sell/release/8017942?sort=price%2Casc": {
+  "precio": 4.55,
+  "ts": 1795065291.949491
+ },
  "https://www.discogs.com/sell/release/8019777": {
   "precio": 4.73,
   "ts": 1792550526.6884494
@@ -1910,6 +1926,10 @@
  "https://www.vinted.es/items/10129245629-blondie-eat-to-the-beat-lp": {
   "precio": 12.0,
   "ts": 1795013453.020824
+ },
+ "https://www.vinted.es/items/10138198338-vinile-lp-james-brown-live-at-the-apollo-theatre-sigillato-sealed": {
+  "precio": 15.0,
+  "ts": 1795065212.5081122
  },
  "https://www.vinted.es/items/10141257319-cat-stevens-tea-for-the-tillerman-1st-us-pressing": {
   "precio": 18.0,
@@ -3287,6 +3307,10 @@
   "precio": 30.0,
   "ts": 1793764995.6206477
  },
+ "https://www.vinted.es/items/2357536518-james-brown-sex-machine-1976-lp-record-gema-2310-065": {
+  "precio": 15.0,
+  "ts": 1795065235.5891063
+ },
  "https://www.vinted.es/items/2583440526-cat-stevens-greatest-hits": {
   "precio": 10.0,
   "ts": 1793792850.423583
@@ -3479,6 +3503,10 @@
   "precio": 10.0,
   "ts": 1793307677.4519777
  },
+ "https://www.vinted.es/items/5638695796-james-brown-the-james-brown-show-live-at-the-apollo": {
+  "precio": 15.0,
+  "ts": 1795065213.142475
+ },
  "https://www.vinted.es/items/5686518104-reggatta-de-blanc-the-police-vinile": {
   "precio": 15.0,
   "ts": 1793554958.9491427
@@ -3643,6 +3671,10 @@
   "precio": 5.0,
   "ts": 1795015217.3344903
  },
+ "https://www.vinted.es/items/7330280063-blondie-eat-to-the-beat": {
+  "precio": 13.0,
+  "ts": 1795064584.495946
+ },
  "https://www.vinted.es/items/7335492780-vinile-cat-stevens-tea-for-the-tillerman": {
   "precio": 20.0,
   "ts": 1793608861.8577428
@@ -3654,6 +3686,10 @@
  "https://www.vinted.es/items/7368778411-sinead-oconnor-i-do-not-want-what-i-havent-got": {
   "precio": 35.0,
   "ts": 1793609756.3833606
+ },
+ "https://www.vinted.es/items/7373720107-james-brown-live-at-the-apollo": {
+  "precio": 15.0,
+  "ts": 1795065212.82709
  },
  "https://www.vinted.es/items/7375794701-vinilo-de-percy-sledge-when-a-man-loves-a-woman-1987": {
   "precio": 10.0,
@@ -3679,9 +3715,17 @@
   "precio": 10.0,
   "ts": 1793764625.847376
  },
+ "https://www.vinted.es/items/7527091608-vinilo-de-james-brown-sex-machine": {
+  "precio": 17.0,
+  "ts": 1795065235.9130578
+ },
  "https://www.vinted.es/items/7530927704-cat-stevens-greatest-hits-lp-12-1975": {
   "precio": 3.0,
   "ts": 1793606270.369995
+ },
+ "https://www.vinted.es/items/7561647631-james-brown-disco-lp-sex-machine": {
+  "precio": 13.0,
+  "ts": 1795065235.2606485
  },
  "https://www.vinted.es/items/7580060260-janis-joplin-pearl": {
   "precio": 22.0,
