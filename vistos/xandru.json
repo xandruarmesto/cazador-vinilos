@@ -67,6 +67,10 @@
   "precio": 8.0,
   "ts": 1795015548.5895293
  },
+ "https://es.wallapop.com/item/the-specials-gangsters-1326430097": {
+  "precio": 3.0,
+  "ts": 1795215966.6462197
+ },
  "https://es.wallapop.com/item/vinile-a-love-supreme-john-coltrane-1315197238": {
   "precio": 18.0,
   "ts": 1792532342.7917101
@@ -3386,6 +3390,10 @@
  "https://www.vinted.es/items/10894841959-lp-the-doors-waiting-for-the-sun-psych-rock": {
   "precio": 12.0,
   "ts": 1795187467.773642
+ },
+ "https://www.vinted.es/items/10897299435-guns-n-roses-appetite-for-destruction": {
+  "precio": 15.0,
+  "ts": 1795214307.027643
  },
  "https://www.vinted.es/items/1606315910-james-brown-a-sex-machine-parts-1-2": {
   "precio": 5.5,
