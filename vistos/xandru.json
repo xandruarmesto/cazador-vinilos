@@ -1327,6 +1327,10 @@
   "precio": 2.95,
   "ts": 1792660361.1033554
  },
+ "https://www.discogs.com/sell/release/4429027?sort=price%2Casc": {
+  "precio": 6.98,
+  "ts": 1795152252.8897667
+ },
  "https://www.discogs.com/sell/release/4448425?sort=price%2Casc": {
   "precio": 3.64,
   "ts": 1794386953.0745256
@@ -3391,6 +3395,10 @@
   "precio": 12.0,
   "ts": 1793503917.4996762
  },
+ "https://www.vinted.es/items/2979038831-lp-james-brown-live-at-the-apollo": {
+  "precio": 18.0,
+  "ts": 1795151110.0513756
+ },
  "https://www.vinted.es/items/2992613520-bob-dylan-highway-61-revisited-1965": {
   "precio": 15.0,
   "ts": 1793502850.3902252
@@ -3542,6 +3550,10 @@
  "https://www.vinted.es/items/5365902352-sinead-oconnor-i-do-not-want-what-i-havent-got-vinile-33-giri-lp": {
   "precio": 35.0,
   "ts": 1793609756.825047
+ },
+ "https://www.vinted.es/items/5369732798-james-brown-live-at-the-apollo-vol-2-vinile-12": {
+  "precio": 18.0,
+  "ts": 1795151109.5041285
  },
  "https://www.vinted.es/items/5474185153-sinead-oconnor-i-do-not-want-what-i-havent-got-vinyl": {
   "precio": 20.0,
@@ -4122,6 +4134,10 @@
  "https://www.vinted.es/items/8786507972-vinilo-pearl-janis-joplin": {
   "precio": 28.0,
   "ts": 1793727334.6547627
+ },
+ "https://www.vinted.es/items/8793748679-james-brown-live-at-the-apollo": {
+  "precio": 18.0,
+  "ts": 1795151108.9392815
  },
  "https://www.vinted.es/items/8793771853-cat-stevens-greatest-hits": {
   "precio": 8.0,
