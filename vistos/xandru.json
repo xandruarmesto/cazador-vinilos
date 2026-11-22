@@ -199,6 +199,10 @@
   "precio": 10.0,
   "ts": 1792594799.7169857
  },
+ "https://es.wallapop.com/item/vinilo-lp-tea-for-the-tillerman-cat-stevens-1326865307": {
+  "precio": 8.0,
+  "ts": 1795312390.971155
+ },
  "https://es.wallapop.com/item/vinilo-lp-the-doors-celebration-1315609464": {
   "precio": 18.0,
   "ts": 1792594740.614278
@@ -3422,6 +3426,10 @@
  "https://www.vinted.es/items/10913625230-coldplay-parachutes-vinilo": {
   "precio": 15.0,
   "ts": 1795292713.2847795
+ },
+ "https://www.vinted.es/items/10915053550-the-police-every-breath-you-take": {
+  "precio": 6.0,
+  "ts": 1795314226.2575316
  },
  "https://www.vinted.es/items/1606315910-james-brown-a-sex-machine-parts-1-2": {
   "precio": 5.5,
