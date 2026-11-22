@@ -319,6 +319,10 @@
   "precio": 3.58,
   "ts": 1794386545.9734344
  },
+ "https://www.discogs.com/sell/release/11160803?sort=price%2Casc": {
+  "precio": 0.95,
+  "ts": 1795338498.418212
+ },
  "https://www.discogs.com/sell/release/11167624?sort=price%2Casc": {
   "precio": 7.0,
   "ts": 1794707474.8682473
@@ -3430,6 +3434,10 @@
  "https://www.vinted.es/items/10915053550-the-police-every-breath-you-take": {
   "precio": 6.0,
   "ts": 1795314226.2575316
+ },
+ "https://www.vinted.es/items/10918393942-lp-off-various-oa-the-doors": {
+  "precio": 7.5,
+  "ts": 1795340283.157269
  },
  "https://www.vinted.es/items/1606315910-james-brown-a-sex-machine-parts-1-2": {
   "precio": 5.5,
