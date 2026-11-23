@@ -899,6 +899,10 @@
   "precio": 2.39,
   "ts": 1795128676.4039743
  },
+ "https://www.discogs.com/sell/release/23681390?sort=price%2Casc": {
+  "precio": 2.72,
+  "ts": 1795410264.9927893
+ },
  "https://www.discogs.com/sell/release/2383628?sort=price%2Casc": {
   "precio": 7.72,
   "ts": 1793606693.9503627
@@ -1790,6 +1794,10 @@
  "https://www.discogs.com/sell/release/8097391?sort=price%2Casc": {
   "precio": 2.67,
   "ts": 1793819271.8534503
+ },
+ "https://www.discogs.com/sell/release/8122088?sort=price%2Casc": {
+  "precio": 1.8,
+  "ts": 1795410923.326508
  },
  "https://www.discogs.com/sell/release/8223453?sort=price%2Casc": {
   "precio": 2.91,
@@ -3450,6 +3458,10 @@
  "https://www.vinted.es/items/10931699536-the-doors-star-collection-vinyl-germany-1972": {
   "precio": 10.0,
   "ts": 1795390367.6327567
+ },
+ "https://www.vinted.es/items/10934589308-the-police-synchronicity-lp-vinile-vinyl": {
+  "precio": 10.0,
+  "ts": 1795411212.613986
  },
  "https://www.vinted.es/items/1606315910-james-brown-a-sex-machine-parts-1-2": {
   "precio": 5.5,
