@@ -476,8 +476,8 @@
   "ts": 1792536562.5796402
  },
  "https://www.discogs.com/sell/release/12894334?sort=price%2Casc": {
-  "precio": 2.37,
-  "ts": 1793696169.5375195
+  "precio": 2.36,
+  "ts": 1795530645.4032013
  },
  "https://www.discogs.com/sell/release/1291700?sort=price%2Casc": {
   "precio": 2.65,
@@ -1415,6 +1415,10 @@
   "precio": 6.23,
   "ts": 1792661032.2677495
  },
+ "https://www.discogs.com/sell/release/4596652?sort=price%2Casc": {
+  "precio": 3.79,
+  "ts": 1795531134.2520337
+ },
  "https://www.discogs.com/sell/release/4629301?sort=price%2Casc": {
   "precio": 4.78,
   "ts": 1794338198.6541011
@@ -1868,8 +1872,8 @@
   "ts": 1792692949.024465
  },
  "https://www.discogs.com/sell/release/862368?sort=price%2Casc": {
-  "precio": 2.99,
-  "ts": 1795013499.0245311
+  "precio": 2.95,
+  "ts": 1795530522.702396
  },
  "https://www.discogs.com/sell/release/8638893": {
   "precio": 18.83,
@@ -3498,6 +3502,10 @@
  "https://www.vinted.es/items/10947255557-dire-straits-making-movies-vinile-lp-originale-vinile-33-giri": {
   "precio": 9.0,
   "ts": 1795491950.622832
+ },
+ "https://www.vinted.es/items/10953183477-the-specials-in-the-studio": {
+  "precio": 12.0,
+  "ts": 1795532685.6985955
  },
  "https://www.vinted.es/items/1606315910-james-brown-a-sex-machine-parts-1-2": {
   "precio": 5.5,
