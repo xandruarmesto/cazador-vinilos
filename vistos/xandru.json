@@ -75,9 +75,17 @@
   "precio": 8.0,
   "ts": 1795015548.5895293
  },
+ "https://es.wallapop.com/item/singles-the-police-1327589839": {
+  "precio": 5.0,
+  "ts": 1795493529.7961042
+ },
  "https://es.wallapop.com/item/the-specials-gangsters-1326430097": {
   "precio": 3.0,
   "ts": 1795215966.6462197
+ },
+ "https://es.wallapop.com/item/tracy-chapman-vinilo-crossroads-1327554057": {
+  "precio": 10.0,
+  "ts": 1795493853.6150575
  },
  "https://es.wallapop.com/item/vinile-a-love-supreme-john-coltrane-1315197238": {
   "precio": 18.0,
@@ -1847,6 +1855,10 @@
   "precio": 4.55,
   "ts": 1794760980.1585643
  },
+ "https://www.discogs.com/sell/release/8522054?sort=price%2Casc": {
+  "precio": 4.15,
+  "ts": 1795492037.5293267
+ },
  "https://www.discogs.com/sell/release/8555437": {
   "precio": 10.0,
   "ts": 1792550416.2614074
@@ -3474,6 +3486,18 @@
  "https://www.vinted.es/items/10934589308-the-police-synchronicity-lp-vinile-vinyl": {
   "precio": 10.0,
   "ts": 1795411212.613986
+ },
+ "https://www.vinted.es/items/10943533917-europe-rock-the-night-seven-doors-hotel-1986": {
+  "precio": 5.0,
+  "ts": 1795493455.8378925
+ },
+ "https://www.vinted.es/items/10946596034-vinilo-lp-tea-for-the-tillerman-cat-stevens": {
+  "precio": 8.0,
+  "ts": 1795491749.2296433
+ },
+ "https://www.vinted.es/items/10947255557-dire-straits-making-movies-vinile-lp-originale-vinile-33-giri": {
+  "precio": 9.0,
+  "ts": 1795491950.622832
  },
  "https://www.vinted.es/items/1606315910-james-brown-a-sex-machine-parts-1-2": {
   "precio": 5.5,
