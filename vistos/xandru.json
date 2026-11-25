@@ -1580,8 +1580,8 @@
   "ts": 1792550527.4999099
  },
  "https://www.discogs.com/sell/release/6103465?sort=price%2Casc": {
-  "precio": 3.57,
-  "ts": 1794255446.299683
+  "precio": 3.52,
+  "ts": 1795603321.8897753
  },
  "https://www.discogs.com/sell/release/6158773?sort=price%2Casc": {
   "precio": 2.39,
@@ -2342,6 +2342,10 @@
  "https://www.vinted.es/items/10378114894-ella-and-louis-vinile": {
   "precio": 20.0,
   "ts": 1792680696.1172535
+ },
+ "https://www.vinted.es/items/10385462343-vinilo-the-alan-parsons-project-the-turn-of-a-friendly-card-directo-y-claro": {
+  "precio": 12.0,
+  "ts": 1795605182.230697
  },
  "https://www.vinted.es/items/10387201456-tracy-chapman-vinyl-lp-crossroads-original-1989-first-issue": {
   "precio": 22.0,
@@ -3510,6 +3514,10 @@
  "https://www.vinted.es/items/10953183477-the-specials-in-the-studio": {
   "precio": 12.0,
   "ts": 1795532685.6985955
+ },
+ "https://www.vinted.es/items/10962979774-the-doors-riders-on-the-storm-changeling-1971": {
+  "precio": 10.0,
+  "ts": 1795605365.4135501
  },
  "https://www.vinted.es/items/1606315910-james-brown-a-sex-machine-parts-1-2": {
   "precio": 5.5,
