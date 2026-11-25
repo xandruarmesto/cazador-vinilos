@@ -31,6 +31,21 @@
     "max_precio": 18
   },
   {
+    "artista": "B.B. King",
+    "disco": "Completely Well",
+    "max_precio": 28
+  },
+  {
+    "artista": "B.B. King",
+    "disco": "Live at the Regal",
+    "max_precio": 30
+  },
+  {
+    "artista": "B.B. King",
+    "disco": "Live in Cook County Jail",
+    "max_precio": 26
+  },
+  {
     "artista": "Big Mama Thornton",
     "disco": "Hound Dog",
     "max_precio": 25
@@ -162,6 +177,11 @@
     "max_precio": 20
   },
   {
+    "artista": "Derek and the Dominos",
+    "disco": "Layla and Other Assorted Love Songs",
+    "max_precio": 32
+  },
+  {
     "artista": "Dire Straits",
     "disco": "Brothers in Arms",
     "max_precio": 18
@@ -190,6 +210,16 @@
     "artista": "Ella Fitzgerald",
     "disco": "Sings the Cole Porter Song Book",
     "max_precio": 32
+  },
+  {
+    "artista": "Eric Clapton",
+    "disco": "Slowhand",
+    "max_precio": 24
+  },
+  {
+    "artista": "Eric Clapton",
+    "disco": "Unplugged",
+    "max_precio": 35
   },
   {
     "artista": "Etta James",
@@ -608,6 +638,21 @@
     "artista": "The Alan Parsons Project",
     "disco": "The Turn of a Friendly Card",
     "max_precio": 24
+  },
+  {
+    "artista": "The Band",
+    "disco": "Music from Big Pink",
+    "max_precio": 30
+  },
+  {
+    "artista": "The Band",
+    "disco": "The Band",
+    "max_precio": 28
+  },
+  {
+    "artista": "The Band",
+    "disco": "The Last Waltz",
+    "max_precio": 42
   },
   {
     "artista": "The Beatles",
