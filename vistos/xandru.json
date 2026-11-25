@@ -231,6 +231,10 @@
   "precio": 4.0,
   "ts": 1795129610.9707391
  },
+ "https://es.wallapop.com/item/vinilo-miniverse-bob-marley-legend-1327874630": {
+  "precio": 3.0,
+  "ts": 1795565992.10525
+ },
  "https://es.wallapop.com/item/vinilo-mink-deville-coup-de-grace-1322985001": {
   "precio": 10.0,
   "ts": 1794338746.2263172
@@ -392,8 +396,8 @@
   "ts": 1792532627.453385
  },
  "https://www.discogs.com/sell/release/1196597?sort=price%2Casc": {
-  "precio": 2.45,
-  "ts": 1795237417.500138
+  "precio": 2.43,
+  "ts": 1795566689.5424283
  },
  "https://www.discogs.com/sell/release/12032445": {
   "precio": 21.37,
@@ -1860,8 +1864,8 @@
   "ts": 1794760980.1585643
  },
  "https://www.discogs.com/sell/release/8522054?sort=price%2Casc": {
-  "precio": 4.15,
-  "ts": 1795492037.5293267
+  "precio": 4.1,
+  "ts": 1795566334.8655672
  },
  "https://www.discogs.com/sell/release/8555437": {
   "precio": 10.0,
