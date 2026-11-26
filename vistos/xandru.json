@@ -371,6 +371,10 @@
   "precio": 1.77,
   "ts": 1795043963.3292885
  },
+ "https://www.discogs.com/sell/release/11371064?sort=price%2Casc": {
+  "precio": 4.55,
+  "ts": 1795665089.676907
+ },
  "https://www.discogs.com/sell/release/11374466": {
   "precio": 17.76,
   "ts": 1792532186.1248229
@@ -1435,6 +1439,10 @@
   "precio": 6.88,
   "ts": 1792532293.4440541
  },
+ "https://www.discogs.com/sell/release/4537647?sort=price%2Casc": {
+  "precio": 2.73,
+  "ts": 1795667118.2768385
+ },
  "https://www.discogs.com/sell/release/4545466?sort=price%2Casc": {
   "precio": 2.85,
   "ts": 1794418696.234441
@@ -1490,6 +1498,10 @@
  "https://www.discogs.com/sell/release/5016271?sort=price%2Casc": {
   "precio": 0.7,
   "ts": 1795454068.8851247
+ },
+ "https://www.discogs.com/sell/release/5094034?sort=price%2Casc": {
+  "precio": 2.92,
+  "ts": 1795667814.162359
  },
  "https://www.discogs.com/sell/release/5208267?sort=price%2Casc": {
   "precio": 6.23,
@@ -1955,6 +1967,10 @@
   "precio": 19.95,
   "ts": 1792532662.5687242
  },
+ "https://www.discogs.com/sell/release/9553065?sort=price%2Casc": {
+  "precio": 0.9,
+  "ts": 1795666096.7128937
+ },
  "https://www.discogs.com/sell/release/9619261": {
   "precio": 13.35,
   "ts": 1792532174.2596633
@@ -2170,6 +2186,10 @@
  "https://www.vinted.es/items/10236644499-vinyle-33-t-lp-tracy-chapman-crossroads": {
   "precio": 15.0,
   "ts": 1793531786.3389857
+ },
+ "https://www.vinted.es/items/10237474275-discovinilo-promocional-the-last-waltz-the-band": {
+  "precio": 22.0,
+  "ts": 1795667122.036161
  },
  "https://www.vinted.es/items/10241742476-tracy-chapman-crossroads": {
   "precio": 15.0,
@@ -3471,6 +3491,10 @@
   "precio": 10.9,
   "ts": 1794957981.3232875
  },
+ "https://www.vinted.es/items/10861179968-vinil-triplo-the-band-the-last-waltz-1978": {
+  "precio": 25.0,
+  "ts": 1795667122.6566021
+ },
  "https://www.vinted.es/items/10862053390-radiohead-ok-computer": {
   "precio": 9.99,
   "ts": 1794979853.2722032
@@ -3555,6 +3579,10 @@
   "precio": 9.0,
   "ts": 1795491950.622832
  },
+ "https://www.vinted.es/items/10951298146-vinyle-the-doors-13-50th-anniversary-edition-elektra-rhino-r1-60671-n3uf": {
+  "precio": 10.0,
+  "ts": 1795667301.3802972
+ },
  "https://www.vinted.es/items/10953183477-the-specials-in-the-studio": {
   "precio": 12.0,
   "ts": 1795532685.6985955
@@ -3571,6 +3599,10 @@
   "precio": 2.5,
   "ts": 1795641994.1222868
  },
+ "https://www.vinted.es/items/10968555142-lp-the-richie-furay-band-ive-got-a-reason": {
+  "precio": 6.0,
+  "ts": 1795667098.285269
+ },
  "https://www.vinted.es/items/10968704307-the-dizzy-mans-band-red-pierrot-1978": {
   "precio": 1.5,
   "ts": 1795641993.7356265
@@ -3582,6 +3614,14 @@
  "https://www.vinted.es/items/10970586383-eric-burdon-band-comeback-lp-vinilo-1983-belter-espana-blues-rock-the-animals": {
   "precio": 6.0,
   "ts": 1795641994.5016448
+ },
+ "https://www.vinted.es/items/10973211715-the-eric-burdon-band-sun-secrets-vinyl-lp": {
+  "precio": 5.0,
+  "ts": 1795667097.7391913
+ },
+ "https://www.vinted.es/items/10973287452-steve-miller-band-fly-like-an-eagle-vinyl-lp": {
+  "precio": 5.0,
+  "ts": 1795667097.2119532
  },
  "https://www.vinted.es/items/1606315910-james-brown-a-sex-machine-parts-1-2": {
   "precio": 5.5,
@@ -3934,6 +3974,10 @@
  "https://www.vinted.es/items/6549859573-cuadro-the-rolling-stones-sticky-fingers": {
   "precio": 17.9,
   "ts": 1793503975.7484329
+ },
+ "https://www.vinted.es/items/6606997173-vinilo-the-last-waltz-the-band": {
+  "precio": 25.0,
+  "ts": 1795667123.1753788
  },
  "https://www.vinted.es/items/6620728952-roy-orbison-all-time-greatest-hits": {
   "precio": 12.5,
