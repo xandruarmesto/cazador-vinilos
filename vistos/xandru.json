@@ -179,6 +179,10 @@
   "precio": 2.9,
   "ts": 1795641990.7508857
  },
+ "https://es.wallapop.com/item/vinilo-gene-farrow-with-the-g-f-band-1328382795": {
+  "precio": 2.9,
+  "ts": 1795701349.2940037
+ },
  "https://es.wallapop.com/item/vinilo-guns-n-roses-appetite-for-destruction-1320544154": {
   "precio": 25.0,
   "ts": 1793793123.027195
@@ -194,6 +198,10 @@
  "https://es.wallapop.com/item/vinilo-john-coltrane-blue-train-1319653988": {
   "precio": 12.0,
   "ts": 1793649792.342225
+ },
+ "https://es.wallapop.com/item/vinilo-lp-chance-manfred-mann-s-earth-band-1328405079": {
+  "precio": 7.5,
+  "ts": 1795701350.2848186
  },
  "https://es.wallapop.com/item/vinilo-lp-el-reloj-1324511746": {
   "precio": 10.0,
@@ -270,6 +278,10 @@
  "https://es.wallapop.com/item/vinilo-the-big-band-latin-sound-1328217162": {
   "precio": 8.0,
   "ts": 1795641991.254122
+ },
+ "https://es.wallapop.com/item/vinilo-the-desert-rose-band-running-1328386544": {
+  "precio": 5.0,
+  "ts": 1795701349.7894242
  },
  "https://es.wallapop.com/item/vinilo-the-doors-13-1318998799": {
   "precio": 13.0,
@@ -1355,6 +1367,14 @@
   "precio": 6.5,
   "ts": 1792612629.2945123
  },
+ "https://www.discogs.com/sell/release/4044861?sort=price%2Casc": {
+  "precio": 0.9,
+  "ts": 1795699406.566078
+ },
+ "https://www.discogs.com/sell/release/4081215?sort=price%2Casc": {
+  "precio": 3.8,
+  "ts": 1795699742.0167155
+ },
  "https://www.discogs.com/sell/release/4095517?sort=price%2Casc": {
   "precio": 3.0,
   "ts": 1793793485.4049916
@@ -1506,6 +1526,10 @@
  "https://www.discogs.com/sell/release/5208267?sort=price%2Casc": {
   "precio": 6.23,
   "ts": 1792570923.4422698
+ },
+ "https://www.discogs.com/sell/release/5241979?sort=price%2Casc": {
+  "precio": 7.08,
+  "ts": 1795701396.2741404
  },
  "https://www.discogs.com/sell/release/526433?sort=price%2Casc": {
   "precio": 4.0,
@@ -1946,6 +1970,10 @@
  "https://www.discogs.com/sell/release/894601?sort=price%2Casc": {
   "precio": 2.0,
   "ts": 1795013630.0077636
+ },
+ "https://www.discogs.com/sell/release/895605?sort=price%2Casc": {
+  "precio": 1.5,
+  "ts": 1795701325.3585784
  },
  "https://www.discogs.com/sell/release/9043488?sort=price%2Casc": {
   "precio": 5.0,
@@ -3583,6 +3611,10 @@
   "precio": 10.0,
   "ts": 1795667301.3802972
  },
+ "https://www.vinted.es/items/10952120887-tracy-chapman-crossroads-vinilo": {
+  "precio": 13.0,
+  "ts": 1795701953.2287037
+ },
  "https://www.vinted.es/items/10953183477-the-specials-in-the-studio": {
   "precio": 12.0,
   "ts": 1795532685.6985955
@@ -3622,6 +3654,22 @@
  "https://www.vinted.es/items/10973287452-steve-miller-band-fly-like-an-eagle-vinyl-lp": {
   "precio": 5.0,
   "ts": 1795667097.2119532
+ },
+ "https://www.vinted.es/items/10975358688-the-michael-zager-band": {
+  "precio": 3.5,
+  "ts": 1795701353.1630816
+ },
+ "https://www.vinted.es/items/10975723520-nick-straker-band-leaving-on-the-midnight-train": {
+  "precio": 3.95,
+  "ts": 1795701353.6944685
+ },
+ "https://www.vinted.es/items/10977490707-solomon-burke-rock-n-soul": {
+  "precio": 7.0,
+  "ts": 1795701231.691008
+ },
+ "https://www.vinted.es/items/10977961710-the-michael-zager-band": {
+  "precio": 2.0,
+  "ts": 1795701352.5545876
  },
  "https://www.vinted.es/items/1606315910-james-brown-a-sex-machine-parts-1-2": {
   "precio": 5.5,
