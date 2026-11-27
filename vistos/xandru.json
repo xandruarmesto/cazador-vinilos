@@ -7,6 +7,10 @@
   "precio": 12.0,
   "ts": 1794762111.5595407
  },
+ "https://es.wallapop.com/item/4x3-yonder-mountain-string-band-1328638001": {
+  "precio": 15.0,
+  "ts": 1795760728.778468
+ },
  "https://es.wallapop.com/item/alan-parsons-vinilo-lp-eye-in-the-sky-1982-1326752534": {
   "precio": 10.0,
   "ts": 1795294206.7335184
@@ -1551,13 +1555,17 @@
   "precio": 4.0,
   "ts": 1794284065.0243256
  },
+ "https://www.discogs.com/sell/release/5278059?sort=price%2Casc": {
+  "precio": 2.72,
+  "ts": 1795758734.4183335
+ },
  "https://www.discogs.com/sell/release/531009?sort=price%2Casc": {
   "precio": 0.86,
   "ts": 1793792871.1731937
  },
  "https://www.discogs.com/sell/release/5310894?sort=price%2Casc": {
-  "precio": 3.59,
-  "ts": 1794894191.3006022
+  "precio": 3.55,
+  "ts": 1795758689.5174472
  },
  "https://www.discogs.com/sell/release/5332160": {
   "precio": 11.29,
