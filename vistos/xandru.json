@@ -687,6 +687,10 @@
   "precio": 2.0,
   "ts": 1795640913.3396041
  },
+ "https://www.discogs.com/sell/release/14094649?sort=price%2Casc": {
+  "precio": 3.64,
+  "ts": 1795844777.6381621
+ },
  "https://www.discogs.com/sell/release/1417554?sort=price%2Casc": {
   "precio": 4.45,
   "ts": 1792570276.2653387
@@ -1875,6 +1879,10 @@
   "precio": 3.19,
   "ts": 1795641989.0942605
  },
+ "https://www.discogs.com/sell/release/7593495?sort=price%2Casc": {
+  "precio": 2.47,
+  "ts": 1795845191.1718934
+ },
  "https://www.discogs.com/sell/release/760558": {
   "precio": 21.35,
   "ts": 1792536711.04298
@@ -1910,6 +1918,10 @@
  "https://www.discogs.com/sell/release/7823049": {
   "precio": 8.9,
   "ts": 1792549900.8567367
+ },
+ "https://www.discogs.com/sell/release/7832586?sort=price%2Casc": {
+  "precio": 6.0,
+  "ts": 1795845944.2758768
  },
  "https://www.discogs.com/sell/release/7878813?sort=price%2Casc": {
   "precio": 8.9,
